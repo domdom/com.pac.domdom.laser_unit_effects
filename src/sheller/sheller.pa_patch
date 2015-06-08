@@ -10,11 +10,11 @@
     ]
   },
   {
-    "target": "/sheller/sheller_ammo_trail.json",
+    "target": "/base_arty/base_ammo_trail.json",
     "destination" : "/mod/sheller/sheller_ammo_trail.json"
   },
   {
-    "target": "/sheller/sheller_ammo_hit.json",
+    "target": "/base_arty/base_ammo_hit.json",
     "destination" : "/mod/sheller/sheller_ammo_hit.json"
   },
   {
