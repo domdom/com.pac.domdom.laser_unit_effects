@@ -1,0 +1,14 @@
+TODO:
+ [ ] - pelter
+ [ ] - holkins
+ [ ] - kestrel
+ [ ] - piranah
+ [ ] - orca
+ [ ] - stingray
+ [ ] - leviathan
+DONE:
+ [x] - ant
+ [x] - dox
+ [x] - grenadier
+ [x] - sheller
+ [x] - slammer

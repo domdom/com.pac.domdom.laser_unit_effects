@@ -1,0 +1,113 @@
+[
+  {
+    "target": "/pa/units/land/tank_laser_adv/tank_laser_adv.json",
+    "patch": [
+      {
+        "op": "replace",
+        "path": "/events/fired/effect_spec",
+        "value": "/mod/leveler/leveler_muzzle_flash.json socket_leftMuzzle /mod/leveler/leveler_muzzle_flash.json socket_rightMuzzle"
+      }
+    ]
+  },
+  {
+    "target": "/pa/effects/specs/tank_muzzle_flash.pfx",
+    "destination": "/mod/leveler/leveler_muzzle_flash.json",
+    "patch": [
+      {"op": "replace", "path": "/emitters/0/spec/red", "value": 0.0 },
+      {"op": "replace", "path": "/emitters/0/spec/green", "value": 0.25 },
+      {"op": "replace", "path": "/emitters/0/spec/blue", "value": 0.7 },
+      {"op": "replace", "path": "/emitters/1/spec/red", "value":   [[0.3, 0.5 ], [1, 0.0 ] ] },
+      {"op": "replace", "path": "/emitters/1/spec/green", "value": [[0.3, 2 ], [1, 0.60 ] ] },
+      {"op": "replace", "path": "/emitters/1/spec/blue", "value":  [[0.3, 5 ], [1, 1.00 ] ] },
+
+      {"op": "copy", "path": "/emitters/2/spec/red", "from": "/emitters/1/spec/red"},
+      {"op": "copy", "path": "/emitters/2/spec/green", "from": "/emitters/1/spec/green"},
+      {"op": "copy", "path": "/emitters/2/spec/blue", "from": "/emitters/1/spec/blue"},
+      {"op": "copy", "path": "/emitters/3/spec/red", "from": "/emitters/0/spec/red"},
+      {"op": "copy", "path": "/emitters/3/spec/green", "from": "/emitters/0/spec/green"},
+      {"op": "copy", "path": "/emitters/3/spec/blue", "from": "/emitters/0/spec/blue"},
+      {"op": "add", "path": "/emitters/-", "value": {
+          "spec": {
+            "shape": "pointlight",
+            "red": 0.2,
+            "green": 0.3,
+            "blue": 1.0,
+            "alpha": [[0.6, 0.8], [1, 0]]
+          },
+          "offsetY": -0.5,
+          "sizeX": 20,
+          "emissionBursts": 1,
+          "lifetime": 0.15,
+          "emitterLifetime": 0.1,
+          "bLoop": false,
+          "endDistance": 850
+        }
+      }
+    ]
+  },
+  {
+    "target": "/pa/units/land/tank_laser_adv/tank_laser_adv_ammo.json",
+    "patch": [
+      {"op": "add", "path": "/events", "value": {"died": {"audio_cue": "/SE/Impacts/shell_tank", "effect_spec": "/mod/leveler/leveler_ammo_hit.json"} } },
+      {"op": "add", "path": "/fx_trail", "value": {
+        "filename": "/mod/leveler/leveler_ammo_trail.json",
+        "offset": [
+            0.0,
+            0.8,
+            0.0
+          ]
+      }}
+    ]
+  },
+  {
+    "target": "/base_ammo_hit.json",
+    "destination": "/mod/leveler/leveler_ammo_hit.json",
+    "patch": [
+      {"op": "replace", "path": "/emitters/0/spec/red", "value": 0.2 },
+      {"op": "replace", "path": "/emitters/0/spec/green", "value": 0.2 },
+      {"op": "replace", "path": "/emitters/0/spec/blue", "value": 1.0 },
+      {"op": "copy", "path": "/emitters/1/spec/red", "from": "/emitters/0/spec/red" },
+      {"op": "copy", "path": "/emitters/1/spec/green", "from": "/emitters/0/spec/green" },
+      {"op": "copy", "path": "/emitters/1/spec/blue", "from": "/emitters/0/spec/blue" },
+      {"op": "copy", "path": "/emitters/2/spec/red", "from": "/emitters/0/spec/red" },
+      {"op": "copy", "path": "/emitters/2/spec/green", "from": "/emitters/0/spec/green" },
+      {"op": "copy", "path": "/emitters/2/spec/blue", "from": "/emitters/0/spec/blue" },
+      {"op": "copy", "path": "/emitters/3/spec/red", "from": "/emitters/0/spec/red" },
+      {"op": "copy", "path": "/emitters/3/spec/green", "from": "/emitters/0/spec/green" },
+      {"op": "copy", "path": "/emitters/3/spec/blue", "from": "/emitters/0/spec/blue" },
+      {"op": "add", "path": "/emitters/-", "value": {
+	      "spec": {
+	        "shader": "particle_clip",
+	        "size": [[0, 0 ], [0.15, 0.5 ], [0.5, 0.75 ], [1, 1.0 ] ],
+	        "red":   [[0.0, 0.25], [1.0, 0.25] ],
+	        "green": [[0.0, 0.9 ], [1.0, 0.9 ] ],
+	        "blue":  [[0.0, 6.0 ], [1.0, 4.0 ] ],
+	        "alpha": [[0.0, 0.5 ], [1.0, 0.0 ] ],
+	        "cameraPush": 0.5,
+	        "baseTexture": "/pa/effects/textures/particles/fire_puff.papa",
+	        "dataChannelFormat": "PositionAndColor"
+	      },
+	      "sizeX": 6,
+	      "emissionBursts": 1,
+	      "rotationRange": 3.15,
+	      "rotationRateRange": 0.25,
+	      "lifetime": 0.4,
+	      "emitterLifetime": 1.0,
+	      "bLoop": false
+	    }
+      }
+    ]
+  },
+  {
+    "target": "/base_ammo_trail.json",
+    "destination": "/mod/leveler/leveler_ammo_trail.json",
+    "patch": [
+      {"op" : "replace", "path" : "/emitters/2/spec/red",     "value" : [[0, 1], [0.1, 0.2], [1, 0.1]]},
+      {"op" : "replace", "path" : "/emitters/2/spec/green",   "value" : [[0, 1], [0.1, 1.2], [1, 1.0]]},
+      {"op" : "replace", "path" : "/emitters/2/spec/blue",    "value" : 5.0},
+
+      {"op": "remove", "path": "/emitters/0"},
+      {"op": "remove", "path": "/emitters/0"}
+    ]
+  }
+]

@@ -1,0 +1,24 @@
+{
+    "options" : {
+        "debug_mode" : false,
+        "output_dir" : ".."
+    },
+    "modinfo" : {
+        "context" : "server",
+        "identifier" : "com.pa.domdom.laser_unit_effects",
+        "display_name" : "More Pew Pew",
+        "description" : "Makes ballistic type weapons on some units look more laser like.",
+        "author" : "dom314",
+        "version" : "0.0.1",
+        "icon": "http://i.imgur.com/k1A2Q53.gif",
+        "priority": 100
+    },
+    "mod" : [
+        { "from_file" : "/ant/ant.pa_patch" },
+        { "from_file" : "/dox/dox.pa_patch" },
+        { "from_file" : "/grenadier/grenadier.pa_patch" },
+        { "from_file" : "/slammer/slammer.pa_patch" },
+        { "from_file" : "/sheller/sheller.pa_patch" },
+        { "from_file" : "/leveler/leveler.pa_patch" }
+    ]
+}

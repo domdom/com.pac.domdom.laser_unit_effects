@@ -1,0 +1,12 @@
+{
+    "context": "server", 
+    "identifier": "com.pa.domdom.laser_unit_effects", 
+    "display_name": "More Pew Pew", 
+    "description": "Makes ballistic type weapons on some units look more laser like.", 
+    "author": "dom314", 
+    "version": "0.0.1", 
+    "icon": "http://i.imgur.com/k1A2Q53.gif", 
+    "priority": 100, 
+    "build": "82369", 
+    "date": "08/06/2015"
+}
