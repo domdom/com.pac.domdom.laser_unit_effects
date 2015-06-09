@@ -1,6 +1,8 @@
 {
     "options" : {
-        "debug_mode" : false
+        "debug_mode" : true,
+        "output_dir" : "..",
+        "indent" : 2
     },
     "modinfo" : {
         "context" : "server",
@@ -19,6 +21,7 @@
         { "from_file" : "/slammer/slammer.pa_patch" },
         { "from_file" : "/sheller/sheller.pa_patch" },
         { "from_file" : "/pelter/pelter.pa_patch" },
+        { "from_file" : "/holkins/holkins.pa_patch" },
         { "from_file" : "/leveler/leveler.pa_patch" }
     ]
 }
