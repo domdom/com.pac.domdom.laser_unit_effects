@@ -300,9 +300,9 @@ base_hit = {
 # amplitudeRange - range of amplitude size for sub wavelets
 def sine(waves, amplitude, amplitudeRange):
     wavelets = []
-    s = range(1, waves * 2)
+    s = list(range(1, waves * 2))
     waves = int(waves)
-    for w in xrange(waves):
+    for w in range(waves):
         f = random.choice(s)
         s.remove(f)
         a = amplitude + random.uniform(-1, 1) * amplitudeRange
@@ -324,7 +324,7 @@ def wave_to_offset(wavelets, period, dt):
 
 def run():
     base_string['lifetime'] = 0.8
-    for t in xrange(5):
+    for t in range(5):
         string = copy.deepcopy(base_string)
         string['offsetX'] = wave_to_offset(sine(10, 0.3, 0.1), base_string['emitterLifetime'], base_string['emitterLifetime'] / 100.0)
         string['offsetZ'] = wave_to_offset(sine(10, 0.3, 0.1), base_string['emitterLifetime'], base_string['emitterLifetime'] / 100.0)
@@ -350,7 +350,7 @@ def run():
     loader.save_json(base_trail, "base_ammo_trail.json", indent=2)
     loader.save_json(base_hit, "base_ammo_hit.json", indent=2)
 
-    print loader.print_effect(base_trail)
+    print((loader.print_effect(base_trail)))
 
     pass
 
