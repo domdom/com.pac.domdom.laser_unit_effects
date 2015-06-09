@@ -350,7 +350,7 @@ def run():
     loader.save_json(base_trail, "base_ammo_trail.json", indent=2)
     loader.save_json(base_hit, "base_ammo_hit.json", indent=2)
 
-    print((loader.print_effect(base_trail)))
+    print(loader.print_effect(base_trail))
 
     pass
 
