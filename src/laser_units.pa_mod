@@ -1,7 +1,6 @@
 {
     "options" : {
-        "debug_mode" : false,
-        "output_dir" : ".."
+        "debug_mode" : false
     },
     "modinfo" : {
         "context" : "server",
@@ -19,6 +18,7 @@
         { "from_file" : "/grenadier/grenadier.pa_patch" },
         { "from_file" : "/slammer/slammer.pa_patch" },
         { "from_file" : "/sheller/sheller.pa_patch" },
+        { "from_file" : "/pelter/pelter.pa_patch" },
         { "from_file" : "/leveler/leveler.pa_patch" }
     ]
 }
