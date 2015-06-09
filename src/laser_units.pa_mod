@@ -1,6 +1,6 @@
 {
     "options" : {
-        "debug_mode" : true,
+        "debug_mode" : false,
         "output_dir" : "..",
         "indent" : 2
     },

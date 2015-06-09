@@ -1,0 +1,35 @@
+{
+  "base_spec": "/pa/ammo/base_artillery/base_artillery.json", 
+  "damage": 5000, 
+  "splash_damage": 5000, 
+  "splash_radius": 20, 
+  "full_damage_splash_radius": 5, 
+  "splash_damages_allies": false, 
+  "initial_velocity": 200.0, 
+  "lifetime": 30, 
+  "influence_radius": 900, 
+  "physics": {
+    "radius": 1, 
+    "gravity_scalar": 10, 
+    "add_to_spatial_db": false
+  }, 
+  "model": {
+    "filename": "/pa/units/air/shell_large/shell_large.papa"
+  }, 
+  "fx_trail": {
+    "filename": "/mod/holkins/holkins_ammo_trail.json", 
+    "offset": [
+      0.0, 
+      0.0, 
+      0.0
+    ]
+  }, 
+  "audio_loop": "/SE/Movement/missile/artillery_long_missile_fly_loop", 
+  "events": {
+    "died": {
+      "audio_cue": "/SE/Impacts/missile_artillery_long_holkins", 
+      "effect_spec": "/mod/holkins/holkins_ammo_hit.json", 
+      "effect_scale": 1.6
+    }
+  }
+}

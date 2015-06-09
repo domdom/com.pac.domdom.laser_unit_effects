@@ -23,11 +23,11 @@
         "green": [
           [
             0, 
-            10
+            100
           ], 
           [
             0.35, 
-            2
+            4
           ]
         ], 
         "materialProperties": {
@@ -48,11 +48,11 @@
         "red": [
           [
             0, 
-            100
+            10
           ], 
           [
             0.35, 
-            4
+            2
           ]
         ], 
         "size": [
@@ -96,22 +96,22 @@
         "blue": [
           [
             0, 
-            80
+            10
           ], 
           [
             0.35, 
-            20
+            4
           ]
         ], 
         "shape": "mesh", 
         "green": [
           [
             0, 
-            10
+            100
           ], 
           [
             0.35, 
-            2
+            20
           ]
         ], 
         "materialProperties": {
@@ -136,11 +136,11 @@
         "red": [
           [
             0, 
-            100
+            10
           ], 
           [
             0.35, 
-            20
+            2
           ]
         ], 
         "size": [
@@ -179,7 +179,7 @@
       "lifetime": 0.8, 
       "sizeX": 30, 
       "spec": {
-        "blue": 5.0, 
+        "blue": 3.0, 
         "alpha": [
           [
             0, 
@@ -195,8 +195,8 @@
           ]
         ], 
         "shape": "pointlight", 
-        "green": 0.4, 
-        "red": 6.0
+        "green": 6.0, 
+        "red": 0.4
       }, 
       "offsetZ": 10, 
       "endDistance": 2000
@@ -220,8 +220,8 @@
       "type": "SHELL", 
       "spec": {
         "facing": "Velocity", 
-        "blue": 0.1, 
-        "green": 0.4, 
+        "blue": 1.0, 
+        "green": 6.0, 
         "temp_alpha": [
           [
             0, 
@@ -236,7 +236,7 @@
         "baseTexture": "/pa/effects/textures/particles/dot.papa", 
         "rampTexture": "/pa/effects/textures/particles/uncompressed/no_ramp.papa", 
         "shader": "particle_add", 
-        "red": 2, 
+        "red": 1.0, 
         "size": [
           [
             0, 
@@ -272,22 +272,22 @@
         "blue": [
           [
             0, 
-            10
+            20
           ], 
           [
             0.75, 
-            10
+            5
           ]
         ], 
         "cameraPush": 1, 
         "green": [
           [
             0, 
-            3
+            15
           ], 
           [
             0.75, 
-            1
+            15
           ]
         ], 
         "dataChannelFormat": "PositionAndColor", 
@@ -307,11 +307,11 @@
         "red": [
           [
             0, 
-            10
+            3
           ], 
           [
             0.75, 
-            10
+            1
           ]
         ], 
         "size": [
@@ -373,7 +373,7 @@
         "blue": [
           [
             0, 
-            10
+            1
           ], 
           [
             0.75, 
@@ -384,11 +384,11 @@
         "green": [
           [
             0, 
-            1
+            10
           ], 
           [
             0.75, 
-            0.5
+            10
           ]
         ], 
         "dataChannelFormat": "PositionAndColor", 

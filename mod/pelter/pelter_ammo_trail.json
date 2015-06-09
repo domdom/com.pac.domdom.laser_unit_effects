@@ -809,13 +809,13 @@
         ]
       ], 
       "cameraPush": 0.5, 
-      "lifetime": 0.8, 
+      "lifetime": 0.5599999999999999, 
       "spec": {
-        "blue": 2.0, 
+        "blue": 3.0, 
         "baseTexture": "/pa/effects/textures/particles/flat.papa", 
         "shader": "particle_transparent", 
         "shape": "string", 
-        "green": 0.3, 
+        "green": 5.0, 
         "dataChannelFormat": "PositionColorAndAlignVector", 
         "alpha": [
           [
@@ -827,7 +827,7 @@
             1
           ]
         ], 
-        "red": 6.0, 
+        "red": 0.2, 
         "size": [
           [
             0, 
@@ -1654,13 +1654,13 @@
         ]
       ], 
       "cameraPush": 0.5, 
-      "lifetime": 0.8, 
+      "lifetime": 0.5599999999999999, 
       "spec": {
-        "blue": 2.0, 
+        "blue": 3.0, 
         "baseTexture": "/pa/effects/textures/particles/flat.papa", 
         "shader": "particle_transparent", 
         "shape": "string", 
-        "green": 0.3, 
+        "green": 5.0, 
         "dataChannelFormat": "PositionColorAndAlignVector", 
         "alpha": [
           [
@@ -1672,7 +1672,7 @@
             1
           ]
         ], 
-        "red": 6.0, 
+        "red": 0.2, 
         "size": [
           [
             0, 
@@ -2499,13 +2499,13 @@
         ]
       ], 
       "cameraPush": 0.5, 
-      "lifetime": 0.8, 
+      "lifetime": 0.5599999999999999, 
       "spec": {
-        "blue": 2.0, 
+        "blue": 3.0, 
         "baseTexture": "/pa/effects/textures/particles/flat.papa", 
         "shader": "particle_transparent", 
         "shape": "string", 
-        "green": 0.3, 
+        "green": 5.0, 
         "dataChannelFormat": "PositionColorAndAlignVector", 
         "alpha": [
           [
@@ -2517,7 +2517,7 @@
             1
           ]
         ], 
-        "red": 6.0, 
+        "red": 0.2, 
         "size": [
           [
             0, 
@@ -3344,13 +3344,13 @@
         ]
       ], 
       "cameraPush": 0.5, 
-      "lifetime": 0.8, 
+      "lifetime": 0.5599999999999999, 
       "spec": {
-        "blue": 2.0, 
+        "blue": 3.0, 
         "baseTexture": "/pa/effects/textures/particles/flat.papa", 
         "shader": "particle_transparent", 
         "shape": "string", 
-        "green": 0.3, 
+        "green": 5.0, 
         "dataChannelFormat": "PositionColorAndAlignVector", 
         "alpha": [
           [
@@ -3362,7 +3362,7 @@
             1
           ]
         ], 
-        "red": 6.0, 
+        "red": 0.2, 
         "size": [
           [
             0, 
@@ -4189,13 +4189,13 @@
         ]
       ], 
       "cameraPush": 0.5, 
-      "lifetime": 0.8, 
+      "lifetime": 0.5599999999999999, 
       "spec": {
-        "blue": 2.0, 
+        "blue": 3.0, 
         "baseTexture": "/pa/effects/textures/particles/flat.papa", 
         "shader": "particle_transparent", 
         "shape": "string", 
-        "green": 0.3, 
+        "green": 5.0, 
         "dataChannelFormat": "PositionColorAndAlignVector", 
         "alpha": [
           [
@@ -4207,7 +4207,7 @@
             1
           ]
         ], 
-        "red": 6.0, 
+        "red": 0.2, 
         "size": [
           [
             0, 
@@ -4230,22 +4230,13 @@
       "sizeX": 1, 
       "endDistance": 2000, 
       "cameraPush": 0.5, 
-      "lifetime": 1, 
+      "lifetime": 0.7, 
       "spec": {
-        "blue": 2.0, 
+        "blue": 3.0, 
         "baseTexture": "/pa/effects/textures/particles/flat.papa", 
         "shader": "particle_transparent", 
         "shape": "string", 
-        "green": [
-          [
-            0, 
-            1
-          ], 
-          [
-            1, 
-            0.5
-          ]
-        ], 
+        "green": 5.0, 
         "dataChannelFormat": "PositionColorAndAlignVector", 
         "alpha": [
           [
@@ -4257,7 +4248,16 @@
             1
           ]
         ], 
-        "red": 6.0, 
+        "red": [
+          [
+            0, 
+            1
+          ], 
+          [
+            1, 
+            0.5
+          ]
+        ], 
         "size": [
           [
             0, 
