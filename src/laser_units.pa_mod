@@ -10,7 +10,7 @@
         "display_name" : "More Pew Pew",
         "description" : "Makes ballistic type weapons on some units look more laser like.",
         "author" : "dom314",
-        "version" : "0.0.1",
+        "version" : "0.5.0",
         "icon": "http://i.imgur.com/k1A2Q53.gif",
         "priority": 100
     },
