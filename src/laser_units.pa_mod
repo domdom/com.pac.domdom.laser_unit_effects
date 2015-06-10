@@ -1,6 +1,6 @@
 {
     "options" : {
-        "debug_mode" : false,
+        "debug_mode" : true,
         "output_dir" : "..",
         "indent" : null
     },
@@ -23,6 +23,9 @@
         { "from_file" : "/pelter/pelter.pa_patch" },
         { "from_file" : "/holkins/holkins.pa_patch" },
         { "from_file" : "/leveler/leveler.pa_patch" },
-        { "from_file" : "/piranha/piranha.pa_patch" }
+        { "from_file" : "/piranha/piranha.pa_patch" },
+        { "from_file" : "/narwhal/narwhal.pa_patch" },
+        { "from_file" : "/leviathan/leviathan.pa_patch" },
+        { "from_file" : "/orca/orca.pa_patch" }
     ]
 }

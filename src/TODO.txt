@@ -1,12 +1,10 @@
 TODO:
  [ ] - kestrel
      - orange/redish laser
-
- [ ] - orca
-     - 
- [ ] - stingray
- [ ] - leviathan
 DONE:
+ [x] - leviathan
+ [x] - narwhal
+ [x] - orca
  [x] - piranah
  [x] - holkins
  [x] - pelter

@@ -1,0 +1,182 @@
+[
+ {
+    "target": "/pa/units/sea/battleship/battleship_ammo.json",
+    "patch": [
+      {"op": "add", "path": "/events", "value": {
+        "died": {
+          "audio_cue": "/SE/Impacts/missile_battleship",
+          "effect_spec": "/mod/leviathan/leviathan_ammo_hit.json",
+          "effect_scale" : 0.5
+        }
+      }},
+      {"op": "add", "path": "/fx_trail", "value": {
+        "filename": "/mod/leviathan/leviathan_ammo_trail.json",
+        "offset": [0.0, 0.0, 0.0]
+      }}
+    ]
+  },
+  {
+    "target": "/base_arty/base_ammo_trail.json",
+    "destination" : "/mod/leviathan/leviathan_ammo_trail.json",
+    "patch" : [
+      {"op" : "replace", "path" : "/emitters/0/spec/shader",     "value" : "particle_transparent_lit"},
+      {"op" : "replace", "path" : "/emitters/0/spec/red",     "value" : 1.2},
+      {"op" : "replace", "path" : "/emitters/0/spec/green",   "value" : 1.7},
+      {"op" : "replace", "path" : "/emitters/0/spec/blue",    "value" : 5.0},
+
+      {"op" : "replace", "path" : "/emitters/5/spec/red",     "value" : 0.4},
+      {"op" : "replace", "path" : "/emitters/5/spec/green",   "value" : 0.4},
+      {"op" : "replace", "path" : "/emitters/5/spec/blue",    "value" : 4.0},
+
+      {"op" : "copy", "path" : "/emitters/1/spec", "from" : "/emitters/0/spec"},
+      {"op" : "copy", "path" : "/emitters/2/spec", "from" : "/emitters/0/spec"},
+      {"op" : "copy", "path" : "/emitters/3/spec", "from" : "/emitters/0/spec"},
+      {"op" : "copy", "path" : "/emitters/4/spec", "from" : "/emitters/0/spec"},
+
+
+
+      
+
+      {"op" : "scale", "path" : "/emitters/0/lifetime", "value" : 1},
+      {"op" : "scale", "path" : "/emitters/1/lifetime", "value" : 1},
+      {"op" : "scale", "path" : "/emitters/2/lifetime", "value" : 1},
+      {"op" : "scale", "path" : "/emitters/3/lifetime", "value" : 1},
+      {"op" : "scale", "path" : "/emitters/4/lifetime", "value" : 1},
+      {"op" : "scale", "path" : "/emitters/5/lifetime", "value" : 1},
+      {"op" : "scale", "path" : "/emitters/5/sizeX", "value" : 1}
+
+    ]
+  },
+    {
+    "target": "/base_arty/base_ammo_hit.json",
+    "destination" : "/mod/leviathan/leviathan_ammo_hit.json",
+    "patch" : [
+      {"op" : "replace", "path" : "/emitters/0/spec/red",     "value" : [[0, 10 ], [0.35, 2 ]]},
+      {"op" : "replace", "path" : "/emitters/0/spec/green",   "value" : [[0, 60 ], [0.35, 4 ]]},
+      {"op" : "replace", "path" : "/emitters/0/spec/blue",    "value" : [[0, 80 ], [0.35, 10]]},
+
+      {"op" : "replace", "path" : "/emitters/1/spec/red",     "value" : [[0, 10 ], [0.35, 2 ]]},
+      {"op" : "replace", "path" : "/emitters/1/spec/green",   "value" : [[0, 50 ], [0.35, 10 ]]},
+      {"op" : "replace", "path" : "/emitters/1/spec/blue",    "value" : [[0, 100 ], [0.35, 10]]},
+
+      {"op" : "replace", "path" : "/emitters/4/spec/red",     "value" : [[0, 3 ], [0.75, 20 ]]},
+      {"op" : "replace", "path" : "/emitters/4/spec/green",   "value" : [[0, 15 ], [0.75, 1 ]]},
+      {"op" : "replace", "path" : "/emitters/4/spec/blue",    "value" : [[0, 20 ], [0.75, 5]]},
+
+      {"op" : "replace", "path" : "/emitters/5/spec/red",     "value" : [[0, 1 ], [0.75, 1 ]]},
+      {"op" : "replace", "path" : "/emitters/5/spec/green",   "value" : [[0, 5 ], [0.75, 2 ]]},
+      {"op" : "replace", "path" : "/emitters/5/spec/blue",    "value" : [[0, 10 ], [0.75, 10]]},
+
+
+      {"op" : "scale", "path" : "/emitters/3/sizeX",   "value" : 2.0},
+      
+      {"op" : "replace", "path" : "/emitters/2/spec/red",   "value" : 1.0},
+      {"op" : "replace", "path" : "/emitters/2/spec/green", "value" : 1.0},
+      {"op" : "replace", "path" : "/emitters/2/spec/blue",  "value" : 6.0},
+
+      {"op" : "replace", "path" : "/emitters/3/spec/red",   "value" : 1.0},
+      {"op" : "replace", "path" : "/emitters/3/spec/green", "value" : 1.0},
+      {"op" : "replace", "path" : "/emitters/3/spec/blue",  "value" : 6.0}
+    ]
+  },
+  {
+    "target": "/pa/units/sea/battleship/battleship.json",
+    "patch": [
+      {
+        "op": "add",
+        "path": "/events/fired0/effect_spec",
+        "value": "/mod/leviathan/leviathan_muzzle_flash.json socket_muzzle01 /mod/leviathan/leviathan_muzzle_flash.json socket_muzzle02 /mod/leviathan/leviathan_muzzle_flash.json socket_muzzle03"
+      },
+      {
+        "op": "add",
+        "path": "/events/fired1/effect_spec",
+        "value": "/mod/leviathan/leviathan_muzzle_flash.json socket_muzzle04 /mod/leviathan/leviathan_muzzle_flash.json socket_muzzle05 /mod/leviathan/leviathan_muzzle_flash.json socket_muzzle06"
+      },
+      {
+        "op": "add",
+        "path": "/events/fired2/effect_spec",
+        "value": "/mod/leviathan/leviathan_muzzle_flash.json socket_muzzle07 /mod/leviathan/leviathan_muzzle_flash.json socket_muzzle08 /mod/leviathan/leviathan_muzzle_flash.json socket_muzzle09"
+      },
+      {
+        "op": "add",
+        "path": "/events/fired3/effect_spec",
+        "value": "/mod/leviathan/leviathan_muzzle_flash.json socket_muzzle10 /mod/leviathan/leviathan_muzzle_flash.json socket_muzzle11 /mod/leviathan/leviathan_muzzle_flash.json socket_muzzle12"
+      },
+      {"op": "add", "path": "/events/fired0/effect_scale", "value": 0.5 },
+      {"op": "add", "path": "/events/fired1/effect_scale", "value": 0.5 },
+      {"op": "add", "path": "/events/fired2/effect_scale", "value": 0.5 },
+      {"op": "add", "path": "/events/fired3/effect_scale", "value": 0.5 }
+    ]
+  },
+  {
+    "target": "/pa/effects/specs/tank_muzzle_flash.pfx",
+    "destination": "/mod/leviathan/leviathan_muzzle_flash.json",
+    "patch": [
+      {"op" : "replace", "path" : "/emitters/1/spec/shader",  "value" : "particle_add"},
+      {"op" : "replace", "path" : "/emitters/1/spec/red",     "value" : [[0.3, 0.2], [1, 0.20]]},
+      {"op" : "replace", "path" : "/emitters/1/spec/green",   "value" : [[0.3, 0.9], [1, 0.9]]},
+      {"op" : "replace", "path" : "/emitters/1/spec/blue",    "value" : [[0.3, 5.0], [1, 2]]},
+      {"op" : "scale", "path" : "/emitters/1/sizeX",    "value" : 2.0},
+      {"op" : "scale", "path" : "/emitters/1/offsetY",    "value" : 2.0},
+
+      {"op" : "replace", "path" : "/emitters/0/spec/shader",  "value" : "particle_add"},
+      {"op" : "copy", "path" : "/emitters/0/spec/red",    "from" : "/emitters/1/spec/red/0/1"},
+      {"op" : "copy", "path" : "/emitters/0/spec/green",  "from" : "/emitters/1/spec/green/0/1"},
+      {"op" : "copy", "path" : "/emitters/0/spec/blue",   "from" : "/emitters/1/spec/blue/0/1"},
+      {"op" : "scale", "path" : "/emitters/0/sizeX",    "value" : 2.0},
+      {"op" : "scale", "path" : "/emitters/0/offsetY",    "value" : 2.0},
+
+      {"op" : "copy", "path" : "/emitters/2/spec/red",    "from" : "/emitters/0/spec/red"},
+      {"op" : "copy", "path" : "/emitters/2/spec/green",  "from" : "/emitters/0/spec/green"},
+      {"op" : "copy", "path" : "/emitters/2/spec/blue",   "from" : "/emitters/0/spec/blue"},
+      {"op": "add", "path": "/emitters/-", "value": {
+          "spec": {
+            "shape": "pointlight",
+            "red": 0,
+            "green": 1.1,
+            "blue": 2.2,
+            "alpha": [[0.2, 0.8], [1, 0]]
+          },
+          "offsetY": 0,
+          "sizeX": 10,
+          "emissionBursts": 1,
+          "lifetime": 0.6,
+          "emitterLifetime": 0.1,
+          "bLoop": false,
+          "endDistance": 850
+        }
+      },
+      {"op": "add", "path": "/emitters/-", "value": {
+        "spec": {
+          "shader": "particle_add",
+          "facing": "Velocity",
+          "size": [[0, 0 ], [0.2, 1 ], [1, 0 ]],
+          "red": 0.6,
+          "green": 0.9,
+          "blue": 5,
+          "temp_alpha": [[0, 1 ], [1, 0 ] ],
+          "baseTexture": "/pa/effects/textures/particles/simpleSmokeSingle.papa",
+                      "rampTexture": "/pa/effects/textures/particles/uncompressed/simpleSmokeCenter_ramp.papa",
+          "dataChannelFormat": "PositionColorAndAlignVector"
+        },
+        "velocityRangeX": 0.2,
+        "velocityRangeY": 0,
+        "velocityRangeZ": 0.2,
+        "velocityY": -1,
+        "velocity": 50,
+        "velocityRange": 20.0,
+        "sizeX": 4,
+        "sizeRangeX": 3,
+        "emissionBursts": 8,
+        "lifetime": 1,
+        "drag" : 0.965,
+        "lifetimeRange": 0.1,
+        "emitterLifetime": 0.1,
+        "bLoop": false,
+        "useWorldSpace" : true,
+        "endDistance": 850
+      }
+    }
+    ]
+  }
+]
