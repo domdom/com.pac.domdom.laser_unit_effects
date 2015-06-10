@@ -1,7 +1,7 @@
 {
     "options" : {
-        "debug_mode" : true,
-        "output_dir" : "",
+        "debug_mode" : false,
+        "output_dir" : "..",
         "indent" : null
     },
     "modinfo" : {

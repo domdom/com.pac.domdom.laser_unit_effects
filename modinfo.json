@@ -1,12 +1,12 @@
 {
-    "context": "server", 
-    "identifier": "com.pa.domdom.laser_unit_effects", 
-    "display_name": "More Pew Pew", 
-    "description": "Makes ballistic type weapons on some units look more laser like.", 
-    "author": "dom314", 
-    "version": "0.5.0", 
-    "icon": "http://i.imgur.com/k1A2Q53.gif", 
-    "priority": 100, 
-    "build": "82369", 
-    "date": "09/06/2015"
+    "context": "server",
+    "identifier": "com.pa.domdom.laser_unit_effects",
+    "display_name": "More Pew Pew",
+    "description": "Makes ballistic type weapons on some units look more laser like.",
+    "author": "dom314",
+    "version": "0.5.0",
+    "icon": "http://i.imgur.com/k1A2Q53.gif",
+    "priority": 100,
+    "build": "82834",
+    "date": "10/06/2015"
 }
