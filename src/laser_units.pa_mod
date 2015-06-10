@@ -1,8 +1,8 @@
 {
     "options" : {
-        "debug_mode" : false,
-        "output_dir" : "..",
-        "indent" : 2
+        "debug_mode" : true,
+        "output_dir" : "",
+        "indent" : null
     },
     "modinfo" : {
         "context" : "server",
@@ -22,6 +22,7 @@
         { "from_file" : "/sheller/sheller.pa_patch" },
         { "from_file" : "/pelter/pelter.pa_patch" },
         { "from_file" : "/holkins/holkins.pa_patch" },
-        { "from_file" : "/leveler/leveler.pa_patch" }
+        { "from_file" : "/leveler/leveler.pa_patch" },
+        { "from_file" : "/piranha/piranha.pa_patch" }
     ]
 }
