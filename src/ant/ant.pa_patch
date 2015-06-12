@@ -77,12 +77,15 @@
       {"op": "replace", "path": "/emitters/0/spec/green", "value": 3.0 },
       {"op": "replace", "path": "/emitters/0/spec/blue", "value": 0.2 },
       {"op": "replace", "path": "/emitters/1/spec/red", "value": 1 },
-      {"op": "replace", "path": "/emitters/1/spec/green", "value": 2 }, 
+      {"op": "replace", "path": "/emitters/1/spec/green", "value": 2 },
       {"op": "replace", "path": "/emitters/1/spec/blue", "value": 1 },
 
       {"op": "replace", "path": "/emitters/2/spec/red", "value": 0.4 },
       {"op": "replace", "path": "/emitters/2/spec/green", "value": 2.2 },
       {"op": "replace", "path": "/emitters/2/spec/blue", "value": 0.4 },
+
+      {"op": "scale", "path" : "/emitters/0/sizeX",  "value" : 0.8},
+      {"op": "scale", "path" : "/emitters/1/sizeX",  "value" : 0.8},
 
       {"op": "scale", "path" : "/emitters/2/lifetime",  "value" : 2},
       {"op": "replace", "path" : "/emitters/2/spec/size/0/0",  "value" : 0.25},
