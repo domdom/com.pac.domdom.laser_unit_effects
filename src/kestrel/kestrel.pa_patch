@@ -1,0 +1,102 @@
+[
+  {
+    "target": "/pa/units/air/gunship/gunship.json",
+    "patch": [
+      {
+        "op": "add",
+        "path": "/events/fired/effect_spec",
+        "value": "/mod/kestrel/kestrel_muzzle_flash.json socket_rightMuzzle /mod/kestrel/kestrel_muzzle_flash.json socket_leftMuzzle"
+      }
+    ]
+  },
+  {
+    "target": "/pa/effects/specs/tank_muzzle_flash.pfx",
+    "destination": "/mod/kestrel/kestrel_muzzle_flash.json",
+    "patch": [
+      {"op" : "replace", "path" : "/emitters/0/spec/red",     "value" : [[0.3, 5], [1, 1.00]]},
+      {"op" : "replace", "path" : "/emitters/0/spec/green",   "value" : [[0.3, 1], [1, 0.30]]},
+      {"op" : "replace", "path" : "/emitters/0/spec/blue",    "value" : [[0.3, 1], [1, 0.70]]},
+
+      {"op" : "scale", "path" : "/emitters/0/sizeX",    "value" : 0.4},
+      {"op" : "scale", "path" : "/emitters/1/sizeX",    "value" : 0.4},
+      {"op" : "scale", "path" : "/emitters/0/offsetY",    "value" : 0.4},
+      {"op" : "scale", "path" : "/emitters/1/offsetY",    "value" : 0.4},
+
+
+      {"op" : "copy", "path" : "/emitters/1/spec/red",    "from" : "/emitters/0/spec/red"},
+      {"op" : "copy", "path" : "/emitters/1/spec/green",  "from" : "/emitters/0/spec/green"},
+      {"op" : "copy", "path" : "/emitters/1/spec/blue",   "from" : "/emitters/0/spec/blue"},
+      {"op": "add", "path": "/emitters/-", "value": {
+          "spec": {
+            "shape": "pointlight",
+            "red": 1.0,
+            "green": 0.4,
+            "blue": 0.3,
+            "alpha": [[0.6, 0.8], [1, 0]]
+          },
+          "offsetY": -0.5,
+          "sizeX": 20,
+          "emissionBursts": 1,
+          "lifetime": 0.15,
+          "emitterLifetime": 0.1,
+          "bLoop": false,
+          "endDistance": 850
+        }
+      }
+    ]
+  },
+  {
+    "target": "/pa/units/air/gunship/gunship_ammo.json",
+    "patch": [
+      {"op": "add", "path": "/events", "value": {"died": {"effect_spec": "/mod/kestrel/kestrel_ammo_hit.json"} } },
+      {"op": "replace", "path": "/fx_trail/filename", "value": "/mod/kestrel/kestrel_ammo_trail.json"}
+    ]
+  },
+  {
+    "target": "/base_ammo_hit.json",
+    "destination": "/mod/kestrel/kestrel_ammo_hit.json",
+    "patch": [
+      {"op" : "replace", "path" : "/emitters/0/spec/red",     "value" : 1.0},
+      {"op" : "replace", "path" : "/emitters/0/spec/green",   "value" : 0.4},
+      {"op" : "replace", "path" : "/emitters/0/spec/blue",    "value" : 0.2},
+
+      {"op" : "copy", "path" : "/emitters/1/spec/red",    "from" : "/emitters/0/spec/red"},
+      {"op" : "copy", "path" : "/emitters/1/spec/green",    "from" : "/emitters/0/spec/green"},
+      {"op" : "copy", "path" : "/emitters/1/spec/blue",    "from" : "/emitters/0/spec/blue"},
+
+      {"op" : "copy", "path" : "/emitters/2/spec/red",    "from" : "/emitters/0/spec/red"},
+      {"op" : "copy", "path" : "/emitters/2/spec/green",    "from" : "/emitters/0/spec/green"},
+      {"op" : "copy", "path" : "/emitters/2/spec/blue",    "from" : "/emitters/0/spec/blue"},
+
+      {"op" : "copy", "path" : "/emitters/3/spec/red",    "from" : "/emitters/0/spec/red"},
+      {"op" : "copy", "path" : "/emitters/3/spec/green",    "from" : "/emitters/0/spec/green"},
+      {"op" : "copy", "path" : "/emitters/3/spec/blue",    "from" : "/emitters/0/spec/blue"}
+    ]
+  },
+  {
+    "target": "/base_ammo_trail.json",
+    "destination": "/mod/kestrel/kestrel_ammo_trail.json",
+    "patch": [
+      {"op" : "remove",   "path" : "/emitters/0"},
+      {"op" : "remove",   "path" : "/emitters/0"},
+
+      {"op" : "replace", "path" : "/emitters/0/spec/red",     "value" : 6.0},
+      {"op" : "replace", "path" : "/emitters/0/spec/green",   "value" : 0.4},
+      {"op" : "replace", "path" : "/emitters/0/spec/blue",    "value" : 0.1},
+
+      {"op" : "replace", "path" : "/emitters/0/spec/alpha",  "value" : [[0, 0], [0.49, 0], [0.5, 1]]},
+
+      {"op" : "scale", "path" : "/emitters/0/sizeX",          "value" : 0.7 },
+      {"op" : "add", "path" : "/emitters/0/spec/size/1",  "value" : [0.2, 1]},
+      {"op" : "replace", "path" : "/emitters/0/spec/size/2/0",  "value" : 0.4},
+
+      {"op" : "add", "path" : "/emitters/0/offsetX",  "value" : 0.29},
+      {"op" : "add", "path" : "/emitters/0/offsetY",  "value" : 2},
+
+      {"op" : "copy", "path" : "/emitters/1",  "from" : "/emitters/0"},
+
+      {"op" : "add", "path" : "/emitters/1/offsetX",  "value" : -1}
+      
+    ]
+  }
+]

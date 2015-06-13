@@ -17,6 +17,7 @@
     "mod" : [
         { "from_file" : "/ant/ant.pa_patch" },
         { "from_file" : "/dox/dox.pa_patch" },
+        { "from_file" : "/kestrel/kestrel.pa_patch" },
         { "from_file" : "/grenadier/grenadier.pa_patch" },
         { "from_file" : "/slammer/slammer.pa_patch" },
         { "from_file" : "/sheller/sheller.pa_patch" },
@@ -27,5 +28,6 @@
         { "from_file" : "/narwhal/narwhal.pa_patch" },
         { "from_file" : "/leviathan/leviathan.pa_patch" },
         { "from_file" : "/orca/orca.pa_patch" }
+
     ]
 }
