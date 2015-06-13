@@ -1,7 +1,9 @@
 TODO:
- [ ] - kestrel
-     - orange/redish laser
+ [ ] - grenadier rework trail
+ [ ] - redo holkins trail and explosion
+ [ ] - redo orca trail
 DONE:
+ [x] - kestrel
  [x] - leviathan
  [x] - narwhal
  [x] - orca

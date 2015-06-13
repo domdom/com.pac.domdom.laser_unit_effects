@@ -1,5 +1,8 @@
 [
     {
+        "from_script" : "/grenadier/grenadier.py"
+    },
+    {
         "target" : "/pa/units/land/bot_grenadier/bot_grenadier_ammo.json",
         "patch" : [
             {"op" : "replace", "path" : "/fx_trail/filename", "value" : "/mod/grenadier/grenadier_ammo_trail.json"},

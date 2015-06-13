@@ -3,8 +3,6 @@ import sys
 import math
 import copy
 
-sys.path.append("../../lib")
-
 import loader
 
 red = 1
@@ -87,6 +85,24 @@ base_trail = {
       },
       "sizeX": 0.5,
       "emissionBurts": 1,
+      "lifetime": 0.4,
+      "emitterLifetime" : 1,
+      "useWorldSpace": true,
+      "endDistance": 2000
+    },
+    {
+      "spec": {
+        "shader": "particle_transparent_lit",
+        "shape" : "string",
+        "red": 6,
+        "green": 1,
+        "blue": 0.1,
+        "size" : [[0, 1], [0.9, 0]],
+        "alpha": 0.2,
+        "baseTexture": "/pa/effects/textures/particles/flat.papa",
+        "dataChannelFormat": "PositionColorAndAlignVector"
+      },
+      "sizeX": 0.5,
       "lifetime": 0.4,
       "emitterLifetime" : 1,
       "useWorldSpace": true,
@@ -236,8 +252,8 @@ base_hit = {
   ]
 }
 
-
-loader.save_json(base_trail, "grenadier_ammo_trail.json", indent=2)
-loader.save_json(base_hit, "grenadier_ammo_hit.json", indent=2)
+def run():
+    loader.save_json(base_trail, "grenadier_ammo_trail.json", indent=2)
+    loader.save_json(base_hit, "grenadier_ammo_hit.json", indent=2)
 
 
