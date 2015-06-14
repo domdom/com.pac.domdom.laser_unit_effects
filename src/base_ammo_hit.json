@@ -26,7 +26,7 @@
       "sizeY": 4,
       "sizeRangeY": 1,
       "emissionBursts": 7,
-      "lifetime": 0.15,
+      "lifetime": 0.3,
       "lifetimeRange": 0.05,
       "emitterLifetime": 0.1,
       "bLoop": false,
@@ -34,7 +34,7 @@
     },
     {
       "spec": {
-        "shader": "particle_transparent",
+        "shader": "particle_add",
         "size": [[0, 0.5 ], [0.2, 1 ], [1, 0 ]],
         "red": 0.2,
         "green": 1,
@@ -47,7 +47,7 @@
       },
       "sizeX": 4,
       "emissionBursts": 1,
-      "lifetime": 0.25,
+      "lifetime": 0.5,
       "emitterLifetime": 0.1,
       "bLoop": false,
       "endDistance": 850
@@ -64,9 +64,9 @@
         "rampTexture": "/pa/effects/textures/particles/uncompressed/no_ramp.papa",
         "dataChannelFormat": "PositionAndColor"
       },
-      "sizeX": 2,
+      "sizeX": 2.1,
       "emissionBursts": 1,
-      "lifetime": 0.125,
+      "lifetime": 0.25,
       "emitterLifetime": 0.1,
       "bLoop": false,
       "endDistance": 850,
@@ -82,7 +82,7 @@
       },
       "sizeX": 12,
       "emissionBursts": 1,
-      "lifetime": 0.25,
+      "lifetime": 0.3,
       "emitterLifetime": 0.5,
       "bLoop": false,
       "endDistance": 850

@@ -26,7 +26,7 @@ base_string = {
         "dataChannelFormat": "PositionColorAndAlignVector",
         "baseTexture": "/pa/effects/textures/particles/flat.papa"
     },
-    "emitterLifetime" : 4,
+    "emitterLifetime" : 1,
     "lifetime" : 1,
     "sizeX" : 0.2,
     "cameraPush" : 0.5,
@@ -324,10 +324,32 @@ def wave_to_offset(wavelets, period, dt):
 
 def run():
     base_string['lifetime'] = 0.8
+    wave_rings = [
+            [0.50,  2, math.pi / 2],
+            [0.75, -1, math.pi / 5],
+            [0.25, .6, 2 * math.pi / 5],
+            [0.75, -2, 3 * math.pi / 5],
+            [0.75, +3, math.pi * 2 / 3],
+            [0.75, -3, math.pi * 4 / 3]
+            ]
     for t in range(5):
         string = copy.deepcopy(base_string)
-        string['offsetX'] = wave_to_offset(sine(10, 0.3, 0.1), base_string['emitterLifetime'], base_string['emitterLifetime'] / 100.0)
-        string['offsetZ'] = wave_to_offset(sine(10, 0.3, 0.1), base_string['emitterLifetime'], base_string['emitterLifetime'] / 100.0)
+        wave_x = wave_rings[t][:]
+        wave_z = wave_rings[t][:]
+
+        wave_x[1] *= 3
+        wave_z[1] *= 3
+
+        wave_z[2] += math.pi / 2
+
+        string['offsetX'] = wave_to_offset([wave_x], base_string['emitterLifetime'], base_string['emitterLifetime'] / 100.0)
+        string['offsetZ'] = wave_to_offset([wave_z], base_string['emitterLifetime'], base_string['emitterLifetime'] / 100.0)
+
+        string['velocityX'] = wave_to_offset([wave_x], base_string['emitterLifetime'], base_string['emitterLifetime'] / 100.0)
+        string['velocityZ'] = wave_to_offset([wave_z], base_string['emitterLifetime'], base_string['emitterLifetime'] / 100.0)
+
+        string['velocity'] = 3.0
+        string['drag'] = 0.97
 
         base_trail['emitters'].append(string)
 

@@ -65,46 +65,55 @@
       {"op": "replace", "path": "/emitters/0/spec/blue", "value": 1.0 },
 
       {"op": "replace", "path": "/emitters/1/spec/red", "value": 0.2 },
-      {"op": "replace", "path": "/emitters/1/spec/green", "value": 0.2 },
-      {"op": "replace", "path": "/emitters/1/spec/blue", "value": 1.0 },
+      {"op": "replace", "path": "/emitters/1/spec/green", "value": 0.6 },
+      {"op": "replace", "path": "/emitters/1/spec/blue", "value": 5.0 },
 
-      {"op": "copy", "path": "/emitters/1/spec/red", "from": "/emitters/1/spec/red" },
-      {"op": "copy", "path": "/emitters/1/spec/green", "from": "/emitters/1/spec/green" },
-      {"op": "copy", "path": "/emitters/1/spec/blue", "from": "/emitters/1/spec/blue" },
-      {"op": "copy", "path": "/emitters/2/spec/red", "from": "/emitters/1/spec/red" },
-      {"op": "copy", "path": "/emitters/2/spec/green", "from": "/emitters/1/spec/green" },
-      {"op": "copy", "path": "/emitters/2/spec/blue", "from": "/emitters/1/spec/blue" },
+      {"op": "copy", "path": "/emitters/2/spec/red", "from": "/emitters/0/spec/red" },
+      {"op": "copy", "path": "/emitters/2/spec/green", "from": "/emitters/0/spec/green" },
+      {"op": "copy", "path": "/emitters/2/spec/blue", "from": "/emitters/0/spec/blue" },
+
       {"op": "copy", "path": "/emitters/3/spec/red", "from": "/emitters/1/spec/red" },
       {"op": "copy", "path": "/emitters/3/spec/green", "from": "/emitters/1/spec/green" },
       {"op": "copy", "path": "/emitters/3/spec/blue", "from": "/emitters/1/spec/blue" },
 
-      {"op": "scale", "path": "/emitters/1/sizeX", "value": 2.0 },
+      {"op": "scale", "path": "/emitters/0/emissionBursts", "value": 1.5 },
+      {"op": "scale", "path": "/emitters/0/velocityRange", "value": 2.0 },
+
+      {"op": "scale", "path": "/emitters/0/sizeX", "value": 1 },
+      {"op": "copy", "path": "/emitters/0/sizeRangeX", "from": "/emitters/0/sizeX" },
+      {"op": "scale", "path": "/emitters/0/sizeRangeX", "value": 0.4 },
+
+      {"op": "scale", "path": "/emitters/0/sizeY", "value": 1.5 },
+      {"op": "copy", "path": "/emitters/0/sizeRangeY", "from": "/emitters/0/sizeY" },
+      {"op": "scale", "path": "/emitters/0/sizeRangeY", "value": 0.4 },
+
+      {"op": "scale", "path": "/emitters/1/sizeX", "value": 3.0 },
       {"op": "scale", "path": "/emitters/2/sizeX", "value": 4.0 },
-      {"op": "scale", "path": "/emitters/0/lifetime", "value": 3.0 },
-      {"op": "scale", "path": "/emitters/1/lifetime", "value": 3.0 },
-      {"op": "scale", "path": "/emitters/2/lifetime", "value": 3.0 },
-      {"op": "scale", "path": "/emitters/3/lifetime", "value": 2.0 },
+      {"op": "scale", "path": "/emitters/0/lifetime", "value": 1.5 },
+      {"op": "scale", "path": "/emitters/1/lifetime", "value": 1.0 },
+      {"op": "scale", "path": "/emitters/2/lifetime", "value": 2.0 },
+      {"op": "scale", "path": "/emitters/3/lifetime", "value": 1.0 },
 
       {"op": "add", "path": "/emitters/-", "value": {
-	      "spec": {
-	        "shader": "particle_clip",
-	        "size": [[0, 0 ], [0.15, 0.5 ], [0.5, 0.75 ], [1, 1.0 ] ],
-	        "red":   [[0.0, 0.25], [1.0, 0.25] ],
-	        "green": [[0.0, 0.9 ], [1.0, 0.9 ] ],
-	        "blue":  [[0.0, 6.0 ], [1.0, 4.0 ] ],
-	        "alpha": [[0.0, 0.5 ], [1.0, 0.0 ] ],
-	        "cameraPush": 0.5,
-	        "baseTexture": "/pa/effects/textures/particles/fire_puff.papa",
-	        "dataChannelFormat": "PositionAndColor"
-	      },
-	      "sizeX": 6,
-	      "emissionBursts": 1,
-	      "rotationRange": 3.15,
-	      "rotationRateRange": 0.25,
-	      "lifetime": 0.4,
-	      "emitterLifetime": 1.0,
-	      "bLoop": false
-	    }
+          "spec": {
+            "shader": "particle_clip",
+            "size": [[0, 0 ], [0.15, 0.5 ], [0.5, 0.75 ], [1, 1.0 ] ],
+            "red":   [[0.0, 0.25], [1.0, 0.25] ],
+            "green": [[0.0, 0.9 ], [1.0, 0.9 ] ],
+            "blue":  [[0.0, 6.0 ], [1.0, 4.0 ] ],
+            "alpha": [[0.0, 0.5 ], [1.0, 0.0 ] ],
+            "cameraPush": 0.5,
+            "baseTexture": "/pa/effects/textures/particles/fire_puff.papa",
+            "dataChannelFormat": "PositionAndColor"
+          },
+          "sizeX": 6,
+          "emissionBursts": 1,
+          "rotationRange": 3.15,
+          "rotationRateRange": 0.25,
+          "lifetime": 0.4,
+          "emitterLifetime": 1.0,
+          "bLoop": false
+        }
       }
     ]
   },
@@ -117,8 +126,66 @@
 
       {"op" : "replace", "path" : "/emitters/0/spec/red",     "value" : [[0, 1], [0.1, 0.2], [1, 0.1]]},
       {"op" : "replace", "path" : "/emitters/0/spec/green",   "value" : [[0, 1], [0.1, 1.2], [1, 1.0]]},
+
       {"op" : "replace", "path" : "/emitters/0/spec/blue",    "value" : 5.0},
-      {"op" : "scale", "path" : "/emitters/0/lifetime",    "value" : 2.0}
+      {"op" : "scale", "path" : "/emitters/0/lifetime",    "value" : 2.0},
+      {"op" : "scale", "path" : "/emitters/0/sizeX",    "value" : 0.8},
+
+      {"op" : "add", "path" : "/emitters/-", "value" : {
+        "spec" : {
+            "shader" : "particle_add_ramp",
+            "red" : 0.1,
+            "green" : 1.0,
+            "blue" : 5.0,
+            "alpha" : [[0, 6], [1, 0]],
+            "baseTexture" : "/pa/effects/textures/particles/dot.papa",
+            "rampTexture" : "/pa/effects/textures/particles/uncompressed/flicker_ramp.papa"
+        },
+        "sizeX" : 0.2,
+        "lifetime" : 0.10,
+        "lifetimeRange" : 0.06,
+        "emissionRate" : 540,
+        "offsetRangeX" : 0.5,
+        "offsetRangeZ" : 0.5,
+        "useWorldSpace" : true,
+        "bLoop" : true
+      }},
+      {"op": "add", "path": "/emitters/-", "value": {
+          "spec": {
+            "shape": "pointlight",
+            "red": 0,
+            "green": 1.1,
+            "blue": 2.2,
+            "alpha": 0.2
+          },
+          "offsetY": 0,
+          "sizeX": 17,
+          "emissionBursts": 1,
+          "lifetime": 1,
+          "emitterLifetime": 0.1,
+          "bLoop": false,
+          "endDistance": 2000
+        }
+      },
+      {"op": "add", "path": "/emitters/-", "value": {
+          "spec": {
+            "shape": "pointlight",
+            "red": 0,
+            "green": 1.1,
+            "blue": 2.2,
+            "alpha": [[0.2, 0.06], [1, 0]],
+            "size": [[0.2, 1], [1, 0.3]]
+          },
+          "offsetY": 0,
+          "sizeX": 14,
+          "emissionRate": 50,
+          "lifetime": 0.3,
+          "bLoop": true,
+          "useWorldSpace" : true,
+          "endDistance": 850
+        }
+      }
+
     ]
   }
 ]

@@ -1,6 +1,6 @@
 {
     "options" : {
-        "debug_mode" : false,
+        "debug_mode" : true,
         "output_dir" : "..",
         "indent" : null
     },
@@ -15,6 +15,8 @@
         "priority": 100
     },
     "mod" : [
+        { "from_script" : "/base_arty/base_arty_effects.py" },
+
         { "from_file" : "/ant/ant.pa_patch" },
         { "from_file" : "/dox/dox.pa_patch" },
         { "from_file" : "/kestrel/kestrel.pa_patch" },
