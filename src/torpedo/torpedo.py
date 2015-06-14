@@ -24,7 +24,7 @@ base_string = {
     },
     "emissionRate" : 30,
     "emitterLifetime" : 3.0,
-    
+
     "velocityRangeX" : 0.1,
     "velocityRangeZ" : 0.1,
     "velocity" : 0.6,
@@ -117,7 +117,7 @@ def run():
                 "/pa/units/sea/torpedo_launcher/torpedo_launcher_ammo.json",
                 "/pa/units/sea/torpedo_launcher_adv/torpedo_launcher_adv_ammo.json",
                 "/pa/units/sea/nuclear_sub/nuclear_sub_ammo.json",
-                "/pa/units/land/assualt_bot_adv/assualt_bot_adv_torpedo_ammo.json",
+                "/pa/units/land/assault_bot_adv/assault_bot_adv_torpedo_ammo.json",
                 "/pa/units/commanders/base_commander/base_commander_torpedo_ammo.json"
             ],
             "patch" : [
