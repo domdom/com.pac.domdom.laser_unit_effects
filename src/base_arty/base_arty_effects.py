@@ -12,7 +12,7 @@ false = False
 true = True
 
 #########################################
-base_string = {
+base_string = loader.load_json_string("""{
     "spec" : {
         "shader" : "particle_transparent",
         "shape" : "string",
@@ -31,14 +31,14 @@ base_string = {
     "cameraPush" : 0.5,
     "useWorldSpace" : true,
     "endDistance" : 2000
-}
+}""")
 
 base_trail = {
     "emitters" : []
 }
 
 
-base_hit_shell = {
+base_hit_shell = loader.load_json_string("""{
     "spec": {
         "shader": "particle_clip",
         "shape": "mesh",
@@ -60,9 +60,9 @@ base_hit_shell = {
     "emissionBursts": 1,
     "bLoop": false,
     "endDistance": 2000
-}
+}""")
 
-base_hit_shell_inner = {
+base_hit_shell_inner = loader.load_json_string("""{
     "spec": {
         "shader": "particle_clip",
         "shape": "mesh",
@@ -84,9 +84,9 @@ base_hit_shell_inner = {
     "emissionBursts": 1,
     "bLoop": false,
     "endDistance": 2000
-}
+}""")
 
-base_hit_light = {
+base_hit_light = loader.load_json_string("""{
     "spec": {
         "shape": "pointlight",
         "red": 6,
@@ -101,9 +101,9 @@ base_hit_light = {
     "emitterLifetime": 0.5,
     "bLoop": false,
     "endDistance": 2000
-}
+}""")
 
-base_hit_sparks = {
+base_hit_sparks = loader.load_json_string("""{
     "spec": {
         "shader": "particle_add",
         "facing": "Velocity",
@@ -134,9 +134,9 @@ base_hit_sparks = {
     "emitterLifetime": 0.1,
     "bLoop": false,
     "endDistance": 850
-}
+}""")
 
-base_hit_rings = [
+base_hit_rings = loader.load_json_string("""[
 {
       "spec": {
         "shader": "particle_add",
@@ -204,9 +204,9 @@ base_hit_rings = [
       "sort": "NoSort",
       "endDistance": 850
     }
-]
+]""")
 
-base_hit_smoke = [
+base_hit_smoke = loader.load_json_string("""[
     {
         "spec": {
             "shader": "particle_transparent_ramp",
@@ -286,7 +286,7 @@ base_hit_smoke = [
         "bLoop": false,
         "endDistance": 850
     }
-]
+]""")
 
 base_hit = {
     "emitters" : []
@@ -370,9 +370,6 @@ def run():
 
     loader.save_json(base_trail, "base_ammo_trail.json", indent=2)
     loader.save_json(base_hit, "base_ammo_hit.json", indent=2)
-
-
-
 
 
 if __name__ == "__main__":
