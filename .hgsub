@@ -1,1 +1,1 @@
-lib = ../pa_tools
+lib = ssh://hg@bitbucket.org/DomDomDom/pa_tools
