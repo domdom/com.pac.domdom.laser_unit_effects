@@ -13,7 +13,7 @@ true = True
 false = False
 
 
-base_trail = {
+base_trail = loader.load_json_string("""{
   "emitters": [
     {
       "spec": {
@@ -111,7 +111,7 @@ base_trail = {
       "endDistance": 2000
     }
   ]
-}
+}""")
 
 
 base_trail['emitters'][2]['offsetRangeX'] = 0.4
@@ -122,7 +122,7 @@ base_trail['emitters'].append(copy.deepcopy(base_trail['emitters'][2]))
 # del base_trail['emitters'][2]
 
 
-base_hit = {
+base_hit = loader.load_json_string("""{
   "emitters": [
       {
       "spec": {
@@ -252,7 +252,7 @@ base_hit = {
       "endDistance": 850
     }
   ]
-}
+}""")
 
 def run():
     loader.save_json(base_trail, "grenadier_ammo_trail.json", indent=2)

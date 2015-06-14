@@ -1,43 +1,47 @@
 {
   "emitters": [
     {
-      "spec": {
-        "blue": 0.2,
-        "green": 1,
-        "baseTexture": "/pa/effects/textures/particles/softdot.papa",
-        "cameraPush": 0.5,
-        "dataChannelFormat": "PositionAndColor",
-        "red": 6,
-        "shader": "particle_add",
-        "alpha": 6
-      },
-      "emissionBurts": 1,
-      "endDistance": 1400,
-      "lifetime": 127,
-      "maxParticles": 1,
       "sizeX": 1,
-      "killOnDeactivate": true
-    },
-    {
+      "endDistance": 1400,
       "spec": {
         "blue": 0.2,
-        "green": 1,
-        "baseTexture": "/pa/effects/textures/particles/dot.papa",
-        "cameraPush": 0.6,
-        "dataChannelFormat": "PositionAndColor",
         "red": 6,
-        "shader": "particle_add",
-        "alpha": 6
+        "baseTexture": "/pa/effects/textures/particles/softdot.papa",
+        "alpha": 6,
+        "cameraPush": 0.5,
+        "green": 1,
+        "dataChannelFormat": "PositionAndColor",
+        "shader": "particle_add"
       },
-      "emissionBurts": 1,
-      "endDistance": 1400,
-      "lifetime": 127,
       "maxParticles": 1,
-      "sizeX": 0.6,
-      "killOnDeactivate": true
+      "emissionBurts": 1,
+      "killOnDeactivate": true,
+      "lifetime": 127
     },
     {
+      "sizeX": 0.6,
+      "endDistance": 1400,
       "spec": {
+        "blue": 0.2,
+        "red": 6,
+        "baseTexture": "/pa/effects/textures/particles/dot.papa",
+        "alpha": 6,
+        "cameraPush": 0.6,
+        "green": 1,
+        "dataChannelFormat": "PositionAndColor",
+        "shader": "particle_add"
+      },
+      "maxParticles": 1,
+      "emissionBurts": 1,
+      "killOnDeactivate": true,
+      "lifetime": 127
+    },
+    {
+      "sizeX": 0.1,
+      "endDistance": 2000,
+      "emitterLifetime": 1,
+      "spec": {
+        "shape": "string",
         "blue": 0.1,
         "size": [
           [
@@ -49,56 +53,27 @@
             0
           ]
         ],
+        "red": 6,
+        "baseTexture": "/pa/effects/textures/particles/flat.papa",
+        "alpha": 1,
         "green": 0.8,
         "dataChannelFormat": "PositionColorAndAlignVector",
-        "baseTexture": "/pa/effects/textures/particles/flat.papa",
-        "shape": "string",
-        "red": 6,
-        "shader": "particle_transparent",
-        "alpha": 1
+        "shader": "particle_transparent"
       },
-      "emissionBurts": 1,
       "offsetRangeZ": 0.4,
-      "endDistance": 2000,
-      "lifetime": 0.4,
-      "sizeX": 0.1,
-      "offsetRangeX": 0.4,
-      "emitterLifetime": 1,
-      "useWorldSpace": true,
-      "killOnDeactivate": true
-    },
-    {
-      "spec": {
-        "blue": 0.1,
-        "size": [
-          [
-            0,
-            1
-          ],
-          [
-            0.9,
-            0
-          ]
-        ],
-        "green": 1,
-        "dataChannelFormat": "PositionColorAndAlignVector",
-        "baseTexture": "/pa/effects/textures/particles/softdot.papa",
-        "shape": "string",
-        "red": 6,
-        "shader": "particle_transparent_lit",
-        "alpha": 0.2
-      },
       "emissionBurts": 1,
-      "offsetRangeZ": 0.2,
-      "endDistance": 2000,
+      "killOnDeactivate": true,
+      "offsetRangeX": 0.4,
       "lifetime": 0.4,
-      "sizeX": 0.5,
-      "offsetRangeX": 0.2,
-      "emitterLifetime": 1,
       "useWorldSpace": true
     },
     {
+      "endDistance": 2000,
+      "sizeX": 0.5,
+      "offsetRangeX": 0.2,
+      "offsetRangeZ": 0.2,
       "spec": {
+        "shape": "string",
         "blue": 0.1,
         "size": [
           [
@@ -110,26 +85,25 @@
             0
           ]
         ],
+        "red": 6,
+        "baseTexture": "/pa/effects/textures/particles/softdot.papa",
+        "alpha": 0.2,
         "green": 1,
         "dataChannelFormat": "PositionColorAndAlignVector",
-        "baseTexture": "/pa/effects/textures/particles/flat.papa",
-        "shape": "string",
-        "red": 6,
-        "shader": "particle_transparent_lit",
-        "alpha": 0.2
+        "shader": "particle_transparent_lit"
       },
-      "useWorldSpace": true,
-      "endDistance": 2000,
+      "emissionBurts": 1,
+      "emitterLifetime": 1,
       "lifetime": 0.4,
-      "sizeX": 0.3,
-      "emitterLifetime": 1
+      "useWorldSpace": true
     },
     {
+      "sizeX": 0.3,
+      "endDistance": 2000,
+      "emitterLifetime": 1,
       "spec": {
+        "shape": "string",
         "blue": 0.1,
-        "dataChannelFormat": "PositionColorAndAlignVector",
-        "green": 0.8,
-        "baseTexture": "/pa/effects/textures/particles/flat.papa",
         "size": [
           [
             0,
@@ -141,19 +115,45 @@
           ]
         ],
         "red": 6,
-        "shader": "particle_transparent",
-        "shape": "string",
-        "alpha": 1
+        "baseTexture": "/pa/effects/textures/particles/flat.papa",
+        "alpha": 0.2,
+        "green": 1,
+        "dataChannelFormat": "PositionColorAndAlignVector",
+        "shader": "particle_transparent_lit"
       },
-      "emissionBurts": 1,
+      "lifetime": 0.4,
+      "useWorldSpace": true
+    },
+    {
       "sizeX": 0.1,
       "endDistance": 2000,
-      "lifetime": 0.4,
-      "offsetRangeZ": 0.4,
-      "offsetRangeX": 0.4,
-      "emitterLifetime": 1,
       "useWorldSpace": true,
-      "killOnDeactivate": true
+      "spec": {
+        "shape": "string",
+        "blue": 0.1,
+        "size": [
+          [
+            0,
+            1
+          ],
+          [
+            0.9,
+            0
+          ]
+        ],
+        "red": 6,
+        "alpha": 1,
+        "baseTexture": "/pa/effects/textures/particles/flat.papa",
+        "green": 0.8,
+        "dataChannelFormat": "PositionColorAndAlignVector",
+        "shader": "particle_transparent"
+      },
+      "offsetRangeZ": 0.4,
+      "emitterLifetime": 1,
+      "killOnDeactivate": true,
+      "offsetRangeX": 0.4,
+      "lifetime": 0.4,
+      "emissionBurts": 1
     }
   ]
 }

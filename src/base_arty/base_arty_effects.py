@@ -25,6 +25,7 @@ base_string = {
         "baseTexture": "/pa/effects/textures/particles/flat.papa"
     },
     "emitterLifetime" : 1,
+    "emissionRate" : 100,
     "lifetime" : 1,
     "sizeX" : 0.2,
     "cameraPush" : 0.5,
@@ -335,8 +336,8 @@ def run():
         wave_x = wave_rings[t][:]
         wave_z = wave_rings[t][:]
 
-        wave_x[1] *= 3
-        wave_z[1] *= 3
+        wave_x[1] *= 1
+        wave_z[1] *= 1
 
         wave_z[2] += math.pi / 2
 
