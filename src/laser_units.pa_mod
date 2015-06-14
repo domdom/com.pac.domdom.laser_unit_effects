@@ -17,6 +17,8 @@
     "mod" : [
         { "from_script" : "/base_arty/base_arty_effects.py" },
 
+        { "from_script" : "/torpedo/torpedo.py" },
+
         { "from_file" : "/ant/ant.pa_patch" },
         { "from_file" : "/dox/dox.pa_patch" },
         { "from_file" : "/kestrel/kestrel.pa_patch" },

@@ -6,8 +6,6 @@ import sys
 import math
 import copy
 
-sys.path.append("../../lib")
-
 import loader
 
 false = False
@@ -317,7 +315,7 @@ def wave_to_offset(wavelets, period, dt):
     while t < period:
         v = 0
         for w in wavelets:
-            v += w[0] * math.sin(w[1] * t / period + w[2])
+            v += w[0] * math.sin(w[1] * t / period * math.pi * 2 + w[2])
         offset.append([t, v])
         t += dt
     return offset
@@ -327,7 +325,7 @@ def run():
     wave_rings = [
             [0.50,  2, math.pi / 2],
             [0.75, -1, math.pi / 5],
-            [0.25, .6, 2 * math.pi / 5],
+            [0.25,  1, 2 * math.pi / 5],
             [0.75, -2, 3 * math.pi / 5],
             [0.75, +3, math.pi * 2 / 3],
             [0.75, -3, math.pi * 4 / 3]

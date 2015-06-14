@@ -1,24 +1,15 @@
 {
   "emitters": [
     {
-      "sizeX": 25,
-      "lifetime": 0.8,
-      "sizeY": 25,
       "spec": {
-        "facing": "EmitterZ",
-        "materialProperties": {
-          "Texture": "/pa/effects/textures/particles/fire_puff.papa"
-        },
-        "shape": "mesh",
-        "papa": "/pa/effects/fbx/particles/sphere_ico16seg.papa",
-        "green": [
+        "blue": [
           [
             0,
-            10
+            100
           ],
           [
             0.35,
-            2
+            20
           ]
         ],
         "size": [
@@ -47,53 +38,10 @@
             1
           ]
         ],
-        "blue": [
-          [
-            0,
-            100
-          ],
-          [
-            0.35,
-            20
-          ]
-        ],
-        "alpha": [
-          [
-            0.0,
-            0.4
-          ],
-          [
-            1,
-            0
-          ]
-        ],
-        "shader": "particle_clip",
-        "red": [
-          [
-            0,
-            100
-          ],
-          [
-            0.35,
-            4
-          ]
-        ]
-      },
-      "rotationRange": 3.2,
-      "endDistance": 2000,
-      "emissionBursts": 1,
-      "bLoop": false
-    },
-    {
-      "sizeX": 14,
-      "lifetime": 1.2,
-      "sizeY": 10,
-      "spec": {
         "facing": "EmitterZ",
         "materialProperties": {
-          "Texture": "/pa/effects/textures/particles/flat.papa"
+          "Texture": "/pa/effects/textures/particles/fire_puff.papa"
         },
-        "shape": "mesh",
         "papa": "/pa/effects/fbx/particles/sphere_ico16seg.papa",
         "green": [
           [
@@ -103,6 +51,49 @@
           [
             0.35,
             2
+          ]
+        ],
+        "shape": "mesh",
+        "red": [
+          [
+            0,
+            100
+          ],
+          [
+            0.35,
+            4
+          ]
+        ],
+        "shader": "particle_clip",
+        "alpha": [
+          [
+            0.0,
+            0.4
+          ],
+          [
+            1,
+            0
+          ]
+        ]
+      },
+      "bLoop": false,
+      "rotationRange": 3.2,
+      "lifetime": 0.8,
+      "endDistance": 2000,
+      "sizeX": 25,
+      "sizeY": 25,
+      "emissionBursts": 1
+    },
+    {
+      "spec": {
+        "blue": [
+          [
+            0,
+            100
+          ],
+          [
+            0.35,
+            20
           ]
         ],
         "size": [
@@ -131,7 +122,23 @@
             0
           ]
         ],
-        "blue": [
+        "facing": "EmitterZ",
+        "materialProperties": {
+          "Texture": "/pa/effects/textures/particles/flat.papa"
+        },
+        "papa": "/pa/effects/fbx/particles/sphere_ico16seg.papa",
+        "green": [
+          [
+            0,
+            10
+          ],
+          [
+            0.35,
+            2
+          ]
+        ],
+        "shape": "mesh",
+        "red": [
           [
             0,
             100
@@ -141,6 +148,7 @@
             20
           ]
         ],
+        "shader": "particle_clip",
         "alpha": [
           [
             0,
@@ -154,31 +162,22 @@
             1,
             0
           ]
-        ],
-        "shader": "particle_clip",
-        "red": [
-          [
-            0,
-            100
-          ],
-          [
-            0.35,
-            20
-          ]
         ]
       },
+      "bLoop": false,
       "rotationRange": 3.2,
+      "lifetime": 1.2,
       "endDistance": 2000,
-      "emissionBursts": 1,
-      "bLoop": false
+      "sizeX": 14,
+      "sizeY": 10,
+      "emissionBursts": 1
     },
     {
-      "sizeX": 30,
-      "emitterLifetime": 0.5,
-      "emissionBursts": 1,
-      "lifetime": 0.8,
       "spec": {
         "blue": 5,
+        "green": 0.4,
+        "shape": "pointlight",
+        "red": 6,
         "alpha": [
           [
             0,
@@ -192,23 +191,20 @@
             1,
             0
           ]
-        ],
-        "shape": "pointlight",
-        "red": 6,
-        "green": 0.4
+        ]
       },
-      "endDistance": 2000,
       "offsetZ": 10,
-      "bLoop": false
+      "endDistance": 2000,
+      "lifetime": 0.8,
+      "bLoop": false,
+      "sizeX": 30,
+      "emitterLifetime": 0.5,
+      "emissionBursts": 1
     },
     {
-      "lifetimeRange": 0.1,
-      "type": "SHELL",
-      "emitterLifetime": 0.1,
-      "offsetAllowNegZ": true,
-      "sizeX": 0.4,
-      "velocityZ": 0.0,
       "spec": {
+        "blue": 0.1,
+        "dataChannelFormat": "PositionColorAndAlignVector",
         "facing": "Velocity",
         "temp_alpha": [
           [
@@ -222,6 +218,7 @@
         ],
         "baseTexture": "/pa/effects/textures/particles/dot.papa",
         "green": 0.4,
+        "rampTexture": "/pa/effects/textures/particles/uncompressed/no_ramp.papa",
         "size": [
           [
             0,
@@ -236,55 +233,40 @@
             0
           ]
         ],
-        "blue": 0.1,
-        "rampTexture": "/pa/effects/textures/particles/uncompressed/no_ramp.papa",
-        "shader": "particle_add",
         "red": 2,
-        "dataChannelFormat": "PositionColorAndAlignVector"
+        "shader": "particle_add"
       },
-      "endDistance": 850,
-      "offsetRangeZ": 3,
-      "sizeY": 19,
-      "offsetRangeY": 3,
+      "lifetimeRange": 0.1,
       "useRadialVelocityDir": true,
       "lifetime": 0.5,
-      "velocityRange": 20.0,
-      "velocity": 70,
       "sizeRangeY": 7,
+      "endDistance": 850,
+      "offsetRangeY": 3,
+      "sizeY": 19,
       "bLoop": false,
+      "velocityZ": 0.0,
+      "sizeX": 0.4,
+      "emissionBursts": 15,
+      "velocityRange": 20.0,
+      "emitterLifetime": 0.1,
+      "type": "SHELL",
+      "offsetRangeZ": 3,
       "offsetRangeX": 3,
-      "emissionBursts": 15
+      "velocity": 70,
+      "offsetAllowNegZ": true
     },
     {
-      "type": "SHELL",
-      "velocityRangeY": 0.1,
-      "emitterLifetime": 0.9,
-      "offsetAllowNegZ": false,
-      "sizeRangeX": 0.3,
-      "lifetime": 2.8,
-      "velocityZ": 0.25,
-      "endDistance": 850,
-      "offsetRangeZ": 10,
-      "maxParticles": 150,
-      "rotationRateRange": 0.25,
-      "velocityRangeX": 0.1,
-      "offsetRangeX": 10,
-      "rampV": 0.25,
-      "sizeX": [
-        [
-          0,
-          2.5
-        ],
-        [
-          0.25,
-          0.1
-        ]
-      ],
-      "velocity": 6,
-      "dragRange": 0.01,
-      "emissionRate": 30,
       "spec": {
-        "baseTexture": "/pa/effects/textures/particles/simpleSmokeSingle.papa",
+        "blue": [
+          [
+            0,
+            10
+          ],
+          [
+            0.75,
+            10
+          ]
+        ],
         "dataChannelFormat": "PositionAndColor",
         "green": [
           [
@@ -296,6 +278,9 @@
             1
           ]
         ],
+        "rampTexture": "/pa/effects/textures/particles/uncompressed/simpleSmokeCenter_ramp.papa",
+        "baseTexture": "/pa/effects/textures/particles/simpleSmokeSingle.papa",
+        "cameraPush": 1,
         "size": [
           [
             0,
@@ -314,28 +299,6 @@
             0
           ]
         ],
-        "blue": [
-          [
-            0,
-            10
-          ],
-          [
-            0.75,
-            10
-          ]
-        ],
-        "rampTexture": "/pa/effects/textures/particles/uncompressed/simpleSmokeCenter_ramp.papa",
-        "alpha": [
-          [
-            0.5,
-            1
-          ],
-          [
-            1,
-            0
-          ]
-        ],
-        "shader": "particle_transparent_ramp",
         "red": [
           [
             0,
@@ -346,38 +309,66 @@
             10
           ]
         ],
-        "cameraPush": 1
+        "shader": "particle_transparent_ramp",
+        "alpha": [
+          [
+            0.5,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ]
       },
-      "drag": 0.99,
-      "offsetRangeY": 10,
-      "bLoop": false,
-      "gravity": -0.1,
-      "useRadialVelocityDir": true,
-      "velocityRange": 2,
       "lifetimeRange": 0.25,
-      "rotationRange": 0.1
+      "velocityRangeY": 0.1,
+      "emissionRate": 30,
+      "endDistance": 850,
+      "sizeRangeX": 0.3,
+      "offsetRangeY": 10,
+      "drag": 0.99,
+      "velocityZ": 0.25,
+      "type": "SHELL",
+      "sizeX": [
+        [
+          0,
+          2.5
+        ],
+        [
+          0.25,
+          0.1
+        ]
+      ],
+      "offsetRangeX": 10,
+      "rotationRange": 0.1,
+      "useRadialVelocityDir": true,
+      "velocityRangeX": 0.1,
+      "rampV": 0.25,
+      "maxParticles": 150,
+      "emitterLifetime": 0.9,
+      "lifetime": 2.8,
+      "velocity": 6,
+      "bLoop": false,
+      "dragRange": 0.01,
+      "rotationRateRange": 0.25,
+      "offsetAllowNegZ": false,
+      "velocityRange": 2,
+      "offsetRangeZ": 10,
+      "gravity": -0.1
     },
     {
-      "type": "SHELL",
-      "velocityRangeY": 0.1,
-      "emitterLifetime": 2,
-      "offsetAllowNegZ": false,
-      "sizeRangeX": 0.5,
-      "emissionBursts": 8,
-      "velocityZ": 0.25,
-      "endDistance": 850,
-      "rotationRange": 0.1,
-      "offsetRangeZ": 2,
-      "rotationRateRange": 0.25,
-      "lifetime": 2.8,
-      "velocityRangeX": 0.1,
-      "offsetRangeX": 2,
-      "rampRangeV": 0.5,
-      "rampV": 0.5,
-      "sizeX": 10,
-      "velocity": 9,
       "spec": {
-        "baseTexture": "/pa/effects/textures/particles/simpleSmoke.papa",
+        "blue": [
+          [
+            0,
+            10
+          ],
+          [
+            0.75,
+            1
+          ]
+        ],
         "dataChannelFormat": "PositionAndColor",
         "green": [
           [
@@ -389,6 +380,9 @@
             0.5
           ]
         ],
+        "rampTexture": "/pa/effects/textures/particles/uncompressed/simpleSmokeCenter_ramp.papa",
+        "baseTexture": "/pa/effects/textures/particles/simpleSmoke.papa",
+        "cameraPush": 1,
         "size": [
           [
             0,
@@ -407,7 +401,7 @@
             0
           ]
         ],
-        "blue": [
+        "red": [
           [
             0,
             10
@@ -417,7 +411,7 @@
             1
           ]
         ],
-        "rampTexture": "/pa/effects/textures/particles/uncompressed/simpleSmokeCenter_ramp.papa",
+        "shader": "particle_transparent_ramp",
         "alpha": [
           [
             0,
@@ -431,34 +425,38 @@
             1,
             0
           ]
-        ],
-        "shader": "particle_transparent_ramp",
-        "red": [
-          [
-            0,
-            10
-          ],
-          [
-            0.75,
-            1
-          ]
-        ],
-        "cameraPush": 1
+        ]
       },
-      "drag": 0.985,
-      "offsetRangeY": 2,
-      "bLoop": false,
-      "gravity": -0.1,
-      "useRadialVelocityDir": true,
+      "offsetZ": 0,
       "lifetimeRange": 0.25,
-      "offsetZ": 0
+      "velocityRangeY": 0.1,
+      "rampRangeV": 0.5,
+      "endDistance": 850,
+      "sizeRangeX": 0.5,
+      "offsetRangeY": 2,
+      "drag": 0.985,
+      "velocityZ": 0.25,
+      "rotationRange": 0.1,
+      "type": "SHELL",
+      "sizeX": 10,
+      "offsetRangeX": 2,
+      "emissionBursts": 8,
+      "useRadialVelocityDir": true,
+      "velocityRangeX": 0.1,
+      "rampV": 0.5,
+      "emitterLifetime": 2,
+      "lifetime": 2.8,
+      "velocity": 9,
+      "bLoop": false,
+      "rotationRateRange": 0.25,
+      "offsetAllowNegZ": false,
+      "offsetRangeZ": 2,
+      "gravity": -0.1
     },
     {
-      "sizeX": 30,
-      "emitterLifetime": 1,
-      "emissionBursts": 1,
-      "lifetime": 0.25,
       "spec": {
+        "blue": 1.0,
+        "dataChannelFormat": "PositionAndColor",
         "facing": "EmitterZ",
         "baseTexture": "/pa/effects/textures/particles/simpleExplosionRing.papa",
         "green": 0.35,
@@ -488,7 +486,8 @@
             1
           ]
         ],
-        "blue": 1.0,
+        "red": 0.05,
+        "shader": "particle_add",
         "alpha": [
           [
             0.2,
@@ -506,26 +505,25 @@
             1,
             0
           ]
-        ],
-        "shader": "particle_add",
-        "red": 0.05,
-        "dataChannelFormat": "PositionAndColor"
+        ]
       },
-      "rotationRange": 3.1415,
-      "endDistance": 850,
       "offsetZ": 1,
-      "bLoop": false
+      "rotationRange": 3.1415,
+      "lifetime": 0.25,
+      "bLoop": false,
+      "endDistance": 850,
+      "sizeX": 30,
+      "emitterLifetime": 1,
+      "emissionBursts": 1
     },
     {
-      "sizeX": 25,
-      "emitterLifetime": 2,
-      "sort": "NoSort",
-      "emissionBursts": 1,
-      "lifetime": 1,
       "spec": {
+        "blue": 1.0,
+        "dataChannelFormat": "PositionAndColor",
         "facing": "EmitterZ",
         "baseTexture": "/pa/effects/textures/particles/simpleExplosionRing.papa",
         "green": 0.35,
+        "rampTexture": "/pa/effects/textures/particles/uncompressed/no_ramp.papa",
         "size": {
           "keys": [
             [
@@ -555,8 +553,8 @@
           ],
           "stepped": false
         },
-        "blue": 1.0,
-        "rampTexture": "/pa/effects/textures/particles/uncompressed/no_ramp.papa",
+        "red": 0.05,
+        "shader": "particle_add",
         "alpha": {
           "keys": [
             [
@@ -577,26 +575,26 @@
             ]
           ],
           "stepped": false
-        },
-        "shader": "particle_add",
-        "red": 0.05,
-        "dataChannelFormat": "PositionAndColor"
+        }
       },
-      "rotationRange": 0.5,
-      "endDistance": 850,
       "offsetZ": 1.5,
-      "bLoop": false
+      "sort": "NoSort",
+      "rotationRange": 0.5,
+      "lifetime": 1,
+      "bLoop": false,
+      "endDistance": 850,
+      "sizeX": 25,
+      "emitterLifetime": 2,
+      "emissionBursts": 1
     },
     {
-      "sizeX": 60,
-      "emitterLifetime": 2,
-      "sort": "NoSort",
-      "emissionBursts": 1,
-      "lifetime": 0.8,
       "spec": {
+        "blue": 1.0,
+        "dataChannelFormat": "PositionAndColor",
         "facing": "EmitterZ",
         "baseTexture": "/pa/effects/textures/particles/simpleExplosionRing.papa",
         "green": 0.35,
+        "rampTexture": "/pa/effects/textures/particles/uncompressed/no_ramp.papa",
         "size": {
           "keys": [
             [
@@ -610,8 +608,8 @@
           ],
           "stepped": false
         },
-        "blue": 1.0,
-        "rampTexture": "/pa/effects/textures/particles/uncompressed/no_ramp.papa",
+        "red": 0.05,
+        "shader": "particle_add",
         "alpha": {
           "keys": [
             [
@@ -632,15 +630,17 @@
             ]
           ],
           "stepped": false
-        },
-        "shader": "particle_add",
-        "red": 0.05,
-        "dataChannelFormat": "PositionAndColor"
+        }
       },
-      "rotationRange": 0.5,
-      "endDistance": 850,
       "offsetZ": 1.5,
-      "bLoop": false
+      "sort": "NoSort",
+      "rotationRange": 0.5,
+      "lifetime": 0.8,
+      "bLoop": false,
+      "endDistance": 850,
+      "sizeX": 60,
+      "emitterLifetime": 2,
+      "emissionBursts": 1
     }
   ]
 }

@@ -22,7 +22,6 @@
       {"op" : "scale", "path" : "/emitters/0/offsetY",    "value" : 0.4},
       {"op" : "scale", "path" : "/emitters/1/offsetY",    "value" : 0.4},
 
-
       {"op" : "copy", "path" : "/emitters/1/spec/red",    "from" : "/emitters/0/spec/red"},
       {"op" : "copy", "path" : "/emitters/1/spec/green",  "from" : "/emitters/0/spec/green"},
       {"op" : "copy", "path" : "/emitters/1/spec/blue",   "from" : "/emitters/0/spec/blue"},
