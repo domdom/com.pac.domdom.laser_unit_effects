@@ -82,7 +82,7 @@ def run():
     string['spec']['cameraPush'] = 0
     string['spec']['alpha'] = 0.1
     string['velocity'] = 0
-    string['lifetime'] = 1.2
+    string['lifetime'] = 0.8
 
     # new_trail['emitters'].append(string)
 

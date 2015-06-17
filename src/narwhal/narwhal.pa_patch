@@ -59,17 +59,17 @@
 
       {"op" : "scale", "path" : "/emitters/3/sizeX",   "value" : 2.0},
 
-      {"op" : "add", "path" : "/emitters/0/offsetRangeX", "value" : 1},
-      {"op" : "add", "path" : "/emitters/1/offsetRangeX", "value" : 1},
-      {"op" : "add", "path" : "/emitters/2/offsetRangeX", "value" : 1},
-      {"op" : "add", "path" : "/emitters/3/offsetRangeX", "value" : 1},
-      {"op" : "add", "path" : "/emitters/4/offsetRangeX", "value" : 1},
+      {"op" : "add", "path" : "/emitters/0/offsetRangeX", "value" : 0.6},
+      {"op" : "add", "path" : "/emitters/1/offsetRangeX", "value" : 0.6},
+      {"op" : "add", "path" : "/emitters/2/offsetRangeX", "value" : 0.6},
+      {"op" : "add", "path" : "/emitters/3/offsetRangeX", "value" : 0.6},
+      {"op" : "add", "path" : "/emitters/4/offsetRangeX", "value" : 0.6},
 
-      {"op" : "add", "path" : "/emitters/0/offsetRangeZ", "value" : 1},
-      {"op" : "add", "path" : "/emitters/1/offsetRangeZ", "value" : 1},
-      {"op" : "add", "path" : "/emitters/2/offsetRangeZ", "value" : 1},
-      {"op" : "add", "path" : "/emitters/3/offsetRangeZ", "value" : 1},
-      {"op" : "add", "path" : "/emitters/4/offsetRangeZ", "value" : 1}
+      {"op" : "add", "path" : "/emitters/0/offsetRangeZ", "value" : 0.6},
+      {"op" : "add", "path" : "/emitters/1/offsetRangeZ", "value" : 0.6},
+      {"op" : "add", "path" : "/emitters/2/offsetRangeZ", "value" : 0.6},
+      {"op" : "add", "path" : "/emitters/3/offsetRangeZ", "value" : 0.6},
+      {"op" : "add", "path" : "/emitters/4/offsetRangeZ", "value" : 0.6}
     ]
   },
     {

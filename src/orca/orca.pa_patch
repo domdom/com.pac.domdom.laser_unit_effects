@@ -20,7 +20,7 @@
     "destination" : "/mod/orca/orca_ammo_trail.json",
     "patch" : [
       {"op" : "replace", "path" : "/emitters/0/spec/red",     "value" : 0.2},
-      {"op" : "replace", "path" : "/emitters/0/spec/green",   "value" : 0.7},
+      {"op" : "replace", "path" : "/emitters/0/spec/green",   "value" : 0.8},
       {"op" : "replace", "path" : "/emitters/0/spec/blue",    "value" : 4.0},
       {"op" : "replace", "path" : "/emitters/0/spec/size/2/0",    "value" : 0.7},
 
@@ -36,7 +36,7 @@
       {"op" : "copy", "path" : "/emitters/5/spec/blue", "from" : "/emitters/0/spec/blue"},
 
 
-      
+
 
       {"op" : "scale", "path" : "/emitters/0/lifetime", "value" : 0.3},
       {"op" : "scale", "path" : "/emitters/1/lifetime", "value" : 0.3},
@@ -58,17 +58,17 @@
       {"op" : "remove", "path" : "/emitters/3/offsetZ"},
       {"op" : "remove", "path" : "/emitters/4/offsetZ"},
 
-      {"op" : "add", "path" : "/emitters/0/offsetRangeX", "value" : 1},
-      {"op" : "add", "path" : "/emitters/1/offsetRangeX", "value" : 1},
-      {"op" : "add", "path" : "/emitters/2/offsetRangeX", "value" : 1},
-      {"op" : "add", "path" : "/emitters/3/offsetRangeX", "value" : 1},
-      {"op" : "add", "path" : "/emitters/4/offsetRangeX", "value" : 1},
-      
-      {"op" : "add", "path" : "/emitters/0/offsetRangeZ", "value" : 1},
-      {"op" : "add", "path" : "/emitters/1/offsetRangeZ", "value" : 1},
-      {"op" : "add", "path" : "/emitters/2/offsetRangeZ", "value" : 1},
-      {"op" : "add", "path" : "/emitters/3/offsetRangeZ", "value" : 1},
-      {"op" : "add", "path" : "/emitters/4/offsetRangeZ", "value" : 1}
+      {"op" : "add", "path" : "/emitters/0/offsetRangeX", "value" : 0.6},
+      {"op" : "add", "path" : "/emitters/1/offsetRangeX", "value" : 0.6},
+      {"op" : "add", "path" : "/emitters/2/offsetRangeX", "value" : 0.6},
+      {"op" : "add", "path" : "/emitters/3/offsetRangeX", "value" : 0.6},
+      {"op" : "add", "path" : "/emitters/4/offsetRangeX", "value" : 0.6},
+
+      {"op" : "add", "path" : "/emitters/0/offsetRangeZ", "value" : 0.6},
+      {"op" : "add", "path" : "/emitters/1/offsetRangeZ", "value" : 0.6},
+      {"op" : "add", "path" : "/emitters/2/offsetRangeZ", "value" : 0.6},
+      {"op" : "add", "path" : "/emitters/3/offsetRangeZ", "value" : 0.6},
+      {"op" : "add", "path" : "/emitters/4/offsetRangeZ", "value" : 0.6}
     ]
   },
     {
@@ -93,7 +93,7 @@
 
 
       {"op" : "scale", "path" : "/emitters/3/sizeX",   "value" : 2.0},
-      
+
       {"op" : "replace", "path" : "/emitters/2/spec/red",   "value" : 1.0},
       {"op" : "replace", "path" : "/emitters/2/spec/green", "value" : 1.0},
       {"op" : "replace", "path" : "/emitters/2/spec/blue",  "value" : 6.0},
