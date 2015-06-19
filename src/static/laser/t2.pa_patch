@@ -1,0 +1,77 @@
+[
+  {
+    "target": "/pa/units/land/laser_defense/laser_defense_ammo.json",
+    "patch": [
+      {"op": "add", "path": "/events", "value": 
+        {
+          "died": {
+            "audio_cue": "/SE/Impacts/laser_blast",
+            "effect_spec": "/mod/laser/t2_ammo_hit.json"
+          }
+        }
+      },
+      {"op": "replace", "path": "/fx_trail/filename", "value": "/mod/laser/t2_ammo_trail.json"}
+    ]
+  },
+  {
+    "target": "/base_ammo_hit.json",
+    "destination": "/mod/laser/t2_ammo_hit.json",
+    "patch": [
+      {"op": "replace", "path": "/emitters/0/spec/red", "value": 1.0 },
+      {"op": "replace", "path": "/emitters/0/spec/green", "value": 1.0 },
+      {"op": "replace", "path": "/emitters/0/spec/blue", "value": 0.1 },
+
+      {"op": "copy", "path": "/emitters/1/spec/red", "from": "/emitters/0/spec/red" },
+      {"op": "copy", "path": "/emitters/1/spec/green", "from": "/emitters/0/spec/green" },
+      {"op": "copy", "path": "/emitters/1/spec/blue", "from": "/emitters/0/spec/blue" },
+      {"op": "copy", "path": "/emitters/2/spec/red", "from": "/emitters/0/spec/red" },
+      {"op": "copy", "path": "/emitters/2/spec/green", "from": "/emitters/0/spec/green" },
+      {"op": "copy", "path": "/emitters/2/spec/blue", "from": "/emitters/0/spec/blue" },
+      {"op": "copy", "path": "/emitters/3/spec/red", "from": "/emitters/0/spec/red" },
+      {"op": "copy", "path": "/emitters/3/spec/green", "from": "/emitters/0/spec/green" },
+      {"op": "copy", "path": "/emitters/3/spec/blue", "from": "/emitters/0/spec/blue" }
+    ]
+  },
+  {
+    "target": "/pa/units/land/laser_defense/laser_defense_ammo_trail.pfx",
+    "destination": "/mod/laser/t2_ammo_trail.json",
+    "patch": [
+      {"op" : "add", "path" : "/emitters/0", "value" : 
+        {
+          "spec": {
+            "shader": "particle_transparent",
+            "shape" : "string",
+            "red": 1.0,
+            "green": 0.2,
+            "blue": 0.1,
+            "size" : [[0, 1], [0.5, 0]],
+            "alpha": 1,
+            "baseTexture": "/pa/effects/textures/particles/flat.papa",
+            "dataChannelFormat": "PositionColorAndAlignVector"
+          },
+          "offsetY": 3.5,
+          "sizeX": 0.7,
+          "emissionBurts": 1,
+          "lifetime": 0.2,
+          "killOnDeactivate": true,
+          "useWorldSpace": true,
+          "endDistance": 2000
+        }
+      },
+      {"op" : "replace", "path" : "/emitters/1/sizeX", "value" : 0.8},
+      {"op" : "replace", "path" : "/emitters/2/sizeX", "value" : 6},
+
+      {"op" : "copy", "path" : "/emitters/1/spec/red", "from" : "/emitters/0/spec/red"},
+      {"op" : "copy", "path" : "/emitters/1/spec/green", "from" : "/emitters/0/spec/green"},
+      {"op" : "copy", "path" : "/emitters/1/spec/blue", "from" : "/emitters/0/spec/blue"},
+
+      {"op" : "copy", "path" : "/emitters/2/spec/red", "from" : "/emitters/0/spec/red"},
+      {"op" : "copy", "path" : "/emitters/2/spec/green", "from" : "/emitters/0/spec/green"},
+      {"op" : "copy", "path" : "/emitters/2/spec/blue", "from" : "/emitters/0/spec/blue"},
+
+      {"op" : "copy", "path" : "/emitters/3/spec/red", "from" : "/emitters/0/spec/red"},
+      {"op" : "copy", "path" : "/emitters/3/spec/green", "from" : "/emitters/0/spec/green"},
+      {"op" : "copy", "path" : "/emitters/3/spec/blue", "from" : "/emitters/0/spec/blue"}
+    ]
+  }
+]

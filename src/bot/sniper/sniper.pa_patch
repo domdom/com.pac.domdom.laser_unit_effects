@@ -1,0 +1,135 @@
+[
+  {
+    "target": "/pa/units/land/bot_sniper/bot_sniper.json",
+    "patch": [
+      {
+        "op": "replace",
+        "path": "/events/fired0/effect_spec",
+        "value": "/mod/sniper/sniper_muzzle_flash.json socket_muzzle01"
+      }
+    ]
+  },
+  {
+      "target": "/pa/effects/specs/default_small_muzzle_flash.pfx",
+      "destination" : "/mod/sniper/sniper_muzzle_flash.json",
+      "patch" : [
+          {"op" : "replace", "path" : "/emitters/0/spec/red",     "value" : [[0.3, 1], [1, 0.50]]},
+          {"op" : "replace", "path" : "/emitters/0/spec/green",   "value" : [[0.3, 1], [1, 0.30]]},
+          {"op" : "replace", "path" : "/emitters/0/spec/blue",    "value" : [[0.3, 5], [1, 1.00]]},
+
+          {"op" : "copy", "path" : "/emitters/1/spec/red",    "from" : "/emitters/0/spec/red"},
+          {"op" : "copy", "path" : "/emitters/1/spec/green",  "from" : "/emitters/0/spec/green"},
+          {"op" : "copy", "path" : "/emitters/1/spec/blue",   "from" : "/emitters/0/spec/blue"}
+      ]
+  },
+  {
+    "target": "/pa/units/land/bot_sniper/bot_sniper_ammo.json",
+    "patch": [
+      {"op": "replace", "path": "/fx_beam_spec", "value": "/mod/sniper/sniper_ammo_trail.json"},
+      {"op": "replace", "path": "/fx_collision_spec", "value" : "/mod/sniper/sniper_ammo_hit.json"}
+    ]
+  },
+  {
+    "target": "/base_ammo_hit.json",
+    "destination": "/mod/sniper/sniper_ammo_hit.json",
+    "patch": [
+      {"op": "replace", "path": "/emitters/0/spec/red", "value": 1.2 },
+      {"op": "replace", "path": "/emitters/0/spec/green", "value": 0.8 },
+      {"op": "replace", "path": "/emitters/0/spec/blue", "value": 4.0 },
+
+      {"op": "scale", "path": "/emitters/0/emissionBursts", "value": 1.5 },
+      {"op": "scale", "path": "/emitters/0/velocityRange", "value": 2.0 },
+
+      {"op": "scale", "path": "/emitters/0/sizeX", "value": 1 },
+      {"op": "copy", "path": "/emitters/0/sizeRangeX", "from": "/emitters/0/sizeX" },
+      {"op": "scale", "path": "/emitters/0/sizeRangeX", "value": 0.4 },
+
+      {"op": "scale", "path": "/emitters/0/sizeY", "value": 1.5 },
+      {"op": "copy", "path": "/emitters/0/sizeRangeY", "from": "/emitters/0/sizeY" },
+      {"op": "scale", "path": "/emitters/0/sizeRangeY", "value": 0.4 },
+
+      {"op": "copy", "path": "/emitters/1/spec/red", "from": "/emitters/0/spec/red" },
+      {"op": "copy", "path": "/emitters/1/spec/green", "from": "/emitters/0/spec/green" },
+      {"op": "copy", "path": "/emitters/1/spec/blue", "from": "/emitters/0/spec/blue" },
+      {"op": "copy", "path": "/emitters/2/spec/red", "from": "/emitters/0/spec/red" },
+      {"op": "copy", "path": "/emitters/2/spec/green", "from": "/emitters/0/spec/green" },
+      {"op": "copy", "path": "/emitters/2/spec/blue", "from": "/emitters/0/spec/blue" },
+      {"op": "copy", "path": "/emitters/3/spec/red", "from": "/emitters/0/spec/red" },
+      {"op": "copy", "path": "/emitters/3/spec/green", "from": "/emitters/0/spec/green" },
+      {"op": "copy", "path": "/emitters/3/spec/blue", "from": "/emitters/0/spec/blue" },
+      {"op": "add", "path": "/emitters/-", "value": {
+          "spec": {
+            "shader": "particle_clip",
+            "size": [[0, 0 ], [0.15, 0.5 ], [0.5, 0.75 ], [1, 1.0 ] ],
+            "red":   [[0.0, 0.25], [1.0, 0.25] ],
+            "green": [[0.0, 0.9 ], [1.0, 0.9 ] ],
+            "blue":  [[0.0, 6.0 ], [1.0, 4.0 ] ],
+            "alpha": [[0.0, 0.5 ], [1.0, 0.0 ] ],
+            "cameraPush": 0.5,
+            "baseTexture": "/pa/effects/textures/particles/fire_puff.papa",
+            "dataChannelFormat": "PositionAndColor"
+          },
+          "sizeX": 6,
+          "emissionBursts": 1,
+          "rotationRange": 3.15,
+          "rotationRateRange": 0.25,
+          "lifetime": 0.4,
+          "emitterLifetime": 1.0,
+          "bLoop": false
+        }
+      }
+    ]
+  },
+  {
+    "target": "/pa/units/land/bot_sniper/bot_sniper_ammo_beam.pfx",
+    "destination": "/mod/sniper/sniper_ammo_trail.json",
+    "patch": [
+      {"op": "replace", "path": "/emitters/0/spec/red", "value": 1.6 },
+      {"op": "replace", "path": "/emitters/0/spec/green", "value": 0.8 },
+      {"op": "replace", "path": "/emitters/0/spec/blue", "value": 4.0 },
+
+      {"op": "replace", "path": "/emitters/1/red", "value":   [[0, 0.8], [1, 0.25]] },
+      {"op": "replace", "path": "/emitters/1/green", "value": [[0, 0.6], [1, 0.12]] },
+      {"op": "replace", "path": "/emitters/1/blue", "value":  [[0, 3.0], [1, 3.00]] },
+
+      {"op": "replace", "path": "/emitters/1/lifetime", "value": [[0, 0.4 ], [1, 0.5 ]] },
+
+
+      {"op": "scale", "path": "/emitters/2/maxParticles", "value": 0.2 },
+      {"op": "scale", "path": "/emitters/2/beamSegmentLength", "value": 5 },
+      {"op": "scale", "path": "/emitters/2/velocityRange", "value": 1 },
+      {"op": "scale", "path": "/emitters/2/velocity", "value": 1 },
+
+      {"op": "add", "path" : "/emitters/-",  "value" : {
+      "spec": {
+        "shape": "pointlight",
+        "red": 1.2,
+        "green": 0.8,
+        "blue": 5,
+        "alpha": [
+          [
+            0,
+            0.05
+          ],
+          [
+            1,
+            0
+          ]
+        ]
+      },
+      "maxParticles" : 50,
+      "offsetZ" : 5,
+      "type" : "EMITTER",
+      "linkIndex" : 2,
+      "sizeX": 40,
+      "emissionBursts": {
+        "count": 1,
+        "time": 0.06
+      },
+      "lifetime": 0.4,
+      "emitterLifetime": 10,
+      "endDistance": 2000
+    }}
+    ]
+  }
+]

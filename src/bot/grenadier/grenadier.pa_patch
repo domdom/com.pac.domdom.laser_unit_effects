@@ -1,6 +1,6 @@
 [
     {
-        "from_script" : "/grenadier/grenadier.py"
+        "from_script" : "/bot/grenadier/grenadier.py"
     },
     {
         "target" : "/pa/units/land/bot_grenadier/bot_grenadier_ammo.json",
@@ -11,11 +11,11 @@
         ]
     },
     {
-        "target" : "/grenadier/grenadier_ammo_trail.json",
+        "target" : "/bot/grenadier/grenadier_ammo_trail.json",
         "destination" : "/mod/grenadier/grenadier_ammo_trail.json"
     },
     {
-        "target" : "/grenadier/grenadier_ammo_hit.json",
+        "target" : "/bot/grenadier/grenadier_ammo_hit.json",
         "destination" : "/mod/grenadier/grenadier_ammo_hit.json"
     }
 ]

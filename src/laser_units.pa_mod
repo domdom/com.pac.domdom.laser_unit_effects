@@ -1,6 +1,6 @@
 {
     "options" : {
-        "debug_mode" : false,
+        "debug_mode" : true,
         "output_dir" : "..",
         "indent" : null
     },
@@ -17,21 +17,29 @@
     "mod" : [
         { "from_script" : "/base_arty/base_arty_effects.py" },
 
-        { "from_script" : "/torpedo/torpedo.py" },
+        { "from_file" : "/land/ant/ant.pa_patch" },
+        { "from_file" : "/land/leveler/leveler.pa_patch" },
+        { "from_file" : "/land/sheller/sheller.pa_patch" },
 
-        { "from_file" : "/ant/ant.pa_patch" },
-        { "from_file" : "/dox/dox.pa_patch" },
-        { "from_file" : "/kestrel/kestrel.pa_patch" },
-        { "from_file" : "/grenadier/grenadier.pa_patch" },
-        { "from_file" : "/slammer/slammer.pa_patch" },
-        { "from_file" : "/sheller/sheller.pa_patch" },
-        { "from_file" : "/pelter/pelter.pa_patch" },
-        { "from_file" : "/holkins/holkins.pa_patch" },
-        { "from_file" : "/leveler/leveler.pa_patch" },
-        { "from_file" : "/piranha/piranha.pa_patch" },
-        { "from_file" : "/narwhal/narwhal.pa_patch" },
-        { "from_file" : "/leviathan/leviathan.pa_patch" },
-        { "from_file" : "/orca/orca.pa_patch" }
+        { "from_file" : "/bot/dox/dox.pa_patch" },
+        { "from_file" : "/bot/grenadier/grenadier.pa_patch" },
+        { "from_file" : "/bot/slammer/slammer.pa_patch" },
+        { "from_file" : "/bot/sniper/sniper.pa_patch" },
+
+        { "from_file" : "/air/kestrel/kestrel.pa_patch" },
+
+        { "from_file" : "/static/pelter/pelter.pa_patch" },
+        { "from_file" : "/static/holkins/holkins.pa_patch" },
+        { "from_file" : "/static/laser/t1.pa_patch" },
+        { "from_file" : "/static/laser/t2.pa_patch" },
+        { "from_file" : "/static/laser/t3.pa_patch" },
+
+        { "from_script" : "/sea/torpedo/torpedo.py" },
+
+        { "from_file" : "/sea/piranha/piranha.pa_patch" },
+        { "from_file" : "/sea/narwhal/narwhal.pa_patch" },
+        { "from_file" : "/sea/leviathan/leviathan.pa_patch" },
+        { "from_file" : "/sea/orca/orca.pa_patch" }
 
     ]
 }
