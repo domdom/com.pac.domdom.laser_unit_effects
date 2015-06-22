@@ -1,12 +1,12 @@
 {
     "context": "client",
     "identifier": "com.pa.domdom.laser_unit_effects",
-    "display_name": "More Pew Pew",
-    "description": "Makes ballistic type weapons on some units look more laser like.",
+    "display_name": "[WIP] More Pew Pew",
+    "description": "[WIP] Please visit forum to give feedback. Makes ballistic type weapons on some units look more laser like.",
     "author": "dom314",
-    "version": "0.6.0",
-    "icon": "http://i.imgur.com/k1A2Q53.gif",
+    "forum": "https://forums.uberent.com/threads/wip-client-more-pew-pew-requesting-opinions.69025/",
+    "version": "0.6.3",
     "priority": 100,
     "build": "83074",
-    "date": "2015/06/20"
+    "date": "2015/06/22"
 }
