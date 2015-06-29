@@ -5,8 +5,50 @@
       {
         "op": "replace",
         "path": "/events/fired/effect_spec",
-        "value": "/mod/ant/ant_muzzle_flash.json socket_muzzle"
+        "value": "/mod/ant/ant_muzzle_flash.json socket_muzzle /mod/ant/top_burst_flash.json bone_root /mod/ant/side_burst_flash.json bone_root"
       }
+    ]
+  },
+  {
+    "target": "/land/ant/top_burst_flash.json",
+    "destination": "/mod/ant/top_burst_flash.json",
+    "patch" : [
+      {"op": "add", "path": "/emitters/0/red", "value" : 0.1 },
+      {"op": "add", "path": "/emitters/0/green", "value" : 4.0 },
+      {"op": "add", "path": "/emitters/0/blue", "value" : 0.3 },
+
+      {"op": "add", "path": "/emitters/1/red", "value" : 0.1 },
+      {"op": "add", "path": "/emitters/1/green", "value" : 4.0 },
+      {"op": "add", "path": "/emitters/1/blue", "value" : 0.3 },
+
+      {"op": "add", "path": "/emitters/2/red", "value" : 0.1 },
+      {"op": "add", "path": "/emitters/2/green", "value" : 4.0 },
+      {"op": "add", "path": "/emitters/2/blue", "value" : 0.3 },
+
+      {"op": "add", "path": "/emitters/3/red", "value" : 0.1 },
+      {"op": "add", "path": "/emitters/3/green", "value" : 4.0 },
+      {"op": "add", "path": "/emitters/3/blue", "value" : 0.3 }
+    ]
+  },
+  {
+    "target": "/land/ant/side_burst_flash.json",
+    "destination": "/mod/ant/side_burst_flash.json",
+    "patch" : [
+      {"op": "add", "path": "/emitters/0/red", "value" : 0.1 },
+      {"op": "add", "path": "/emitters/0/green", "value" : 4.0 },
+      {"op": "add", "path": "/emitters/0/blue", "value" : 0.3 },
+
+      {"op": "add", "path": "/emitters/1/red", "value" : 0.1 },
+      {"op": "add", "path": "/emitters/1/green", "value" : 4.0 },
+      {"op": "add", "path": "/emitters/1/blue", "value" : 0.3 },
+
+      {"op": "add", "path": "/emitters/2/red", "value" : 0.1 },
+      {"op": "add", "path": "/emitters/2/green", "value" : 4.0 },
+      {"op": "add", "path": "/emitters/2/blue", "value" : 0.3 },
+
+      {"op": "add", "path": "/emitters/3/red", "value" : 0.1 },
+      {"op": "add", "path": "/emitters/3/green", "value" : 4.0 },
+      {"op": "add", "path": "/emitters/3/blue", "value" : 0.3 }
     ]
   },
   {
