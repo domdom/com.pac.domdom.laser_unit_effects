@@ -18,7 +18,7 @@
       "sizeX": 0.53,
       "sizeY": 0.67,
       "emissionBursts": 1,
-      "lifetime": 0.5,
+      "lifetime": 0.2,
       "emitterLifetime": 0.3,
       "bLoop": false,
       "endDistance" : 1400
@@ -41,7 +41,7 @@
       "sizeX": 0.53,
       "sizeY": 0.67,
       "emissionBursts": 1,
-      "lifetime": 0.75,
+      "lifetime": 0.4,
       "emitterLifetime": 0.3,
       "bLoop": false,
       "endDistance" : 1400
@@ -64,7 +64,7 @@
       "sizeX": 0.53,
       "sizeY": 0.67,
       "emissionBursts": 1,
-      "lifetime": 0.5,
+      "lifetime": 0.2,
       "emitterLifetime": 0.3,
       "bLoop": false,
       "endDistance" : 1400
@@ -87,7 +87,7 @@
       "sizeX": 0.53,
       "sizeY": 0.67,
       "emissionBursts": 1,
-      "lifetime": 0.75,
+      "lifetime": 0.4,
       "emitterLifetime": 0.3,
       "bLoop": false,
       "endDistance" : 1400

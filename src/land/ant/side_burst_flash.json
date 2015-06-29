@@ -9,7 +9,7 @@
         "red": 3.0,
         "green": 3.0,
         "blue": 3.0,
-        "alpha" : [[0, 20], [1.00, 0]],
+        "alpha" : [[0, 10], [1.00, 0]],
         "dataChannelFormat" : "PositionAndColor"
       },
       "offsetX" : 2.5,
@@ -18,7 +18,7 @@
       "sizeX": 0.53,
       "sizeY": 0.55,
       "emissionBursts": 1,
-      "lifetime": 0.5,
+      "lifetime": 0.2,
       "emitterLifetime": 0.3,
       "bLoop": false,
       "endDistance" : 1400
@@ -32,7 +32,7 @@
         "red": 3.0,
         "green": 3.0,
         "blue": 3.0,
-        "alpha" : [[0, 20], [1.00, 0]],
+        "alpha" : [[0, 10], [1.00, 0]],
         "dataChannelFormat" : "PositionAndColor"
       },
       "offsetX" : 2.5,
@@ -41,7 +41,7 @@
       "sizeX": 0.53,
       "sizeY": 0.55,
       "emissionBursts": 1,
-      "lifetime": 0.75,
+      "lifetime": 0.4,
       "emitterLifetime": 0.3,
       "bLoop": false,
       "endDistance" : 1400
@@ -55,7 +55,7 @@
         "red": 3.0,
         "green": 3.0,
         "blue": 3.0,
-        "alpha" : [[0, 20], [1.00, 0]],
+        "alpha" : [[0, 10], [1.00, 0]],
         "dataChannelFormat" : "PositionAndColor"
       },
       "offsetX" : -2.5,
@@ -64,7 +64,7 @@
       "sizeX": 0.53,
       "sizeY": 0.55,
       "emissionBursts": 1,
-      "lifetime": 0.5,
+      "lifetime": 0.2,
       "emitterLifetime": 0.3,
       "bLoop": false,
       "endDistance" : 1400
@@ -78,7 +78,7 @@
         "red": 3.0,
         "green": 3.0,
         "blue": 3.0,
-        "alpha" : [[0, 20], [1.00, 0]],
+        "alpha" : [[0, 10], [1.00, 0]],
         "dataChannelFormat" : "PositionAndColor"
       },
       "offsetX" : -2.5,
@@ -87,7 +87,7 @@
       "sizeX": 0.53,
       "sizeY": 0.55,
       "emissionBursts": 1,
-      "lifetime": 0.75,
+      "lifetime": 0.4,
       "emitterLifetime": 0.3,
       "bLoop": false,
       "endDistance" : 1400
