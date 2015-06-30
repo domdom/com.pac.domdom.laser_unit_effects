@@ -14,9 +14,10 @@
     "target": "/base_arty/base_ammo_trail.json",
     "destination" : "/mod/holkins/holkins_ammo_trail.json",
     "patch" : [
-      {"op" : "replace", "path" : "/emitters/0/spec/red",     "value" : 1.0},
-      {"op" : "replace", "path" : "/emitters/0/spec/green",   "value" : 0.1},
-      {"op" : "replace", "path" : "/emitters/0/spec/blue",    "value" : 5.0},
+      {"op" : "replace", "path" : "/emitters/0/spec/red",     "value" : [[0, 1.0], [0.5, 0.0]]},
+      {"op" : "replace", "path" : "/emitters/0/spec/green",   "value" : [[0.5, 0.1], [1.0, 1.0]]},
+      {"op" : "replace", "path" : "/emitters/0/spec/blue",    "value" : [[0, 20.0], [1, 10.0]]},
+
       {"op" : "copy", "path" : "/emitters/1/spec", "from" : "/emitters/0/spec"},
       {"op" : "copy", "path" : "/emitters/2/spec", "from" : "/emitters/0/spec"},
       {"op" : "copy", "path" : "/emitters/3/spec", "from" : "/emitters/0/spec"},
@@ -27,11 +28,11 @@
       {"op" : "copy", "path" : "/emitters/5/spec/blue", "from" : "/emitters/0/spec/blue"},
       {"op" : "replace", "path" : "/emitters/5/spec/green", "value" : [[0, 1], [1, 0.5]]},
 
-      {"op" : "scale", "path" : "/emitters/0/sizeX", "value" : 1.4},
-      {"op" : "scale", "path" : "/emitters/1/sizeX", "value" : 1.4},
-      {"op" : "scale", "path" : "/emitters/2/sizeX", "value" : 1.4},
-      {"op" : "scale", "path" : "/emitters/3/sizeX", "value" : 1.4},
-      {"op" : "scale", "path" : "/emitters/4/sizeX", "value" : 1.4},
+      {"op" : "scale", "path" : "/emitters/0/sizeX", "value" : 3.0},
+      {"op" : "scale", "path" : "/emitters/1/sizeX", "value" : 3.0},
+      {"op" : "scale", "path" : "/emitters/2/sizeX", "value" : 3.0},
+      {"op" : "scale", "path" : "/emitters/3/sizeX", "value" : 3.0},
+      {"op" : "scale", "path" : "/emitters/4/sizeX", "value" : 3.0},
       {"op" : "scale", "path" : "/emitters/5/sizeX", "value" : 1.4},
 
       {"op" : "scale", "path" : "/emitters/0/lifetime", "value" : 1.4},
@@ -46,10 +47,12 @@
     "target": "/base_arty/base_ammo_hit.json",
     "destination" : "/mod/holkins/holkins_ammo_hit.json",
     "patch" : [
-      {"op" : "replace", "path" : "/emitters/0/spec/red",     "value" : [[0, 1 ], [0.35, 2 ]]},
+      {"op" : "replace", "path" : "/emitters/0/spec/red",     "value" : [[0, 0 ], [0.35, 0.2 ]]},
       {"op" : "replace", "path" : "/emitters/0/spec/green",   "value" : [[0, 1 ], [0.35, 1 ]]},
       {"op" : "replace", "path" : "/emitters/0/spec/blue",    "value" : [[0, 50 ], [0.35, 10]]},
 
+      {"op" : "replace", "path" : "/emitters/1/lifetime",     "value" : 2.4},
+      
 
       {"op" : "replace", "path" : "/emitters/1/spec/red",     "value" : [[0, 100 ], [0.35, 10 ]]},
       {"op" : "replace", "path" : "/emitters/1/spec/green",   "value" : [[0, 2 ], [0.35, 2 ]]},
@@ -59,7 +62,7 @@
       {"op" : "replace", "path" : "/emitters/4/spec/green",   "value" : [[0, 1 ], [0.75, 1 ]]},
       {"op" : "replace", "path" : "/emitters/4/spec/blue",    "value" : [[0, 20 ], [0.75, 1]]},
 
-      {"op" : "replace", "path" : "/emitters/5/spec/red",     "value" : [[0, 10 ], [0.75, 1 ]]},
+      {"op" : "replace", "path" : "/emitters/5/spec/red",     "value" : [[0, 0.1 ], [0.75, 0 ]]},
       {"op" : "replace", "path" : "/emitters/5/spec/green",   "value" : [[0, 10 ], [0.75, 1 ]]},
       {"op" : "replace", "path" : "/emitters/5/spec/blue",    "value" : [[0, 100 ], [0.75, 100]]},
 
@@ -78,8 +81,98 @@
       {"op" : "scale", "path" : "/emitters/3/emissionBursts", "value" : 3},
       {"op" : "scale", "path" : "/emitters/3/velocity", "value" : 0.8},
       {"op" : "scale", "path" : "/emitters/3/sizeY", "value" : 0.6},
-      {"op" : "scale", "path" : "/emitters/3/velocityRange", "value" : 2}
+      {"op" : "scale", "path" : "/emitters/3/velocityRange", "value" : 2},
 
+      {"op" : "add", "path" : "/emitters/-", "value" : {
+         "spec": {
+            "shader": "particle_clip",
+            "shape": "mesh",
+            "facing": "EmitterZ",
+            "red": 0,
+            "green": [[0, 1 ], [0.8, 1 ] ],
+            "blue": [[0, 100 ], [0.8, 20 ] ],
+            "alpha": {
+              "keys" : [[0.0, 0.6], [0.1, 0.1], [0.2, 0.1], [0.3, 0.1], [0.4, 0.36], [0.5, 0.1], [0.6, 0.1], [0.7, 0.1], [0.8, 0.12], [0.9, 0.1], [1, 0]],
+              "stepped" : false
+            },
+            "size": [[0, 0 ], [0.1, 0.5 ], [0.2, 0.75 ], [0.3, 0.87 ], [0.4, 0.95 ], [0.5, 1 ]],
+            "papa": "/pa/effects/fbx/particles/sphere_ico16seg.papa",
+            "materialProperties": {
+                "Texture": "/pa/effects/textures/particles/fire_puff.papa"
+            }
+          },
+          "sizeX": 31,
+          "sizeY": 31,
+          "rotationRange": 3.2,
+          "rotationRateRange": 0.1,
+          "lifetime": 1.5,
+          "emissionBursts": 1,
+          "bLoop": false,
+          "endDistance": 2000
+      }},
+      {"op" : "add", "path" : "/emitters/-", "value" : {
+         "spec": {
+            "shader": "particle_clip",
+            "shape": "mesh",
+            "facing": "EmitterZ",
+            "red": [[0, 100 ], [0.6, 20 ] ],
+            "green": [[0, 1 ], [0.8, 1 ] ],
+            "blue": [[0, 10 ], [0.8, 2 ] ],
+            "alpha": {
+              "keys" : [[0.0, 0], [0.1, 0], [0.2, 0.48], [0.3, 0], [0.4, 0], [0.5, 0], [0.6, 0.24], [0.7, 0], [0.8, 0], [1, 0]],
+              "stepped" : false
+            },
+            "size": [[0, 0 ], [0.1, 0.5 ], [0.2, 0.75 ], [0.3, 0.87 ], [0.4, 0.95 ], [0.5, 1 ]],
+            "papa": "/pa/effects/fbx/particles/sphere_ico16seg.papa",
+            "materialProperties": {
+                "Texture": "/pa/effects/textures/particles/fire_puff.papa"
+            }
+          },
+          "sizeX": 31,
+          "sizeY": 31,
+          "rotationRange": 3.2,
+          "rotationRateRange": 0.1,
+          "lifetime": 1.5,
+          "emissionBursts": 1,
+          "bLoop": false,
+          "endDistance": 2000
+      }},
+      {"op" : "add", "path" : "/emitters/-", "value" : {
+        "spec": {
+            "shader": "particle_transparent",
+            "facing": "velocity",
+            "flipBookColumns": 4,
+            "flipBookRows": 1,
+            "frameCurve": [[0, 0 ], [1, 0.75 ] ],
+            "flipBookRandomStart": true,
+            "polyAdjustCenter": 0.5,
+            "sizeX": [[0, 1 ], [1, 1.2 ] ],
+            "sizeY": [[0, -1 ], [1, -1.02 ] ],
+            "red": 1,
+            "green": 1,
+            "blue": 10,
+            "alpha": [[0.5, 1.0 ], [1, 0.0 ] ],
+            "baseTexture": "/pa/effects/textures/particles/metalControlCoreSpark.papa"
+        },
+        "offsetAllowNegZ" : false,
+        "offsetRangeX": 7,
+        "offsetRangeY": 7,
+        "offsetRangeZ": 7,
+        "velocity": 0.1,
+        "velocityRangeX": 1,
+        "velocityRangeZ": 1,
+        "velocityRangeY": 1,
+        "sizeX": 3,
+        "sizeRangeX": 1,
+        "sizeY": [[0, 23], [2, 4]],
+        "sizeRangeY": [[0, 10], [2, 2]],
+        "lifetime": 0.3,
+        "lifetimeRange": 0.125,
+        "emissionRate": [[0, 200], [1, 100], [1.2, 10], [2, 0]],
+        "emitterLifetime": 2,
+        "bLoop": false,
+        "endDistance": 850
+      }}
     ]
   },
   {
