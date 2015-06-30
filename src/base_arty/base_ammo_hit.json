@@ -485,11 +485,11 @@
         ],
         "red": 0.05,
         "green": 0.35,
-        "blue": 1.0,
+        "blue": 5.0,
         "alpha": [
           [
             0.2,
-            1
+            2
           ],
           [
             0.3,
@@ -497,7 +497,7 @@
           ],
           [
             0.6,
-            0.25
+            0.5
           ],
           [
             1,
@@ -514,7 +514,7 @@
       "lifetime": 0.25,
       "emitterLifetime": 1,
       "bLoop": false,
-      "endDistance": 850
+      "endDistance": 1000
     },
     {
       "spec": {
@@ -551,7 +551,7 @@
         },
         "red": 0.05,
         "green": 0.35,
-        "blue": 1.0,
+        "blue": 5.0,
         "alpha": {
           "keys": [
             [
@@ -560,7 +560,7 @@
             ],
             [
               0.3,
-              0.2
+              1
             ],
             [
               0.6,
@@ -585,7 +585,7 @@
       "emitterLifetime": 2,
       "bLoop": false,
       "sort": "NoSort",
-      "endDistance": 850
+      "endDistance": 1000
     },
     {
       "spec": {
@@ -606,16 +606,16 @@
         },
         "red": 0.05,
         "green": 0.35,
-        "blue": 1.0,
+        "blue": 5.0,
         "alpha": {
           "keys": [
             [
               0,
-              0.25
+              1
             ],
             [
               0.3,
-              0.05
+              1
             ],
             [
               0.6,
@@ -640,7 +640,7 @@
       "emitterLifetime": 2,
       "bLoop": false,
       "sort": "NoSort",
-      "endDistance": 850
+      "endDistance": 1000
     }
   ]
 }

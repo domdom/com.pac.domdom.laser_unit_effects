@@ -144,8 +144,8 @@ base_hit_rings = loader.load_json_string("""[
         "size": [[0, 0 ], [0.2, 0.667 ], [0.4, 0.889 ], [0.6, 0.963 ], [0.8, 0.98 ], [1, 1 ] ],
         "red": 0.05,
         "green": 0.35,
-        "blue": 1.0,
-        "alpha": [[0.2, 1 ], [0.3, 1 ], [0.6, 0.25 ], [1, 0 ] ],
+        "blue": 5.0,
+        "alpha": [[0.2, 2 ], [0.3, 1 ], [0.6, 0.5 ], [1, 0 ] ],
         "baseTexture": "/pa/effects/textures/particles/simpleExplosionRing.papa",
         "dataChannelFormat": "PositionAndColor"
       },
@@ -156,7 +156,7 @@ base_hit_rings = loader.load_json_string("""[
       "lifetime": 0.25,
       "emitterLifetime": 1,
       "bLoop": false,
-      "endDistance": 850
+      "endDistance": 1000
     },
     {
       "spec": {
@@ -165,8 +165,8 @@ base_hit_rings = loader.load_json_string("""[
         "size": {"keys": [[0, 0 ], [0.2, 0.667 ], [0.4, 0.889 ], [0.6, 0.963 ], [0.8, 0.98 ], [1, 1 ] ], "stepped": false },
         "red": 0.05,
         "green": 0.35,
-        "blue": 1.0,
-        "alpha": {"keys": [[0, 1 ], [0.3, 0.2 ], [0.6, 0.05 ], [1, 0 ] ], "stepped": false },
+        "blue": 5.0,
+        "alpha": {"keys": [[0, 1 ], [0.3, 1 ], [0.6, 0.05 ], [1, 0 ] ], "stepped": false },
         "baseTexture": "/pa/effects/textures/particles/simpleExplosionRing.papa",
         "rampTexture": "/pa/effects/textures/particles/uncompressed/no_ramp.papa",
         "dataChannelFormat": "PositionAndColor"
@@ -179,7 +179,7 @@ base_hit_rings = loader.load_json_string("""[
       "emitterLifetime": 2,
       "bLoop": false,
       "sort": "NoSort",
-      "endDistance": 850
+      "endDistance": 1000
     },
     {
       "spec": {
@@ -188,8 +188,8 @@ base_hit_rings = loader.load_json_string("""[
         "size": {"keys": [[0, 0 ], [1, 1 ] ], "stepped": false },
         "red": 0.05,
         "green": 0.35,
-        "blue": 1.0,
-        "alpha": {"keys": [[0, 0.25 ], [0.3, 0.05 ], [0.6, 0.02 ], [1, 0 ] ], "stepped": false },
+        "blue": 5.0,
+        "alpha": {"keys": [[0, 1 ], [0.3, 1 ], [0.6, 0.02 ], [1, 0 ] ], "stepped": false },
         "baseTexture": "/pa/effects/textures/particles/simpleExplosionRing.papa",
         "rampTexture": "/pa/effects/textures/particles/uncompressed/no_ramp.papa",
         "dataChannelFormat": "PositionAndColor"
@@ -202,7 +202,7 @@ base_hit_rings = loader.load_json_string("""[
       "emitterLifetime": 2,
       "bLoop": false,
       "sort": "NoSort",
-      "endDistance": 850
+      "endDistance": 1000
     }
 ]""")
 

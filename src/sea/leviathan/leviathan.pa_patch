@@ -6,7 +6,7 @@
         "died": {
           "audio_cue": "/SE/Impacts/missile_battleship",
           "effect_spec": "/mod/leviathan/leviathan_ammo_hit.json",
-          "effect_scale" : 0.5
+          "effect_scale" : 0.9
         }
       }},
       {"op": "add", "path": "/fx_trail", "value": {
@@ -15,36 +15,41 @@
       }}
     ]
   },
-  {
-    "target": "/base_arty/base_ammo_trail.json",
-    "destination" : "/mod/leviathan/leviathan_ammo_trail.json",
-    "patch" : [
-      {"op" : "replace", "path" : "/emitters/0/spec/shader",     "value" : "particle_transparent_lit"},
-      {"op" : "replace", "path" : "/emitters/0/spec/red",     "value" : 1.2},
-      {"op" : "replace", "path" : "/emitters/0/spec/green",   "value" : 1.7},
-      {"op" : "replace", "path" : "/emitters/0/spec/blue",    "value" : 5.0},
+{
+    "target": "/base_ammo_trail.json",
+    "destination": "/mod/leviathan/leviathan_ammo_trail.json",
+    "patch": [
+      {"op": "remove", "path": "/emitters/0"},
+      {"op": "remove", "path": "/emitters/0"},
 
-      {"op" : "replace", "path" : "/emitters/5/spec/red",     "value" : 0.4},
-      {"op" : "replace", "path" : "/emitters/5/spec/green",   "value" : 0.4},
-      {"op" : "replace", "path" : "/emitters/5/spec/blue",    "value" : 4.0},
+      {"op" : "replace", "path" : "/emitters/0/spec/red",     "value" : [[0, 2], [0.3, 0.2], [1, 0.1]]},
+      {"op" : "replace", "path" : "/emitters/0/spec/green",   "value" : [[0, 1], [0.1, 1.2], [1, 5.0]]},
+      {"op" : "replace", "path" : "/emitters/0/spec/blue",    "value" : 4.0},
 
-      {"op" : "copy", "path" : "/emitters/1/spec", "from" : "/emitters/0/spec"},
-      {"op" : "copy", "path" : "/emitters/2/spec", "from" : "/emitters/0/spec"},
-      {"op" : "copy", "path" : "/emitters/3/spec", "from" : "/emitters/0/spec"},
-      {"op" : "copy", "path" : "/emitters/4/spec", "from" : "/emitters/0/spec"},
+      {"op" : "replace", "path" : "/emitters/0/lifetime",    "value" : 1.0},
+      {"op" : "scale", "path" : "/emitters/0/sizeX",    "value" : 1.2},
 
-
-
-      
-
-      {"op" : "scale", "path" : "/emitters/0/lifetime", "value" : 1},
-      {"op" : "scale", "path" : "/emitters/1/lifetime", "value" : 1},
-      {"op" : "scale", "path" : "/emitters/2/lifetime", "value" : 1},
-      {"op" : "scale", "path" : "/emitters/3/lifetime", "value" : 1},
-      {"op" : "scale", "path" : "/emitters/4/lifetime", "value" : 1},
-      {"op" : "scale", "path" : "/emitters/5/lifetime", "value" : 1},
-      {"op" : "scale", "path" : "/emitters/5/sizeX", "value" : 1}
-
+      {"op" : "add", "path" : "/emitters/-", "value" : {
+        "spec" : {
+            "shader" : "particle_add_soft",
+            "red" : 0.1,
+            "green" : 1.0,
+            "blue" : 6.0,
+            "size" : [[0, 1], [0.2, 2], [1, 0]],
+            "alpha" : [[0, 0.9], [1, 0]],
+            "baseTexture" : "/pa/effects/textures/particles/ring.papa",
+            "rampTexture" : "/pa/effects/textures/particles/uncompressed/flicker_ramp.papa"
+        },
+        "rampV" : 0.5,
+        "rampRangeV" : 0.5,
+        "sizeX" : 1.5,
+        "sizeRangeX" : 0.1,
+        "lifetime" : 0.5,
+        "lifetimeRange" : 0.06,
+        "emissionRate" : 120,
+        "useWorldSpace" : true,
+        "bLoop" : true
+      }}
     ]
   },
     {
