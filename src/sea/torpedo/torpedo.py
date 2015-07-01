@@ -108,25 +108,9 @@ def run():
         {
             "target" : "/pa/ammo/torpedo/torpedo.json",
             "patch" : [
-                {"op" : "replace", "path" : "/fx_trail/filename", "value" : "/mod/torpedo/torpedo_trail.json"}
-            ]
-        },
-        {
-            "target" : [
-                "/pa/units/sea/frigate/frigate_ammo_torpedo.json",
-                "/pa/units/sea/torpedo_launcher/torpedo_launcher_ammo.json",
-                "/pa/units/sea/torpedo_launcher_adv/torpedo_launcher_adv_ammo.json",
-                "/pa/units/sea/nuclear_sub/nuclear_sub_ammo.json",
-                "/pa/units/land/assault_bot_adv/assault_bot_adv_torpedo_ammo.json",
-                "/pa/units/commanders/base_commander/base_commander_torpedo_ammo.json"
-            ],
-            "patch" : [
-                {"op" : "add", "path" : "/events", "value" : {
-                    "died" : {
-                        "effect_spec" : "/mod/torpedo/torpedo_hit.json",
-                        "effect_scale" : 0.15
-                    }
-                }}
+                {"op" : "replace", "path" : "/fx_trail/filename", "value" : "/mod/torpedo/torpedo_trail.json"},
+                {"op" : "replace", "path" : "/events/died/effect_spec", "value" : "/mod/torpedo/torpedo_hit.json"},
+                {"op" : "add", "path" : "/events/died/effect_scale", "value" : 0.15}
             ]
         },
         {
