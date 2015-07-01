@@ -1,1 +1,74 @@
-{"emitters": [{"velocity": 0.6, "velocityRangeX": 0.1, "cameraPush": 0.5, "emitterLifetime": 3.0, "endDistance": 2000, "sizeRangeX": 0.15, "velocityRangeZ": 0.1, "sizeX": 0.2, "spec": {"shader": "particle_transparent", "green": 0.8, "shape": "string", "cameraPush": 0.4, "baseTexture": "/pa/effects/textures/particles/flat.papa", "size": [[0, 1], [0.1, 1], [1, 0]], "alpha": [[0, 1], [0.1, 1], [1, 0]], "blue": 0.8, "red": 5, "dataChannelFormat": "PositionColorAndAlignVector"}, "lifetime": 1, "emissionRate": 30, "alignVelocityToSurface": true, "drag": 0.98, "bLoop": true, "useWorldSpace": true}, {"emissionBurts": 1, "sizeX": 0.6, "spec": {"green": 0.2, "facing": "axialY", "cameraPush": 0.5, "baseTexture": "/pa/effects/textures/particles/dot.papa", "shader": "particle_add", "blue": 0.4, "red": 2.0}, "lifetime": 0.2, "sizeY": 1, "offsetY": 1.2}]}
+{
+  "emitters": [
+    {
+      "emitterLifetime": 3.0,
+      "alignVelocityToSurface": true,
+      "useWorldSpace": true,
+      "endDistance": 2000,
+      "velocityRangeX": 0.1,
+      "drag": 0.98,
+      "velocityRangeZ": 0.1,
+      "lifetime": 1,
+      "spec": {
+        "cameraPush": 0.4,
+        "shader": "particle_transparent",
+        "green": 0.8,
+        "red": 5,
+        "size": [
+          [
+            0,
+            1
+          ],
+          [
+            0.1,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "dataChannelFormat": "PositionColorAndAlignVector",
+        "shape": "string",
+        "alpha": [
+          [
+            0,
+            1
+          ],
+          [
+            0.1,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "baseTexture": "/pa/effects/textures/particles/flat.papa",
+        "blue": 0.8
+      },
+      "emissionRate": 30,
+      "cameraPush": 0.5,
+      "bLoop": true,
+      "sizeX": 0.2,
+      "sizeRangeX": 0.15,
+      "velocity": 0.6
+    },
+    {
+      "sizeY": 1,
+      "lifetime": 0.2,
+      "spec": {
+        "baseTexture": "/pa/effects/textures/particles/dot.papa",
+        "green": 0.2,
+        "blue": 0.4,
+        "red": 2.0,
+        "cameraPush": 0.5,
+        "facing": "axialY",
+        "shader": "particle_add"
+      },
+      "sizeX": 0.6,
+      "offsetY": 1.2,
+      "emissionBurts": 1
+    }
+  ]
+}

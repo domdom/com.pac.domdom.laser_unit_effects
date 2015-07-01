@@ -1,1 +1,42 @@
-{"ammo_type": "AMMO_Projectile", "flight_type": "Seeking", "flight_layer": "Underwater", "spawn_layers": "WL_Underwater", "model": {"filename": "/pa/units/sea/torpedo/torpedo.papa"}, "fx_trail": {"filename": "/mod/torpedo/torpedo_trail.json", "offset": [0.0, 0.8, 0.0]}, "physics": {"radius": 1, "push_class": 1, "gravity_scalar": 5, "add_to_spatial_db": false, "allow_underground": true}, "events": {"died": {"audio_cue": "/SE/Impacts/torpedo", "effect_spec": "/mod/torpedo/torpedo_hit.json", "effect_scale": 0.15}}, "damage": 50, "lifetime": 8, "initial_velocity": 40.0, "max_velocity": 40.0, "turn_rate": 45, "cruise_height": 2, "recon": {"observable": {"ignore_radar": true}}}
+{
+  "ammo_type": "AMMO_Projectile",
+  "flight_type": "Seeking",
+  "flight_layer": "Underwater",
+  "spawn_layers": "WL_Underwater",
+  "model": {
+    "filename": "/pa/units/sea/torpedo/torpedo.papa"
+  },
+  "fx_trail": {
+    "filename": "/mod/torpedo/torpedo_trail.json",
+    "offset": [
+      0.0,
+      0.8,
+      0.0
+    ]
+  },
+  "physics": {
+    "radius": 1,
+    "push_class": 1,
+    "gravity_scalar": 5,
+    "add_to_spatial_db": false,
+    "allow_underground": true
+  },
+  "events": {
+    "died": {
+      "audio_cue": "/SE/Impacts/torpedo",
+      "effect_spec": "/mod/torpedo/torpedo_hit.json",
+      "effect_scale": 0.15
+    }
+  },
+  "damage": 50,
+  "lifetime": 8,
+  "initial_velocity": 40.0,
+  "max_velocity": 40.0,
+  "turn_rate": 45,
+  "cruise_height": 2,
+  "recon": {
+    "observable": {
+      "ignore_radar": true
+    }
+  }
+}

@@ -1,8 +1,8 @@
 {
     "options" : {
-        "debug_mode" : true,
+        "debug_mode" : false,
         "output_dir" : "..",
-        "indent" : null
+        "indent" : 2
     },
     "modinfo" : {
         "context" : "client",

@@ -1,1 +1,28 @@
-{"base_spec": "/pa/ammo/base_artillery/base_artillery.json", "damage": 200, "splash_damage": 200, "splash_radius": 7, "full_damage_splash_radius": 2, "initial_velocity": 110.0, "max_velocity": 110.0, "splash_damages_allies": false, "influence_radius": 900, "lifetime": 4, "audio_loop": "/SE/Movement/missile/battleship_fly_loop", "events": {"died": {"audio_cue": "/SE/Impacts/missile_battleship", "effect_spec": "/mod/leviathan/leviathan_ammo_hit.json", "effect_scale": 0.9}}, "fx_trail": {"filename": "/mod/leviathan/leviathan_ammo_trail.json", "offset": [0.0, 0.0, 0.0]}}
+{
+  "base_spec": "/pa/ammo/base_artillery/base_artillery.json",
+  "damage": 200,
+  "splash_damage": 200,
+  "splash_radius": 7,
+  "full_damage_splash_radius": 2,
+  "initial_velocity": 110.0,
+  "max_velocity": 110.0,
+  "splash_damages_allies": false,
+  "influence_radius": 900,
+  "lifetime": 4,
+  "audio_loop": "/SE/Movement/missile/battleship_fly_loop",
+  "events": {
+    "died": {
+      "audio_cue": "/SE/Impacts/missile_battleship",
+      "effect_spec": "/mod/leviathan/leviathan_ammo_hit.json",
+      "effect_scale": 0.9
+    }
+  },
+  "fx_trail": {
+    "filename": "/mod/leviathan/leviathan_ammo_trail.json",
+    "offset": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  }
+}
