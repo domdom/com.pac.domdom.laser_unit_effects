@@ -1,21 +1,21 @@
 [
-    {
-        "from_script" : "/bot/grenadier/grenadier.py"
-    },
-    {
-        "target" : "/pa/units/land/bot_grenadier/bot_grenadier_ammo.json",
-        "patch" : [
-            {"op" : "replace", "path" : "/fx_trail/filename", "value" : "/mod/grenadier/grenadier_ammo_trail.pfx"},
-            {"op" : "replace", "path" : "/events/died/effect_spec", "value" : "/mod/grenadier/grenadier_ammo_hit.pfx"},
-            {"op" : "replace", "path" : "/events/died/effect_scale", "value" : 1}
-        ]
-    },
-    {
-        "target" : "/bot/grenadier/grenadier_ammo_trail.pfx",
-        "destination" : "/mod/grenadier/grenadier_ammo_trail.pfx"
-    },
-    {
-        "target" : "/bot/grenadier/grenadier_ammo_hit.pfx",
-        "destination" : "/mod/grenadier/grenadier_ammo_hit.pfx"
-    }
+  {
+    "from_script" : "/bot/grenadier/grenadier.py"
+  },
+  {
+    "target" : "/pa/units/land/bot_grenadier/bot_grenadier_ammo.json",
+    "patch" : [
+      {"op" : "replace", "path" : "/fx_trail/filename", "value" : "/mod/grenadier/grenadier_ammo_trail.pfx"},
+      {"op" : "replace", "path" : "/events/died/effect_spec", "value" : "/mod/grenadier/grenadier_ammo_hit.pfx"},
+      {"op" : "replace", "path" : "/events/died/effect_scale", "value" : 1}
+    ]
+  },
+  {
+    "target" : "/bot/grenadier/grenadier_ammo_trail.pfx",
+    "destination" : "/mod/grenadier/grenadier_ammo_trail.pfx"
+  },
+  {
+    "target" : "/bot/grenadier/grenadier_ammo_hit.pfx",
+    "destination" : "/mod/grenadier/grenadier_ammo_hit.pfx"
+  }
 ]

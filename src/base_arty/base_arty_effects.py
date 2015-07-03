@@ -1,5 +1,6 @@
 import math
 import random
+from decimal import Decimal as D
 # import lib.loader
 import json
 import sys
@@ -292,6 +293,9 @@ base_hit = {
     "emitters" : []
 }
 
+def _round_time_curve(curve, digits=3):
+    return [[round(x, digits), round(y, digits)] for [x,y] in curve]
+
 # period - time to create waves over
 # frequency - the lowest frequency wave with a period of 'period'
 # waves - the number of sub wavelets to add to the system (will have a period that is equal to base)
@@ -322,6 +326,7 @@ def wave_to_offset(wavelets, period, dt):
     return offset
 
 def run():
+    ds = 0.05
     base_string['lifetime'] = 0.8
     wave_rings = [
             [0.50,  2, math.pi / 2],
@@ -341,11 +346,14 @@ def run():
 
         wave_z[2] += math.pi / 2
 
-        string['offsetX'] = wave_to_offset([wave_x], base_string['emitterLifetime'], base_string['emitterLifetime'] / 100.0)
-        string['offsetZ'] = wave_to_offset([wave_z], base_string['emitterLifetime'], base_string['emitterLifetime'] / 100.0)
+        wave_life = base_string['emitterLifetime']
+        wave_ds = wave_life * ds
 
-        string['velocityX'] = wave_to_offset([wave_x], base_string['emitterLifetime'], base_string['emitterLifetime'] / 100.0)
-        string['velocityZ'] = wave_to_offset([wave_z], base_string['emitterLifetime'], base_string['emitterLifetime'] / 100.0)
+        string['offsetX'] = _round_time_curve(wave_to_offset([wave_x], wave_life, wave_ds))
+        string['offsetZ'] = _round_time_curve(wave_to_offset([wave_z], wave_life, wave_ds))
+
+        string['velocityX'] = _round_time_curve(wave_to_offset([wave_x], wave_life, wave_ds))
+        string['velocityZ'] = _round_time_curve(wave_to_offset([wave_z], wave_life, wave_ds))
 
         string['velocity'] = 3.0
         string['drag'] = 0.97
@@ -368,8 +376,8 @@ def run():
     base_hit['emitters'].extend(base_hit_rings)
     # base_hit['emitters'].extend(base_hit_smoke_burst)
 
-    loader.save_json(base_trail, "base_ammo_trail.json", indent=2)
-    loader.save_json(base_hit, "base_ammo_hit.json", indent=2)
+    loader.save_effect(base_trail, "base_ammo_trail.json")
+    loader.save_effect(base_hit, "base_ammo_hit.json")
 
 
 if __name__ == "__main__":

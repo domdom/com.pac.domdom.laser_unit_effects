@@ -48,7 +48,7 @@
         "dataChannelFormat": "PositionColorAndAlignVector"
       },
       "offsetY": 3.5,
-      "sizeX": 0.5599999999999999,
+      "sizeX": 0.56,
       "sizeY": 7,
       "emissionBurts": 1,
       "lifetime": 0.2,

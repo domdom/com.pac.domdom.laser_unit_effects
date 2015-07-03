@@ -103,46 +103,4 @@ def run():
             "offsetY" : 1.2
         })
 
-
-    return [
-        {
-            "target" : "/pa/ammo/torpedo/torpedo.json",
-            "patch" : [
-                {"op" : "replace", "path" : "/fx_trail/filename", "value" : "/mod/torpedo/torpedo_trail.pfx"},
-                {"op" : "replace", "path" : "/events/died/effect_spec", "value" : "/mod/torpedo/torpedo_hit.pfx"},
-                {"op" : "add", "path" : "/events/died/effect_scale", "value" : 0.15}
-            ]
-        },
-        {
-            "target" : "/pa/effects/specs/torpedo_proj_trail.pfx",
-            "destination" : "/mod/torpedo/torpedo_trail.pfx",
-            "patch" : [
-                { "op" : "replace", "path" : "", "value" : new_trail}
-            ]
-        },
-        {
-            "target": "/base_arty/base_ammo_hit.json",
-            "destination" : "/mod/torpedo/torpedo_hit.pfx",
-            "patch" : [
-              {"op" : "replace", "path" : "/emitters/0/spec/red",   "value" : [[0, 100 ], [0.35, 4 ]]},
-              {"op" : "replace", "path" : "/emitters/0/spec/green", "value" : [[0, 10 ], [0.35, 2 ]]},
-              {"op" : "replace", "path" : "/emitters/0/spec/blue",  "value" : [[0, 30 ], [0.35, 2]]},
-
-              {"op" : "replace", "path" : "/emitters/1/spec/red",   "value" : [[0, 100 ], [0.35, 20 ]]},
-              {"op" : "replace", "path" : "/emitters/1/spec/green", "value" : [[0, 10 ], [0.35, 2]]},
-              {"op" : "replace", "path" : "/emitters/1/spec/blue",  "value" : [[0, 30 ], [0.35, 2]]},
-
-              {"op" : "replace", "path" : "/emitters/4/spec/red",   "value" : [[0, 10 ], [0.75, 10 ]]},
-              {"op" : "replace", "path" : "/emitters/4/spec/green", "value" : [[0, 3  ], [0.75, 1 ]]},
-              {"op" : "replace", "path" : "/emitters/4/spec/blue",  "value" : [[0, 8 ], [0.75, 5]]},
-
-              {"op" : "replace", "path" : "/emitters/5/spec/red",   "value" : [[0, 10 ], [0.75, 1 ]]},
-              {"op" : "replace", "path" : "/emitters/5/spec/green", "value" : [[0, 1 ], [0.75, 0.5 ]]},
-              {"op" : "replace", "path" : "/emitters/5/spec/blue",  "value" : [[0, 1 ], [0.75, 0.5]]},
-
-              {"op" : "replace", "path" : "/emitters/2/spec/red",   "value" : 6.0},
-              {"op" : "replace", "path" : "/emitters/2/spec/green", "value" : 0.4},
-              {"op" : "replace", "path" : "/emitters/2/spec/blue",  "value" : 0.1}
-            ]
-        }
-    ]
+    loader.save_effect(new_trail, 'torpedo_trail.pfx')

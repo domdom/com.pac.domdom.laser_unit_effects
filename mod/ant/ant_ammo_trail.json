@@ -11,7 +11,7 @@
         "baseTexture": "/pa/effects/textures/particles/softdot.papa",
         "dataChannelFormat": "PositionAndColor"
       },
-      "sizeX": 1.2000000000000002,
+      "sizeX": 1.2,
       "emissionBurts": 1,
       "lifetime": 127,
       "maxParticles": 1,
@@ -29,7 +29,7 @@
         "baseTexture": "/pa/effects/textures/particles/dot.papa",
         "dataChannelFormat": "PositionAndColor"
       },
-      "sizeX": 0.5599999999999999,
+      "sizeX": 0.56,
       "emissionBurts": 1,
       "lifetime": 127,
       "maxParticles": 1,
