@@ -12,7 +12,8 @@
         "description" : "WIP - Please visit forum to give feedback. Makes ballistic type weapons on some units look more laser like.",
         "author" : "dom314",
         "forum" : "https://forums.uberent.com/threads/wip-client-more-pew-pew-requesting-opinions.69025/",
-        "version" : "0.7.0",
+        "icon" : "http://i.imgur.com/PQOpc3u.gif",
+        "version" : "0.8.0",
         "priority": 100
     },
     "mod" : [

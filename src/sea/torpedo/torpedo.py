@@ -9,7 +9,7 @@ false = False
 true = True
 
 #########################################
-base_string = {
+base_string = loader.load_json_string("""{
     "spec" : {
         "shader" : "particle_transparent",
         "shape" : "string",
@@ -37,7 +37,7 @@ base_string = {
     "alignVelocityToSurface" : true,
     "bLoop" : true,
     "endDistance" : 2000
-}
+}""")
 
 # period - time to create waves over
 # frequency - the lowest frequency wave with a period of 'period'
@@ -86,7 +86,7 @@ def run():
 
     # new_trail['emitters'].append(string)
 
-    new_trail['emitters'].append({
+    new_trail['emitters'].append(loader.load_json_string("""{
             "spec" : {
                 "shader" : "particle_add",
                 "facing" : "axialY",
@@ -101,6 +101,6 @@ def run():
             "sizeX" : 0.6,
             "sizeY" : 1,
             "offsetY" : 1.2
-        })
+        }"""))
 
     loader.save_effect(new_trail, 'torpedo_trail.pfx')
