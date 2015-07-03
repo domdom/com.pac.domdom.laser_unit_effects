@@ -16,7 +16,7 @@
     ]
   },
   {
-    "target": "/base_arty/base_ammo_trail.json",
+    "target": "/base_arty/base_ammo_trail.pfx",
     "destination" : "/mod/pelter/pelter_ammo_trail.pfx",
     "patch" : [
       {"op" : "replace", "path" : "/emitters/0/spec/red",     "value" : 0.2},
@@ -40,7 +40,7 @@
     ]
   },
   {
-    "target": "/base_arty/base_ammo_hit.json",
+    "target": "/base_arty/base_ammo_hit.pfx",
     "destination" : "/mod/pelter/pelter_ammo_hit.pfx",
     "patch" : [
       {"op" : "replace", "path" : "/emitters/0/spec/red",     "value" : [[0, 10 ], [0.35, 2 ]]},

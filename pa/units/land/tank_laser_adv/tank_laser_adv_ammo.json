@@ -10,10 +10,10 @@
   "lifetime": 2,
   "events": {
     "died": {
-      "effect_spec": "/mod/leveler/leveler_ammo_hit.json"
+      "effect_spec": "/mod/leveler/leveler_ammo_hit.pfx"
     }
   },
   "fx_trail": {
-    "filename": "/mod/leveler/leveler_ammo_trail.json"
+    "filename": "/mod/leveler/leveler_ammo_trail.pfx"
   }
 }

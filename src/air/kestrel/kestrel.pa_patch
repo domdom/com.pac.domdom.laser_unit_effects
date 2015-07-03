@@ -52,7 +52,7 @@
     ]
   },
   {
-    "target": "/base_ammo_hit.json",
+    "target": "/base_ammo_hit.pfx",
     "destination": "/mod/kestrel/kestrel_ammo_hit.pfx",
     "patch": [
       {"op" : "replace", "path" : "/emitters/0/spec/red",     "value" : 1.0},
@@ -73,7 +73,7 @@
     ]
   },
   {
-    "target": "/base_ammo_trail.json",
+    "target": "/base_ammo_trail.pfx",
     "destination": "/mod/kestrel/kestrel_ammo_trail.pfx",
     "patch": [
       {"op" : "scale", "path" : "/emitters/0/sizeX",          "value" : 0.5},

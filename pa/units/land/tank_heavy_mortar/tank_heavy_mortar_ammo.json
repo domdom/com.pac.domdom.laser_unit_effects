@@ -12,11 +12,11 @@
   "events": {
     "died": {
       "audio_cue": "/SE/Impacts/shell_tank",
-      "effect_spec": "/mod/sheller/sheller_ammo_hit.json"
+      "effect_spec": "/mod/sheller/sheller_ammo_hit.pfx"
     }
   },
   "fx_trail": {
-    "filename": "/mod/sheller/sheller_ammo_trail.json",
+    "filename": "/mod/sheller/sheller_ammo_trail.pfx",
     "offset": [
       0.0,
       0.0,

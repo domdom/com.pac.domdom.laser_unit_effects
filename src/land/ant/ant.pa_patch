@@ -5,13 +5,13 @@
       {
         "op": "replace",
         "path": "/events/fired/effect_spec",
-        "value": "/mod/ant/ant_muzzle_flash.json socket_muzzle /mod/ant/top_burst_flash.json bone_root /mod/ant/side_burst_flash.json bone_root"
+        "value": "/mod/ant/ant_muzzle_flash.pfx socket_muzzle /mod/ant/top_burst_flash.pfx bone_root /mod/ant/side_burst_flash.pfx bone_root"
       }
     ]
   },
   {
-    "target": "/land/ant/top_burst_flash.json",
-    "destination": "/mod/ant/top_burst_flash.json",
+    "target": "/land/ant/top_burst_flash.pfx",
+    "destination": "/mod/ant/top_burst_flash.pfx",
     "patch" : [
       {"op": "add", "path": "/emitters/0/red", "value" : 0.1 },
       {"op": "add", "path": "/emitters/0/green", "value" : 4.0 },
@@ -31,8 +31,8 @@
     ]
   },
   {
-    "target": "/land/ant/side_burst_flash.json",
-    "destination": "/mod/ant/side_burst_flash.json",
+    "target": "/land/ant/side_burst_flash.pfx",
+    "destination": "/mod/ant/side_burst_flash.pfx",
     "patch" : [
       {"op": "add", "path": "/emitters/0/red", "value" : 0.1 },
       {"op": "add", "path": "/emitters/0/green", "value" : 4.0 },
@@ -53,7 +53,7 @@
   },
   {
     "target": "/pa/effects/specs/tank_muzzle_flash.pfx",
-    "destination": "/mod/ant/ant_muzzle_flash.json",
+    "destination": "/mod/ant/ant_muzzle_flash.pfx",
     "patch": [
       {"op": "replace", "path": "/emitters/0/spec/red", "value": 0.1 },
       {"op": "replace", "path": "/emitters/0/spec/green", "value": 0.5 },
@@ -89,13 +89,18 @@
   {
     "target": "/pa/units/land/tank_light_laser/tank_light_laser_ammo.json",
     "patch": [
-      {"op": "add", "path": "/events", "value": {"died": {"audio_cue": "/SE/Impacts/shell_tank", "effect_spec": "/mod/ant/ant_ammo_hit.json"} } },
-      {"op": "replace", "path": "/fx_trail/filename", "value": "/mod/ant/ant_ammo_trail.json"}
+      {"op": "add", "path": "/events", "value": {"died":
+        {
+          "audio_cue": "/SE/Impacts/shell_tank",
+          "effect_spec": "/mod/ant/ant_ammo_hit.pfx"
+        }
+      }},
+      {"op": "replace", "path": "/fx_trail/filename", "value": "/mod/ant/ant_ammo_trail.pfx"}
     ]
   },
   {
-    "target": "/base_ammo_hit.json",
-    "destination": "/mod/ant/ant_ammo_hit.json",
+    "target": "/base_ammo_hit.pfx",
+    "destination": "/mod/ant/ant_ammo_hit.pfx",
     "patch": [
       {"op": "replace", "path": "/emitters/0/spec/red", "value": 0.2 },
       {"op": "replace", "path": "/emitters/0/spec/green", "value": 1.0 },
@@ -112,8 +117,8 @@
     ]
   },
   {
-    "target": "/base_ammo_trail.json",
-    "destination": "/mod/ant/ant_ammo_trail.json",
+    "target": "/base_ammo_trail.pfx",
+    "destination": "/mod/ant/ant_ammo_trail.pfx",
     "patch": [
       {"op": "replace", "path": "/emitters/0/spec/red", "value": 0.2 },
       {"op": "replace", "path": "/emitters/0/spec/green", "value": 3.0 },

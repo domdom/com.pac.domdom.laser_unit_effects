@@ -75,7 +75,7 @@
     },
     "fired": {
       "audio_cue": "/SE/Weapons/veh/tank_T2_leveler",
-      "effect_spec": "/mod/leveler/leveler_muzzle_flash.json socket_leftMuzzle /mod/leveler/leveler_muzzle_flash.json socket_rightMuzzle"
+      "effect_spec": "/mod/leveler/leveler_muzzle_flash.pfx socket_leftMuzzle /mod/leveler/leveler_muzzle_flash.pfx socket_rightMuzzle"
     },
     "died": {
       "audio_cue": "/SE/Death/Veh",

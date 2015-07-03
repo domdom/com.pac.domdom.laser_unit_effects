@@ -5,13 +5,13 @@
       {
         "op": "replace",
         "path": "/events/fired/effect_spec",
-        "value": "/mod/leveler/leveler_muzzle_flash.json socket_leftMuzzle /mod/leveler/leveler_muzzle_flash.json socket_rightMuzzle"
+        "value": "/mod/leveler/leveler_muzzle_flash.pfx socket_leftMuzzle /mod/leveler/leveler_muzzle_flash.pfx socket_rightMuzzle"
       }
     ]
   },
   {
     "target": "/pa/effects/specs/tank_muzzle_flash.pfx",
-    "destination": "/mod/leveler/leveler_muzzle_flash.json",
+    "destination": "/mod/leveler/leveler_muzzle_flash.pfx",
     "patch": [
       {"op": "replace", "path": "/emitters/0/spec/red", "value": 0.0 },
       {"op": "replace", "path": "/emitters/0/spec/green", "value": 0.25 },
@@ -49,16 +49,16 @@
     "target": "/pa/units/land/tank_laser_adv/tank_laser_adv_ammo.json",
     "patch": [
       {"op": "add", "path": "/events", "value": {"died": {
-        "effect_spec": "/mod/leveler/leveler_ammo_hit.json"
+        "effect_spec": "/mod/leveler/leveler_ammo_hit.pfx"
       } } },
       {"op": "add", "path": "/fx_trail", "value": {
-        "filename": "/mod/leveler/leveler_ammo_trail.json"
+        "filename": "/mod/leveler/leveler_ammo_trail.pfx"
       }}
     ]
   },
   {
-    "target": "/base_ammo_hit.json",
-    "destination": "/mod/leveler/leveler_ammo_hit.json",
+    "target": "/base_ammo_hit.pfx",
+    "destination": "/mod/leveler/leveler_ammo_hit.pfx",
     "patch": [
       {"op": "replace", "path": "/emitters/0/spec/red", "value": 0.2 },
       {"op": "replace", "path": "/emitters/0/spec/green", "value": 1.0 },
@@ -118,8 +118,8 @@
     ]
   },
   {
-    "target": "/base_ammo_trail.json",
-    "destination": "/mod/leveler/leveler_ammo_trail.json",
+    "target": "/base_ammo_trail.pfx",
+    "destination": "/mod/leveler/leveler_ammo_trail.pfx",
     "patch": [
       {"op": "remove", "path": "/emitters/0"},
       {"op": "remove", "path": "/emitters/0"},

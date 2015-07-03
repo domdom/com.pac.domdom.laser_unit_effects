@@ -81,7 +81,7 @@
     },
     "fired": {
       "audio_cue": "/SE/Weapons/veh/tank_T2_sheller",
-      "effect_spec": "/mod/sheller/sheller_muzzle_flash.json socket_muzzle",
+      "effect_spec": "/mod/sheller/sheller_muzzle_flash.pfx socket_muzzle",
       "effect_scale": 4.0
     },
     "died": {

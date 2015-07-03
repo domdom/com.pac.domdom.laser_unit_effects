@@ -16,7 +16,7 @@
     ]
   },
 {
-    "target": "/base_ammo_trail.json",
+    "target": "/base_ammo_trail.pfx",
     "destination": "/mod/leviathan/leviathan_ammo_trail.pfx",
     "patch": [
       {"op": "remove", "path": "/emitters/0"},
@@ -53,8 +53,8 @@
     ]
   },
     {
-    "target": "/base_arty/base_ammo_hit.json",
-    "destination" : "/mod/leviathan/leviathan_ammo_hit.json",
+    "target": "/base_arty/base_ammo_hit.pfx",
+    "destination" : "/mod/leviathan/leviathan_ammo_hit.pfx",
     "patch" : [
       {"op" : "replace", "path" : "/emitters/0/spec/red",     "value" : [[0, 10 ], [0.35, 2 ]]},
       {"op" : "replace", "path" : "/emitters/0/spec/green",   "value" : [[0, 60 ], [0.35, 4 ]]},

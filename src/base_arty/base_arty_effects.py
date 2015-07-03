@@ -376,8 +376,8 @@ def run():
     base_hit['emitters'].extend(base_hit_rings)
     # base_hit['emitters'].extend(base_hit_smoke_burst)
 
-    loader.save_effect(base_trail, "base_ammo_trail.json")
-    loader.save_effect(base_hit, "base_ammo_hit.json")
+    loader.save_effect(base_trail, "base_ammo_trail.pfx")
+    loader.save_effect(base_hit, "base_ammo_hit.pfx")
 
 
 if __name__ == "__main__":

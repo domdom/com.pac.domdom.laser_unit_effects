@@ -11,7 +11,7 @@
     ]
   },
   {
-    "target": "/base_arty/base_ammo_trail.json",
+    "target": "/base_arty/base_ammo_trail.pfx",
     "destination" : "/mod/holkins/holkins_ammo_trail.pfx",
     "patch" : [
       {"op" : "replace", "path" : "/emitters/0/spec/red",     "value" : [[0, 1.0], [0.5, 0.0]]},
@@ -44,7 +44,7 @@
     ]
   },
   {
-    "target": "/base_arty/base_ammo_hit.json",
+    "target": "/base_arty/base_ammo_hit.pfx",
     "destination" : "/mod/holkins/holkins_ammo_hit.pfx",
     "patch" : [
       {"op" : "replace", "path" : "/emitters/0/spec/red",     "value" : [[0, 0 ], [0.35, 0.2 ]]},

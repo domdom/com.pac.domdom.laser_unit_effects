@@ -48,12 +48,17 @@
   {
     "target": "/pa/units/sea/sea_scout/sea_scout_ammo.json",
     "patch": [
-      {"op": "add", "path": "/events", "value": {"died": {"audio_cue": "/SE/Impacts/shell_tank", "effect_spec": "/mod/piranha/piranha_ammo_hit.pfx"} } },
+      {"op": "add", "path": "/events", "value": {"died": 
+        {
+          "audio_cue": "/SE/Impacts/shell_tank", 
+          "effect_spec": "/mod/piranha/piranha_ammo_hit.pfx"
+        }
+      }},
       {"op": "replace", "path": "/fx_trail/filename", "value": "/mod/piranha/piranha_ammo_trail.pfx"}
     ]
   },
   {
-    "target": "/base_ammo_hit.json",
+    "target": "/base_ammo_hit.pfx",
     "destination": "/mod/piranha/piranha_ammo_hit.pfx",
     "patch": [
       {"op" : "replace", "path" : "/emitters/0/spec/red",     "value" : 1.0},
@@ -74,7 +79,7 @@
     ]
   },
   {
-    "target": "/base_ammo_trail.json",
+    "target": "/base_ammo_trail.pfx",
     "destination": "/mod/piranha/piranha_ammo_trail.pfx",
     "patch": [
       {"op" : "replace", "path" : "/emitters/2/spec/red",     "value" : 6.0},

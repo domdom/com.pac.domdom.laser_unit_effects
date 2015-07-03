@@ -16,14 +16,13 @@
     ]
   },
   {
-    "target": "/base_arty/base_ammo_trail.json",
+    "target": "/base_arty/base_ammo_trail.pfx",
     "destination" : "/mod/narwhal/narwhal_ammo_trail.pfx",
     "patch" : [
       {"op" : "replace", "path" : "/emitters/0/spec/red",     "value" : 0.2},
       {"op" : "replace", "path" : "/emitters/0/spec/green",   "value" : 5.0},
       {"op" : "replace", "path" : "/emitters/0/spec/blue",    "value" : 1.0},
       {"op" : "replace", "path" : "/emitters/0/spec/size/2/0",    "value" : 0.7},
-
 
 
       {"op" : "copy", "path" : "/emitters/1/spec", "from" : "/emitters/0/spec"},
@@ -35,8 +34,6 @@
       {"op" : "copy", "path" : "/emitters/5/spec/green", "from" : "/emitters/0/spec/green"},
       {"op" : "copy", "path" : "/emitters/5/spec/blue", "from" : "/emitters/0/spec/blue"},
 
-
-      
 
       {"op" : "scale", "path" : "/emitters/0/lifetime", "value" : 0.2},
       {"op" : "scale", "path" : "/emitters/1/lifetime", "value" : 0.2},
@@ -73,7 +70,7 @@
     ]
   },
     {
-    "target": "/base_arty/base_ammo_hit.json",
+    "target": "/base_arty/base_ammo_hit.pfx",
     "destination" : "/mod/narwhal/narwhal_ammo_hit.pfx",
     "patch" : [
       {"op" : "replace", "path" : "/emitters/0/spec/red",     "value" : [[0, 10 ], [0.35, 2 ]]},
