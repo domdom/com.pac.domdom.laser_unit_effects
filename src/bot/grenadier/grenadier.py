@@ -255,7 +255,7 @@ base_hit = loader.load_json_string("""{
 }""")
 
 def run():
-    loader.save_json(base_trail, "grenadier_ammo_trail.json", indent=2)
-    loader.save_json(base_hit, "grenadier_ammo_hit.json", indent=2)
+    loader.save_effect(base_trail, "grenadier_ammo_trail.pfx")
+    loader.save_effect(base_hit, "grenadier_ammo_hit.pfx")
 
 
