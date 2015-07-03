@@ -13,12 +13,12 @@
   "events": {
     "died": {
       "audio_cue": "/SE/Impacts/missile_battleship",
-      "effect_spec": "/mod/leviathan/leviathan_ammo_hit.json",
+      "effect_spec": "/mod/leviathan/leviathan_ammo_hit.pfx",
       "effect_scale": 0.9
     }
   },
   "fx_trail": {
-    "filename": "/mod/leviathan/leviathan_ammo_trail.json",
+    "filename": "/mod/leviathan/leviathan_ammo_trail.pfx",
     "offset": [
       0.0,
       0.0,

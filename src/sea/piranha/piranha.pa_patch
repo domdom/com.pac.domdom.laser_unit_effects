@@ -5,13 +5,13 @@
       {
         "op": "add",
         "path": "/events/fired/effect_spec",
-        "value": "/mod/piranha/piranha_muzzle_flash.json socket_muzzle"
+        "value": "/mod/piranha/piranha_muzzle_flash.pfx socket_muzzle"
       }
     ]
   },
   {
     "target": "/pa/effects/specs/tank_muzzle_flash.pfx",
-    "destination": "/mod/piranha/piranha_muzzle_flash.json",
+    "destination": "/mod/piranha/piranha_muzzle_flash.pfx",
     "patch": [
       {"op" : "replace", "path" : "/emitters/0/spec/red",     "value" : [[0.3, 5], [1, 1.00]]},
       {"op" : "replace", "path" : "/emitters/0/spec/green",   "value" : [[0.3, 1], [1, 0.30]]},
@@ -48,13 +48,13 @@
   {
     "target": "/pa/units/sea/sea_scout/sea_scout_ammo.json",
     "patch": [
-      {"op": "add", "path": "/events", "value": {"died": {"audio_cue": "/SE/Impacts/shell_tank", "effect_spec": "/mod/piranha/piranha_ammo_hit.json"} } },
-      {"op": "replace", "path": "/fx_trail/filename", "value": "/mod/piranha/piranha_ammo_trail.json"}
+      {"op": "add", "path": "/events", "value": {"died": {"audio_cue": "/SE/Impacts/shell_tank", "effect_spec": "/mod/piranha/piranha_ammo_hit.pfx"} } },
+      {"op": "replace", "path": "/fx_trail/filename", "value": "/mod/piranha/piranha_ammo_trail.pfx"}
     ]
   },
   {
     "target": "/base_ammo_hit.json",
-    "destination": "/mod/piranha/piranha_ammo_hit.json",
+    "destination": "/mod/piranha/piranha_ammo_hit.pfx",
     "patch": [
       {"op" : "replace", "path" : "/emitters/0/spec/red",     "value" : 1.0},
       {"op" : "replace", "path" : "/emitters/0/spec/green",   "value" : 0.4},
@@ -75,7 +75,7 @@
   },
   {
     "target": "/base_ammo_trail.json",
-    "destination": "/mod/piranha/piranha_ammo_trail.json",
+    "destination": "/mod/piranha/piranha_ammo_trail.pfx",
     "patch": [
       {"op" : "replace", "path" : "/emitters/2/spec/red",     "value" : 6.0},
       {"op" : "replace", "path" : "/emitters/2/spec/green",   "value" : 0.4},

@@ -85,12 +85,12 @@
     },
     "fired0": {
       "audio_cue": "/SE/Weapons/sea/destroyer_fire",
-      "effect_spec": "/mod/orca/orca_muzzle_flash.json socket_rightMuzzle01 /mod/orca/orca_muzzle_flash.json socket_leftMuzzle01",
+      "effect_spec": "/mod/orca/orca_muzzle_flash.pfx socket_rightMuzzle01 /mod/orca/orca_muzzle_flash.pfx socket_leftMuzzle01",
       "effect_scale": 5.0
     },
     "fired1": {
       "audio_cue": "/SE/Weapons/sea/destroyer_fire",
-      "effect_spec": "/mod/orca/orca_muzzle_flash.json socket_rightMuzzle02 /mod/orca/orca_muzzle_flash.json socket_leftMuzzle02",
+      "effect_spec": "/mod/orca/orca_muzzle_flash.pfx socket_rightMuzzle02 /mod/orca/orca_muzzle_flash.pfx socket_leftMuzzle02",
       "effect_scale": 5.0
     },
     "fired2": {

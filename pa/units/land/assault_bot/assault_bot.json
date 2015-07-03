@@ -89,7 +89,7 @@
     },
     "fired": {
       "audio_cue": "/SE/Weapons/bot/assault_fire",
-      "effect_spec": "/mod/dox/dox_muzzle_flash.json socket_rightMuzzle /mod/dox/dox_muzzle_flash.json socket_leftMuzzle"
+      "effect_spec": "/mod/dox/dox_muzzle_flash.pfx socket_rightMuzzle /mod/dox/dox_muzzle_flash.pfx socket_leftMuzzle"
     },
     "died": {
       "audio_cue": "/SE/Death/Bot",

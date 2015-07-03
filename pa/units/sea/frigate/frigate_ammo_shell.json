@@ -10,12 +10,12 @@
   "events": {
     "died": {
       "audio_cue": "/SE/Impacts/missile_frigate",
-      "effect_spec": "/mod/narwhal/narwhal_ammo_hit.json",
+      "effect_spec": "/mod/narwhal/narwhal_ammo_hit.pfx",
       "effect_scale": 0.2
     }
   },
   "fx_trail": {
-    "filename": "/mod/narwhal/narwhal_ammo_trail.json",
+    "filename": "/mod/narwhal/narwhal_ammo_trail.pfx",
     "offset": [
       0.0,
       0.0,

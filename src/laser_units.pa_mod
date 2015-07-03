@@ -2,6 +2,7 @@
     "options" : {
         "debug_mode" : false,
         "output_dir" : "..",
+        "pretty_print_effects" : true,
         "indent" : 2
     },
     "modinfo" : {

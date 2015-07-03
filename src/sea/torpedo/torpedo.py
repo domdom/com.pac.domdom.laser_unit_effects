@@ -108,21 +108,21 @@ def run():
         {
             "target" : "/pa/ammo/torpedo/torpedo.json",
             "patch" : [
-                {"op" : "replace", "path" : "/fx_trail/filename", "value" : "/mod/torpedo/torpedo_trail.json"},
-                {"op" : "replace", "path" : "/events/died/effect_spec", "value" : "/mod/torpedo/torpedo_hit.json"},
+                {"op" : "replace", "path" : "/fx_trail/filename", "value" : "/mod/torpedo/torpedo_trail.pfx"},
+                {"op" : "replace", "path" : "/events/died/effect_spec", "value" : "/mod/torpedo/torpedo_hit.pfx"},
                 {"op" : "add", "path" : "/events/died/effect_scale", "value" : 0.15}
             ]
         },
         {
             "target" : "/pa/effects/specs/torpedo_proj_trail.pfx",
-            "destination" : "/mod/torpedo/torpedo_trail.json",
+            "destination" : "/mod/torpedo/torpedo_trail.pfx",
             "patch" : [
                 { "op" : "replace", "path" : "", "value" : new_trail}
             ]
         },
         {
             "target": "/base_arty/base_ammo_hit.json",
-            "destination" : "/mod/torpedo/torpedo_hit.json",
+            "destination" : "/mod/torpedo/torpedo_hit.pfx",
             "patch" : [
               {"op" : "replace", "path" : "/emitters/0/spec/red",   "value" : [[0, 100 ], [0.35, 4 ]]},
               {"op" : "replace", "path" : "/emitters/0/spec/green", "value" : [[0, 10 ], [0.35, 2 ]]},

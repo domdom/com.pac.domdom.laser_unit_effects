@@ -5,19 +5,19 @@
       {"op": "add", "path": "/events", "value": {
         "died": {
           "audio_cue": "/SE/Impacts/missile_battleship",
-          "effect_spec": "/mod/leviathan/leviathan_ammo_hit.json",
+          "effect_spec": "/mod/leviathan/leviathan_ammo_hit.pfx",
           "effect_scale" : 0.9
         }
       }},
       {"op": "add", "path": "/fx_trail", "value": {
-        "filename": "/mod/leviathan/leviathan_ammo_trail.json",
+        "filename": "/mod/leviathan/leviathan_ammo_trail.pfx",
         "offset": [0.0, 0.0, 0.0]
       }}
     ]
   },
 {
     "target": "/base_ammo_trail.json",
-    "destination": "/mod/leviathan/leviathan_ammo_trail.json",
+    "destination": "/mod/leviathan/leviathan_ammo_trail.pfx",
     "patch": [
       {"op": "remove", "path": "/emitters/0"},
       {"op": "remove", "path": "/emitters/0"},
@@ -90,22 +90,22 @@
       {
         "op": "add",
         "path": "/events/fired0/effect_spec",
-        "value": "/mod/leviathan/leviathan_muzzle_flash.json socket_muzzle01 /mod/leviathan/leviathan_muzzle_flash.json socket_muzzle02 /mod/leviathan/leviathan_muzzle_flash.json socket_muzzle03"
+        "value": "/mod/leviathan/leviathan_muzzle_flash.pfx socket_muzzle01 /mod/leviathan/leviathan_muzzle_flash.pfx socket_muzzle02 /mod/leviathan/leviathan_muzzle_flash.pfx socket_muzzle03"
       },
       {
         "op": "add",
         "path": "/events/fired1/effect_spec",
-        "value": "/mod/leviathan/leviathan_muzzle_flash.json socket_muzzle04 /mod/leviathan/leviathan_muzzle_flash.json socket_muzzle05 /mod/leviathan/leviathan_muzzle_flash.json socket_muzzle06"
+        "value": "/mod/leviathan/leviathan_muzzle_flash.pfx socket_muzzle04 /mod/leviathan/leviathan_muzzle_flash.pfx socket_muzzle05 /mod/leviathan/leviathan_muzzle_flash.pfx socket_muzzle06"
       },
       {
         "op": "add",
         "path": "/events/fired2/effect_spec",
-        "value": "/mod/leviathan/leviathan_muzzle_flash.json socket_muzzle07 /mod/leviathan/leviathan_muzzle_flash.json socket_muzzle08 /mod/leviathan/leviathan_muzzle_flash.json socket_muzzle09"
+        "value": "/mod/leviathan/leviathan_muzzle_flash.pfx socket_muzzle07 /mod/leviathan/leviathan_muzzle_flash.pfx socket_muzzle08 /mod/leviathan/leviathan_muzzle_flash.pfx socket_muzzle09"
       },
       {
         "op": "add",
         "path": "/events/fired3/effect_spec",
-        "value": "/mod/leviathan/leviathan_muzzle_flash.json socket_muzzle10 /mod/leviathan/leviathan_muzzle_flash.json socket_muzzle11 /mod/leviathan/leviathan_muzzle_flash.json socket_muzzle12"
+        "value": "/mod/leviathan/leviathan_muzzle_flash.pfx socket_muzzle10 /mod/leviathan/leviathan_muzzle_flash.pfx socket_muzzle11 /mod/leviathan/leviathan_muzzle_flash.pfx socket_muzzle12"
       },
       {"op": "add", "path": "/events/fired0/effect_scale", "value": 0.5 },
       {"op": "add", "path": "/events/fired1/effect_scale", "value": 0.5 },
@@ -115,7 +115,7 @@
   },
   {
     "target": "/pa/effects/specs/tank_muzzle_flash.pfx",
-    "destination": "/mod/leviathan/leviathan_muzzle_flash.json",
+    "destination": "/mod/leviathan/leviathan_muzzle_flash.pfx",
     "patch": [
       {"op" : "replace", "path" : "/emitters/1/spec/shader",  "value" : "particle_add"},
       {"op" : "replace", "path" : "/emitters/1/spec/red",     "value" : [[0.3, 0.2], [1, 0.20]]},
@@ -161,7 +161,7 @@
           "blue": 5,
           "temp_alpha": [[0, 1 ], [1, 0 ] ],
           "baseTexture": "/pa/effects/textures/particles/simpleSmokeSingle.papa",
-                      "rampTexture": "/pa/effects/textures/particles/uncompressed/simpleSmokeCenter_ramp.papa",
+          "rampTexture": "/pa/effects/textures/particles/uncompressed/simpleSmokeCenter_ramp.papa",
           "dataChannelFormat": "PositionColorAndAlignVector"
         },
         "velocityRangeX": 0.2,
