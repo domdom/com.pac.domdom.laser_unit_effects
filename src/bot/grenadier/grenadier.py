@@ -13,7 +13,7 @@ true = True
 false = False
 
 
-base_trail = loader.load_json_string("""{
+base_trail = loader.loads("""{
   "emitters": [
     {
       "spec": {
@@ -122,7 +122,7 @@ base_trail['emitters'].append(copy.deepcopy(base_trail['emitters'][2]))
 # del base_trail['emitters'][2]
 
 
-base_hit = loader.load_json_string("""{
+base_hit = loader.loads("""{
   "emitters": [
       {
       "spec": {
@@ -255,7 +255,7 @@ base_hit = loader.load_json_string("""{
 }""")
 
 def run():
-    loader.save_effect(base_trail, "grenadier_ammo_trail.pfx")
-    loader.save_effect(base_hit, "grenadier_ammo_hit.pfx")
+    loader.dump_effect(base_trail, "grenadier_ammo_trail.pfx")
+    loader.dump_effect(base_hit, "grenadier_ammo_hit.pfx")
 
 

@@ -13,7 +13,7 @@ false = False
 true = True
 
 #########################################
-base_string = loader.load_json_string("""{
+base_string = loader.loads("""{
     "spec" : {
         "shader" : "particle_transparent",
         "shape" : "string",
@@ -39,7 +39,7 @@ base_trail = {
 }
 
 
-base_hit_shell = loader.load_json_string("""{
+base_hit_shell = loader.loads("""{
     "spec": {
         "shader": "particle_clip",
         "shape": "mesh",
@@ -63,7 +63,7 @@ base_hit_shell = loader.load_json_string("""{
     "endDistance": 2000
 }""")
 
-base_hit_shell_inner = loader.load_json_string("""{
+base_hit_shell_inner = loader.loads("""{
     "spec": {
         "shader": "particle_clip",
         "shape": "mesh",
@@ -87,7 +87,7 @@ base_hit_shell_inner = loader.load_json_string("""{
     "endDistance": 2000
 }""")
 
-base_hit_light = loader.load_json_string("""{
+base_hit_light = loader.loads("""{
     "spec": {
         "shape": "pointlight",
         "red": 6,
@@ -104,7 +104,7 @@ base_hit_light = loader.load_json_string("""{
     "endDistance": 2000
 }""")
 
-base_hit_sparks = loader.load_json_string("""{
+base_hit_sparks = loader.loads("""{
     "spec": {
         "shader": "particle_add",
         "facing": "Velocity",
@@ -137,7 +137,7 @@ base_hit_sparks = loader.load_json_string("""{
     "endDistance": 850
 }""")
 
-base_hit_rings = loader.load_json_string("""[
+base_hit_rings = loader.loads("""[
 {
       "spec": {
         "shader": "particle_add",
@@ -207,7 +207,7 @@ base_hit_rings = loader.load_json_string("""[
     }
 ]""")
 
-base_hit_smoke = loader.load_json_string("""[
+base_hit_smoke = loader.loads("""[
     {
         "spec": {
             "shader": "particle_transparent_ramp",
@@ -376,8 +376,8 @@ def run():
     base_hit['emitters'].extend(base_hit_rings)
     # base_hit['emitters'].extend(base_hit_smoke_burst)
 
-    loader.save_effect(base_trail, "base_ammo_trail.pfx")
-    loader.save_effect(base_hit, "base_ammo_hit.pfx")
+    loader.dump_effect(base_trail, "base_ammo_trail.pfx")
+    loader.dump_effect(base_hit, "base_ammo_hit.pfx")
 
 
 if __name__ == "__main__":

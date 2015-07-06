@@ -9,7 +9,7 @@ false = False
 true = True
 
 #########################################
-base_string = loader.load_json_string("""{
+base_string = loader.loads("""{
     "spec" : {
         "shader" : "particle_transparent",
         "shape" : "string",
@@ -86,7 +86,7 @@ def run():
 
     # new_trail['emitters'].append(string)
 
-    new_trail['emitters'].append(loader.load_json_string("""{
+    new_trail['emitters'].append(loader.loads("""{
             "spec" : {
                 "shader" : "particle_add",
                 "facing" : "axialY",
@@ -103,4 +103,4 @@ def run():
             "offsetY" : 1.2
         }"""))
 
-    loader.save_effect(new_trail, 'torpedo_trail.pfx')
+    loader.dump_effect(new_trail, 'torpedo_trail.pfx')

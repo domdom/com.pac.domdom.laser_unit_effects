@@ -120,16 +120,16 @@
     "target": "/base_ammo_trail.pfx",
     "destination": "/mod/ant/ant_ammo_trail.pfx",
     "patch": [
-      {"op": "replace", "path": "/emitters/0/spec/red", "value": 0.2 },
-      {"op": "replace", "path": "/emitters/0/spec/green", "value": 3.0 },
-      {"op": "replace", "path": "/emitters/0/spec/blue", "value": 0.2 },
+      {"op": "replace", "path": "/emitters/0/spec/red", "value": 0.05 },
+      {"op": "replace", "path": "/emitters/0/spec/green", "value": 7.0 },
+      {"op": "replace", "path": "/emitters/0/spec/blue", "value": 0.1 },
       {"op": "replace", "path": "/emitters/1/spec/red", "value": 1 },
       {"op": "replace", "path": "/emitters/1/spec/green", "value": 2 },
       {"op": "replace", "path": "/emitters/1/spec/blue", "value": 1 },
 
-      {"op": "replace", "path": "/emitters/2/spec/red", "value": 0.4 },
-      {"op": "replace", "path": "/emitters/2/spec/green", "value": 2.2 },
-      {"op": "replace", "path": "/emitters/2/spec/blue", "value": 0.4 },
+      {"op": "replace", "path": "/emitters/2/spec/red", "value": [[0, 0.05], [0.5, 0]] },
+      {"op": "replace", "path": "/emitters/2/spec/green", "value": [[0, 7], [0.5, 1]] },
+      {"op": "replace", "path": "/emitters/2/spec/blue", "value": [[0, 0.5], [0.5, 0]] },
 
       {"op": "scale", "path" : "/emitters/0/sizeX",  "value" : 0.8},
       {"op": "scale", "path" : "/emitters/1/sizeX",  "value" : 0.8},
