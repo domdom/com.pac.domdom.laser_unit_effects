@@ -54,7 +54,7 @@ def bullet_trail():
         "bLoop" : true
     }""")
 
-    sparks = 5
+    sparks = 6
     sparks_amp = 1
 
     for i in range(sparks):
@@ -81,14 +81,32 @@ def bullet_trail():
                 "shape" : "pointlight",
                 "red" : 0.1,
                 "green" : 1,
-                "blue" : 0.4,
-                "alpha" : 0.1
+                "blue" : 0.2,
+                "alpha" : 0.05
             },
             "sizeX" : 20,
             "lifetime" : 10,
             "killOnDeactivate" : true
         }
         """))
+
+    base_effect['emitters'].append(loader.loads("""{
+          "spec": {
+            "shape": "pointlight",
+            "red": 0,
+            "green": [[0, 2.1], [0.2, 0.1], [0.4, 2]],
+            "blue": [[0.2, 2.2], [0.4, 0]],
+            "alpha": [[0.2, 0.06], [1, 0]],
+            "size": [[0.2, 1], [1, 0.3]]
+          },
+          "offsetY": 0,
+          "sizeX": 25,
+          "emissionRate": 40,
+          "lifetime": 0.35,
+          "bLoop": true,
+          "useWorldSpace" : true,
+          "endDistance": 850
+        }"""))
 
     return base_effect
 
@@ -106,7 +124,7 @@ def laser_trail():
                     "alpha" : 10,
                     "baseTexture" : "/pa/effects/textures/particles/dot.papa"
                 },
-                "sizeX" : 1,
+                "sizeX" : 0.5,
                 "emissionBursts" : 1
             },
             {
@@ -121,7 +139,7 @@ def laser_trail():
                     "baseTexture" : "/pa/effects/textures/particles/flat.papa"
                 },
                 "lifetime" : 0.5,
-                "sizeX" : 0.8,
+                "sizeX" : 0.4,
                 "emissionRate" : 60,
                 "useWorldSpace" : true,
                 "bLoop" : true
@@ -129,29 +147,30 @@ def laser_trail():
         ]
     }""")
     
-    ring_amp = 0.6
-    ring_life = 0.5
-    ring_revs = 7
-    ring_dt = ring_life / 60
+    ring_amp = 0.4
+    ring_life = 2
+    ring_revs = 14
+    ring_dt = ring_life / 240
 
     rings = 3
 
     for i in range(rings):
         string = copy.deepcopy(base_effect['emitters'][1])
 
-        string['emissionRate'] = 400
+        string['emissionRate'] = 240
         string['emitterLifetime'] = ring_life
         string['lifetime'] = 0.3
 
         string['sizeX'] = 0.4
-        string['spec']['blue'] = 2
-        string['spec']['green'] = 0.1
+        string['spec']['red'] = 3
+        string['spec']['green'] = 7
+        string['spec']['blue'] = 0
         string['offsetX'] = _round_time_curve(wave_to_offset([[ring_amp, ring_revs, 2 * math.pi / rings * i]],                  ring_life, ring_dt))
         string['offsetZ'] = _round_time_curve(wave_to_offset([[ring_amp, ring_revs, 2 * math.pi / rings * i + math.pi / 2]],    ring_life, ring_dt))
 
         string['velocityX'] = _round_time_curve(wave_to_offset([[ring_amp, ring_revs, 2 * math.pi / rings * i]],                  ring_life, ring_dt))
         string['velocityZ'] = _round_time_curve(wave_to_offset([[ring_amp, ring_revs, 2 * math.pi / rings * i + math.pi / 2]],    ring_life, ring_dt))
-        string['velocity'] = 1.5
+        string['velocity'] = 3
         string['drag'] = 0.98
 
         base_effect['emitters'].append(string)
@@ -165,13 +184,31 @@ def laser_trail():
                 "red" : 0.1,
                 "green" : 1,
                 "blue" : 0.2,
-                "alpha" : 0.1
+                "alpha" : 0.05
             },
             "sizeX" : 20,
             "lifetime" : 10,
             "killOnDeactivate" : true
         }
         """))
+
+    base_effect['emitters'].append(loader.loads("""{
+          "spec": {
+            "shape": "pointlight",
+            "red": [[0, 1], [1, 0]],
+            "green": 5,
+            "blue": 0.05,
+            "alpha": [[0, 0.04], [1, 0]],
+            "size": [[0.2, 1], [1, 0.3]]
+          },
+          "offsetY": 0,
+          "sizeX": 25,
+          "emissionRate": 30,
+          "lifetime": 0.35,
+          "bLoop": true,
+          "useWorldSpace" : true,
+          "endDistance": 850
+        }"""))
 
 
     return base_effect   
@@ -192,7 +229,7 @@ def rocket_trail():
                         "alpha" : [[0, 0.8], [1, 0]],
                         "baseTexture" : "/pa/effects/textures/particles/flat.papa"
                     },
-                    "lifetime" : 0.3,
+                    "lifetime" : 0.25,
                     "sizeX" : 1,
                     "sizeRangeX" : 0.5,
                     "emissionRate" : 60,
@@ -200,36 +237,36 @@ def rocket_trail():
                     "bLoop" : true
                 },
                 {
-        "spec" : {
-            "shader" : "particle_add_ramp",
-            "red" : 0.1,
-            "green" : 1.0,
-            "blue" : 5.0,
-            "alpha" : [[0, 6], [1, 0]],
-            "baseTexture" : "/pa/effects/textures/particles/flat.papa",
-            "rampTexture" : "/pa/effects/textures/particles/uncompressed/flicker_ramp.papa"
-        },
-        "rotationRange" : 6.28,
-        "velocityY" : 1,
-        "velocityRangeX" : 0.5,
-        "velocityRangeZ" : 0.5,
-        "velocityRange" : 20,
-        "velocity" : 10,
-        "drag" : 0.98,
-        "gravity" : -9.8,
-        "sizeX" : 0.1,
-        "sizeY" : 0.5,
-        "sizeRangeY" : 0.2,
-        "sizeRangeX" : 0.1,
-        "lifetime" : 0.3,
-        "lifetimeRange" : 0.1,
-        "emissionRate" : 200,
-        "offsetRangeX" : 0.5,
-        "offsetRangeZ" : 0.5,
-        "useWorldSpace" : true,
-        "emitterLifetime" : 1,
-        "bLoop" : true
-      }
+                    "spec" : {
+                        "shader" : "particle_add_ramp",
+                        "red" : [[0, 0], [2, 1.0]],
+                        "green" : 0.2,
+                        "blue" : 5,
+                        "alpha" : [[0, 6], [1, 0]],
+                        "baseTexture" : "/pa/effects/textures/particles/flat.papa",
+                        "rampTexture" : "/pa/effects/textures/particles/uncompressed/flicker_ramp.papa"
+                    },
+                    "rotationRange" : 6.28,
+                    "velocityY" : 1,
+                    "velocityRangeX" : 0.5,
+                    "velocityRangeZ" : 0.5,
+                    "velocityRange" : 20,
+                    "velocity" : 8,
+                    "drag" : 0.97,
+                    "gravity" : -9.8,
+                    "sizeX" : 0.2,
+                    "sizeY" : 0.9,
+                    "sizeRangeY" : 0.3,
+                    "sizeRangeX" : 0.1,
+                    "lifetime" : 0.25,
+                    "lifetimeRange" : 0.15,
+                    "emissionRate" : 200,
+                    "offsetRangeX" : 0.5,
+                    "offsetRangeZ" : 0.5,
+                    "useWorldSpace" : true,
+                    "emitterLifetime" : 1,
+                    "bLoop" : true
+                }
             ]
         }""")
 
@@ -238,8 +275,8 @@ def rocket_trail():
                 "shape" : "pointlight",
                 "red" : 0.1,
                 "green" : 1,
-                "blue" : 0.2,
-                "alpha" : 0.1
+                "blue" : 0.5,
+                "alpha" : 0.05
             },
             "sizeX" : 20,
             "lifetime" : 10,
@@ -247,6 +284,23 @@ def rocket_trail():
         }
         """))
 
+    base_effect['emitters'].append(loader.loads("""{
+          "spec": {
+            "shape": "pointlight",
+            "red": 0.05,
+            "green": 3,
+            "blue": 0.5,
+            "alpha": [[0, 0.04], [1, 0]],
+            "size": [[0.2, 1], [1, 0.3]]
+          },
+          "offsetY": 0,
+          "sizeX": 25,
+          "emissionRate": 40,
+          "lifetime": 0.35,
+          "bLoop": true,
+          "useWorldSpace" : true,
+          "endDistance": 850
+        }"""))
 
     return base_effect
 
