@@ -13,7 +13,7 @@
         "author" : "dom314",
         "forum" : "https://forums.uberent.com/threads/wip-client-more-pew-pew-requesting-opinions.69025/",
         "icon" : "http://i.imgur.com/PQOpc3u.gif",
-        "version" : "0.9.1",
+        "version" : "0.9.6",
         "priority": 100
     },
     "mod" : [
@@ -21,6 +21,7 @@
 
         {"from_script" : "/land/commander/commander.py"},
 
+        {"from_script" : "/land/inferno/inferno.py"},
         { "from_file" : "/land/ant/ant.pa_patch" },
         { "from_file" : "/land/leveler/leveler.pa_patch" },
         { "from_file" : "/land/sheller/sheller.pa_patch" },
