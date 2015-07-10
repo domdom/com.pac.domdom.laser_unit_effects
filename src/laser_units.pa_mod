@@ -13,8 +13,8 @@
         "author" : "dom314",
         "forum" : "https://forums.uberent.com/threads/wip-client-more-pew-pew-requesting-opinions.69025/",
         "icon" : "http://i.imgur.com/PQOpc3u.gif",
-        "version" : "0.9.6",
-        "priority": 100
+        "version" : "0.9.7",
+        "priority": 101
     },
     "mod" : [
         { "from_script" : "/base_arty/base_arty_effects.py" },

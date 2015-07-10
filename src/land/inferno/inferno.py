@@ -3,82 +3,73 @@ import math
 
 import loader
 
-def trail():
-    base_effect = loader.loads('{"emitters":[]}')
-
-    base_spark = loader.loads("""{
-        "spec" : {
-            "shader": "particle_transparent",
-            "shape": "beam",
-            "alpha": [[0.5, 1], [0.55, 0.25], [1, 0]],
-            "sizeX": [[0, 0.25], [0.2, 3.5], [0.5, 1]],
-            "baseTexture": "/pa/effects/textures/particles/flat.papa"
-        },
-        "offsetRangeX": [[0, 0], [0.01, 1], [0.99, 1], [1, 0]],
-        "offsetRangeZ": [[0, 0], [0.01, 1], [0.99, 1], [1, 0]],
-        "offsetRangeY": [[0, 0], [0.01, 0.1], [0.99, 0.1], [1, 0]],
-        "velocityRangeX": [[0, 0], [0.01, 1], [0.99, 1], [1, 0]],
-        "velocityRangeZ": [[0, 0], [0.01, 1], [0.99, 1], [1, 0]],
-        "velocityRangeY": [[0, 0], [0.01, 0.1], [0.99, 0.1], [1, 0]],
-        "velocityRange" : 1,
-
-        "red": 0.05,
-        "green": 5,
-        "blue": 100,
-        "sizeX": 0.1,
-        "emissionBursts": 1,
-        "beamSegmentLength": 1.8,
-        "maxParticles" : 10,
-        "lifetime": [[0, 0], [1, 0.3]],
-        "emitterLifetime": 0.5,
-        "bLoop": false,
-        "endDistance": 1000
-        }""")
-
-    num_sparks = 4
-    duration_sparks = 0.3
-
-    for i in range(num_sparks):
-        spark = copy.deepcopy(base_spark)
-
-        spark['delay'] = i * duration_sparks / float(num_sparks)
-
-        base_effect['emitters'].append(spark)
-
-    return base_effect
-
-def hit():
-    base_effect = {'emitters':[]}
-
-    base_light = loader.loads("""{
-            "spec" : {
-                "shape" : "pointlight",
-                "red" : 0.01,
-                "green" : 0.2,
-                "blue" : 1,
-                "alpha" : [[0.5, 0.4], [1, 0]]
-            },
-            "sizeX" : 15,
-            "lifetime" : 0.4
-        }""")
-
-    base_dot = loader.loads("""{
+def muzzle_sparks_patch():
+    base_spark_patch = loader.loads("""
+        {"op" : "add", "path" : "/emitters/-", "value" : {
             "spec" : {
                 "shader": "particle_transparent",
-                "red" : 0.05,
-                "green" : 5,
-                "blue" : 100,
-                "alpha" : [[0.5, 1], [1, 0]],
-                "cameraPush" : 2,
-                "baseTexture": "/pa/effects/textures/particles/softdot.papa"
+                "shape": "beam",
+                "alpha": [[0.5, 1], [0.55, 0.25], [1, 0]],
+                "sizeX": [[0, 0.25], [0.2, 3.5], [0.5, 1]],
+                "baseTexture": "/pa/effects/textures/particles/flat.papa"
             },
-            "sizeX" : 3,
-            "lifetime" : 0.4,
-            "emissionBursts" : 1,
-            "bLoop" : false
-        }""")
+            "useWorldSpace" : true,
+            "offsetRangeX": [[0, 0], [0.01, 1], [1, 3]],
+            "offsetRangeZ": [[0, 0], [0.01, 1], [1, 3]],
+            "offsetRangeY": [[0, 0], [0.01, 1], [1, 3]],
+            "velocityRangeX": [[0, 0], [0.01, 1], [0.7, 1], [1, 2]],
+            "velocityRangeZ": [[0, 0], [0.01, 1], [0.7, 1], [1, 2]],
+            "velocityRangeY": [[0, 0], [0.01, 0.1], [0.7, 0.1], [1, 0]],
+            "velocityRange" : 1,
+            "offsetY" : [[0, 0], [1, -15]],
+            "red": 0.05,
+            "green": 5,
+            "blue": 100,
+            "sizeX": [[0, 0.08], [0.5, 0.1], [1, 0]],
+            "sizeRangeX" : 0.08,
+            "emissionBursts": 1,
+            "maxParticles" : 10,
+            "lifetime": [[0, 0], [1, 0.25]],
+            "emitterLifetime": 0.5,
+            "bLoop": false,
+            "endDistance": 1000
+        }}
+    """)
+    base_extra_flames_patch = loader.loads("""
+       { "op" : "add", "path" : "/emitters/-", "value" : {
+            "spec": {
+                "shader": "particle_transparent",
+                "facing": "velocity",
+                "size": [[0, 0.5], [0.5, 1.25], [1, 0]],
+                "red": [[0, 2.0], [0.2, 2.0], [0.65, 1.5]],
+                "green": [[0, 2.0], [0.2, 0.6], [0.65, 0.05]],
+                "blue": [[0, 2.0], [0.2, 0.2], [0.65, 0.01]],
+                "alpha" : [[0, 0.7], [1, 0]],
+                "baseTexture": "/pa/effects/textures/particles/simpleSmokeSingle.papa",
+                "dataChannelFormat": "PositionColorAndAlignVector"
+            },
+            "useWorldSpace" : true,
+            "velocityY": -1,
+            "velocityRangeX": 0.1,
+            "velocityRangeZ": 0.1,
+            "velocity": 90.0,
+            "velocityRange": 20.0,
+            "drag": 0.92,
+            "gravity": 25,
+            "sizeX": 2,
+            "sizeY": 3.5,
+            "sizeRangeY": 1.5,
+            "emissionBursts": 1,
+            "emissionRate": 60,
+            "lifetime": 0.5,
+            "emitterLifetime": 0.3,
+            "useWorldSpace": true,
+            "endDistance": 1600,
+            "bLoop": false
+          }}
+      """)
 
-    base_sparks = loader.loads("""{
+    base_glitter = loader.loads("""{ "op" : "add", "path" : "/emitters/-", "value" : {
             "spec" : {
                 "facing" : "velocity",
                 "shader" : "particle_add",
@@ -87,144 +78,86 @@ def hit():
                 "blue" : 100,
                 "baseTexture" : "/pa/effects/textures/particles/flat.papa"
             },
+            "useWorldSpace" : true,
+            "type" : "EMITTER",
+            "linkIndex" : 5,
             "sizeX" : 0.1,
             "sizeY" : 0.5,
             "offsetRangeX" : 1,
             "offsetRangeY" : 1,
             "offsetRangeZ" : 1,
-            "useRadialVelocityDir" : true,
-            "velocity" : 15,
-            "emissionRate" : 60,
+            "velocityRangeX" : 1,
+            "velocityRangeY" : 1,
+            "velocityRangeZ" : 1,
+            "useRadialVelocityDir" : false,
+            "velocity" : 10,
+            "velocityRange" : 5,
+            "emissionRate" : 9,
             "emitterLifetime" : 0.3,
             "lifetime" : 0.2
-        }""")
+        }}""")
 
-    base_effect['emitters'].append(base_light)
-    base_effect['emitters'].append(base_dot)
-    base_effect['emitters'].append(base_sparks)
-    return base_effect
+    patch = [base_extra_flames_patch, base_glitter]
 
 
-def muzzle():
-    return loader.loads("""{
-      "emitters":[
-        {
-          "spec": {
-            "shader": "particle_add_soft",
-            "red": 0.0,
-            "green": 0.25,
-            "blue": 0.7,
-            "cameraPush": 0.5,
-            "baseTexture": "/pa/effects/textures/particles/softdot.papa",
-            "dataChannelFormat": "PositionAndColor"
-          },
-          "offsetY": -0.5,
-          "sizeX": 6,
-          "emissionBursts": 1,
-          "lifetime": 0.4,
-          "emitterLifetime": 0.1,
-          "bLoop": false,
-          "endDistance": 1400,
-          "sort": "NoSort"
-        },
-        {
-          "spec": {
-            "shader": "particle_transparent",
-            "facing": "AxialY",
-            "red": [[0.3, 0.5], [1, 0.0]],
-            "green": [[0.3, 2], [1, 0.6]],
-            "blue": [[0.3, 5], [1, 1.0]],
-            "alpha": [[0, 1], [1, 0]],
-            "baseTexture": "/pa/effects/textures/particles/muzzle_flash_a.papa",
-            "rampTexture": "/pa/effects/textures/particles/uncompressed/no_ramp.papa",
-            "dataChannelFormat": "PositionColorAndAlignVector"
-          },
-          "rotationRange" : 1,
-          "rotationRangeRate" : 1,
-          "sizeX": 2.5,
-          "sizeRangeX" : 0.2,
-          "emissionBursts": 1,
-          "offsetY": -1.5,
-          "lifetime": 0.4,
-          "emitterLifetime": 0.25,
-          "bLoop": false,
-          "endDistance": 1400
-        },
-        {
-          "spec": {
-            "shader": "particle_transparent",
-            "facing": "EmitterY",
-            "red": [[0.3, 0.5], [1, 0.0]],
-            "green": [[0.3, 2], [1, 0.6]],
-            "blue": [[0.3, 5], [1, 1.0]],
-            "alpha": [[0, 1], [1, 0]],
-            "baseTexture": "/pa/effects/textures/particles/muzzle_flash_b.papa",
-            "rampTexture": "/pa/effects/textures/particles/uncompressed/no_ramp.papa",
-            "dataChannelFormat": "PositionAndColor"
-          },
-          "sizeX": 2.5,
-          "sizeRangeX" : 0.2,
-          "emissionBursts": 1,
-          "offsetY": -0.4,
-          "rotationRange": 7,
-          "lifetime": 0.4,
-          "emitterLifetime": 0.25,
-          "bLoop": false,
-          "endDistance": 1400
-        },
-        {
-          "spec": {
-            "shape": "pointlight",
-            "red": 0.2,
-            "green": 0.3,
-            "blue": 1.0,
-            "alpha": [[0.6, 0.8], [1, 0]]
-          },
-          "offsetY": -0.5,
-          "sizeX": 20,
-          "emissionBursts": 1,
-          "lifetime": 0.15,
-          "emitterLifetime": 0.1,
-          "bLoop": false,
-          "endDistance": 850
-        }
-      ]
-    }""")
+    num_sparks = 4
+    duration_sparks = 0.3
 
+    for i in range(num_sparks):
+        spark = copy.deepcopy(base_spark_patch)
+
+        spark['value']['delay'] = i * duration_sparks / float(num_sparks)
+
+        patch.append(spark)
+
+    patch.append(loader.loads("""{ "op" : "replace", "path" : "/emitters/0/spec/alpha/keys/1/1", "value" : 1}"""))
+
+
+
+    return patch
+         
 def run():
 
     
-
-    loader.dump_effect(trail(), "spark_trail.pfx")
-    loader.dump_effect(hit(),  "spark_hit.pfx")
-
-    loader.dump_effect(muzzle(),  "muzzle_flash.pfx")
+    muzzle_patch = loader.dumps(muzzle_sparks_patch())
 
     return loader.loads("""[
-         {
+        {
            "target" : "/pa/units/land/tank_armor/tank_armor.json",
             "patch" : [
                 {"op" : "replace", "path" : "/events/fired/effect_spec", "value" : "/mod/inferno/spark_muzzle_flash.pfx socket_muzzle"}
             ]
+        },        
+        {
+            "target" : "/pa/units/land/tank_armor/tank_armor_muzzle_flame.pfx",
+            "destination" : "/mod/inferno/spark_muzzle_flash.pfx",
+            "patch" : """ + muzzle_patch + """
         },
         {
-           "target" : "/pa/units/land/tank_armor/tank_armor_ammo.json",
+            "target" : "/blueflamethrower.papa",
+            "destination" : "/mod/blueflamethrower.papa"
+        },
+        {
+            "target" : "/pa/units/land/tank_armor/tank_armor_muzzle_flame.pfx",
+            "destination" : "/mod/inferno/spark_muzzle_flash.pfx",
             "patch" : [
-                {"op" : "add", "path" : "/fx_beam_spec", "value" : "/mod/inferno/spark_trail.pfx"},
-                {"op" : "add", "path" : "/fx_collision_spec", "value" : "/mod/inferno/spark_hit.pfx"}
-            ]
-        },
-        {
-            "target" : "/spark_trail.pfx",
-            "destination" : "/mod/inferno/spark_trail.pfx"
-        },
-        {
-            "target" : "/muzzle_flash.pfx",
-            "destination" : "/mod/inferno/spark_muzzle_flash.pfx"
-        },
-        {
-            "target" : "/spark_hit.pfx",
-            "destination" : "/mod/inferno/spark_hit.pfx"
-        }
+                {"op" : "move", "path" : "/emitters/0/spec/_blue", "from" : "/emitters/0/spec/red"},
+                {"op" : "move", "path" : "/emitters/0/spec/red", "from" : "/emitters/0/spec/blue"},
+                {"op" : "move", "path" : "/emitters/0/spec/blue", "from" : "/emitters/0/spec/_blue"},
 
+                {"op" : "move", "path" : "/emitters/1/spec/_blue", "from" : "/emitters/1/spec/red"},
+                {"op" : "move", "path" : "/emitters/1/spec/red", "from" : "/emitters/1/spec/blue"},
+                {"op" : "move", "path" : "/emitters/1/spec/blue", "from" : "/emitters/1/spec/_blue"},
+
+                {"op" : "move", "path" : "/emitters/2/spec/_blue", "from" : "/emitters/2/spec/red"},
+                {"op" : "move", "path" : "/emitters/2/spec/red", "from" : "/emitters/2/spec/blue"},
+                {"op" : "move", "path" : "/emitters/2/spec/blue", "from" : "/emitters/2/spec/_blue"},
+
+                {"op" : "move", "path" : "/emitters/3/spec/_blue", "from" : "/emitters/3/spec/red"},
+                {"op" : "move", "path" : "/emitters/3/spec/red", "from" : "/emitters/3/spec/blue"},
+                {"op" : "move", "path" : "/emitters/3/spec/blue", "from" : "/emitters/3/spec/_blue"},
+
+                {"op" : "replace", "path" : "/emitters/1/spec/baseTexture", "value" : "/mod/blueflamethrower.papa"}
+            ]
+        }
     ]""")
