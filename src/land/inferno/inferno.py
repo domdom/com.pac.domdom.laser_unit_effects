@@ -117,8 +117,6 @@ def muzzle_sparks_patch():
     return patch
          
 def run():
-
-    
     muzzle_patch = loader.dumps(muzzle_sparks_patch())
 
     return loader.loads("""[
