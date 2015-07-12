@@ -8,12 +8,12 @@
     "modinfo" : {
         "context" : "client",
         "identifier" : "com.pa.domdom.laser_unit_effects",
-        "display_name" : "[WIP] More Pew Pew",
-        "description" : "WIP - Please visit forum to give feedback. Makes ballistic type weapons on some units look more laser like.",
+        "display_name" : "More Pew Pew",
+        "description" : "More pew, more color, and more distinguishable unit weapon effects! Tell at a glance what is shooting at you.",
         "author" : "dom314",
-        "forum" : "https://forums.uberent.com/threads/wip-client-more-pew-pew-requesting-opinions.69025/",
+        "forum" : "https://forums.uberent.com/threads/rel-client-more-pew-pew.69229/",
         "icon" : "http://i.imgur.com/PQOpc3u.gif",
-        "version" : "0.9.7",
+        "version" : "1.0.0",
         "priority": 101
     },
     "mod" : [
