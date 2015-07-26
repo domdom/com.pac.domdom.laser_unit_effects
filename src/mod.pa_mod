@@ -14,7 +14,7 @@
         "forum" : "https://forums.uberent.com/threads/rel-client-more-pew-pew.69229/",
         "icon" : "http://i.imgur.com/PQOpc3u.gif",
         "version" : "1.0.1",
-        "priority": 101
+        "priority": 95
     },
     "mod" : [
         { "from_script" : "/base_arty/base_arty_effects.py" },
