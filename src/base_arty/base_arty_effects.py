@@ -293,7 +293,7 @@ base_hit = {
     "emitters" : []
 }
 
-def _round_time_curve(curve, digits=3):
+def _round_time_curve(curve, digits=7):
     return [[round(x, digits), round(y, digits)] for [x,y] in curve]
 
 # period - time to create waves over

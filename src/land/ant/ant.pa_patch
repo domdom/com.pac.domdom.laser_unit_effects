@@ -134,7 +134,7 @@
       {"op": "scale", "path" : "/emitters/0/sizeX",  "value" : 0.8},
       {"op": "scale", "path" : "/emitters/1/sizeX",  "value" : 0.8},
 
-      {"op": "scale", "path" : "/emitters/2/lifetime",  "value" : 2},
+      {"op": "scale", "path" : "/emitters/2/lifetime",  "value" : 1.6},
       {"op": "replace", "path" : "/emitters/2/spec/size",  "value" : [[0,0.7],[0.5, 0]]}
     ]
   }

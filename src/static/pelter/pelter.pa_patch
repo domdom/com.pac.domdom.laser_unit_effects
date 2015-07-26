@@ -19,24 +19,27 @@
     "target": "/base_arty/base_ammo_trail.pfx",
     "destination" : "/mod/pelter/pelter_ammo_trail.pfx",
     "patch" : [
-      {"op" : "replace", "path" : "/emitters/0/spec/red",     "value" : 0.2},
-      {"op" : "replace", "path" : "/emitters/0/spec/green",   "value" : 5.0},
+      {"op" : "replace", "path" : "/emitters/0/spec/red",     "value" : 0.1},
+      {"op" : "replace", "path" : "/emitters/0/spec/green",   "value" : 1},
       {"op" : "replace", "path" : "/emitters/0/spec/blue",    "value" : 3.0},
+
       {"op" : "copy", "path" : "/emitters/1/spec", "from" : "/emitters/0/spec"},
       {"op" : "copy", "path" : "/emitters/2/spec", "from" : "/emitters/0/spec"},
       {"op" : "copy", "path" : "/emitters/3/spec", "from" : "/emitters/0/spec"},
       {"op" : "copy", "path" : "/emitters/4/spec", "from" : "/emitters/0/spec"},
 
-      {"op" : "replace", "path" : "/emitters/5/spec/red", "value" : [[0, 1], [1, 0.5]]},
-      {"op" : "copy", "path" : "/emitters/5/spec/green", "from" : "/emitters/0/spec/green"},
+      {"op" : "replace", "path" : "/emitters/5/spec/red", "value" : [[0,1], [1, 0.1]]},
+      {"op" : "replace", "path" : "/emitters/5/spec/green", "value" : 6},
       {"op" : "copy", "path" : "/emitters/5/spec/blue", "from" : "/emitters/0/spec/blue"},
 
-      {"op" : "scale", "path" : "/emitters/0/lifetime", "value" : 0.7},
-      {"op" : "scale", "path" : "/emitters/1/lifetime", "value" : 0.7},
-      {"op" : "scale", "path" : "/emitters/2/lifetime", "value" : 0.7},
-      {"op" : "scale", "path" : "/emitters/3/lifetime", "value" : 0.7},
-      {"op" : "scale", "path" : "/emitters/4/lifetime", "value" : 0.7},
-      {"op" : "scale", "path" : "/emitters/5/lifetime", "value" : 0.7}
+      {"op" : "scale", "path" : "/emitters/0/lifetime", "value" : 0.6},
+      {"op" : "scale", "path" : "/emitters/1/lifetime", "value" : 0.6},
+      {"op" : "scale", "path" : "/emitters/2/lifetime", "value" : 0.6},
+      {"op" : "scale", "path" : "/emitters/3/lifetime", "value" : 0.6},
+      {"op" : "scale", "path" : "/emitters/4/lifetime", "value" : 0.6},
+      {"op" : "scale", "path" : "/emitters/5/lifetime", "value" : 0.9},
+
+      {"op" : "scale", "path" : "/emitters/5/sizeX", "value" : 0.6}
     ]
   },
   {
