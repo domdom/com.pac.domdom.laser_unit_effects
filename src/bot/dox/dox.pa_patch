@@ -62,6 +62,14 @@
         "target" : "/base_ammo_trail.json",
         "destination" : "/mod/dox/dox_ammo_trail.pfx",
         "patch"  : [
+            {"op" : "replace", "path" : "/emitters/0/spec/red",     "value" : 6.0},
+            {"op" : "replace", "path" : "/emitters/0/spec/green",   "value" : 0.05},
+            {"op" : "replace", "path" : "/emitters/0/spec/blue",    "value" : 0.05},
+
+            {"op" : "replace", "path" : "/emitters/1/spec/red",     "value" : 6.0},
+            {"op" : "replace", "path" : "/emitters/1/spec/green",   "value" : 0.05},
+            {"op" : "replace", "path" : "/emitters/1/spec/blue",    "value" : 0.05},
+
             {"op" : "replace", "path" : "/emitters/2/spec/red",     "value" : 6.0},
             {"op" : "replace", "path" : "/emitters/2/spec/green",   "value" : 0.05},
             {"op" : "replace", "path" : "/emitters/2/spec/blue",    "value" : 0.05},
