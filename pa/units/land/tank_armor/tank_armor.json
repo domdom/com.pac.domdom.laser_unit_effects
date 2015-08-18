@@ -1,7 +1,7 @@
 {
   "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
-  "display_name": "!LOC(units:inferno.message):Inferno",
-  "description": "!LOC(units:flame_tank_short_ranged_heavy_armored_vehicle.message):Flame tank- Short ranged, heavy armored vehicle.",
+  "display_name": "!LOC:Inferno",
+  "description": "!LOC:Flame tank- Short ranged, heavy armored vehicle.",
   "max_health": 1000,
   "build_metal_cost": 225,
   "attachable": {
@@ -40,8 +40,7 @@
     "group_preference": "front"
   },
   "physics": {
-    "radius": 4.5,
-    "push_class": 80
+    "radius": 4.5
   },
   "recon": {
     "observer": {
@@ -102,6 +101,9 @@
   "scrolling_uv": {
     "scroll_rate": 0.71,
     "uv_split": 0.881
+  },
+  "selection_icon": {
+    "diameter": 13.0
   },
   "TEMP_texelinfo": 8.06901,
   "mesh_bounds": [

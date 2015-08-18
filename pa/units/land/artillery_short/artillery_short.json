@@ -1,7 +1,7 @@
 {
   "base_spec": "/pa/units/land/base_structure/base_structure.json",
-  "display_name": "!LOC(units:pelter.message):Pelter",
-  "description": "!LOC(units:basic_artillery_equipped_with_medium_range_anti_land_and_anti_ship_gun.message):Basic artillery- Equipped with medium range anti-land, and anti-ship gun.",
+  "display_name": "!LOC:Pelter",
+  "description": "!LOC:Artillery- Long-range damage for siege and area denial purposes. Attacks land and sea targets.",
   "max_health": 1000,
   "build_metal_cost": 900,
   "atrophy_rate": 25,
@@ -98,10 +98,17 @@
       "bone": "bone_pitch"
     }
   ],
+  "selection_icon": {
+    "diameter": 21.0
+  },
   "mesh_bounds": [
-    7,
-    15.1443,
+    8,
+    10,
     8.9
+  ],
+  "placement_size": [
+    15,
+    15
   ],
   "TEMP_texelinfo": 12.901
 }

@@ -1,7 +1,7 @@
 {
   "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
-  "display_name": "!LOC(units:sheller.message):Sheller",
-  "description": "!LOC(units:mortar_tank_equipped_with_advanced_mobile_artillery.message):Mortar tank- Equipped with advanced mobile artillery.",
+  "display_name": "!LOC:Sheller",
+  "description": "!LOC:Mortar tank- Equipped with advanced mobile artillery.",
   "max_health": 125,
   "build_metal_cost": 1200,
   "influence_radius": 400,
@@ -41,8 +41,7 @@
     "group_preference": "back"
   },
   "physics": {
-    "radius": 6,
-    "push_class": 60
+    "radius": 6
   },
   "recon": {
     "observer": {
@@ -86,7 +85,8 @@
     },
     "died": {
       "audio_cue": "/SE/Death/Veh",
-      "effect_scale": 1.4
+      "effect_spec": "/pa/effects/specs/default_explosion_bot_t2.pfx",
+      "effect_scale": 1.0
     }
   },
   "audio": {
@@ -98,6 +98,9 @@
         "should_stop_func": "is_not_moving"
       }
     }
+  },
+  "selection_icon": {
+    "diameter": 15.0
   },
   "TEMP_texelinfo": 9.31488,
   "mesh_bounds": [

@@ -1,7 +1,7 @@
 {
   "base_spec": "/pa/units/land/base_bot/base_bot.json",
-  "display_name": "!LOC(units:dox.message):Dox",
-  "description": "!LOC(units:assault_bot_equipped_with_basic_anti_land_and_anti_ship_lasers.message):Assault bot- Equipped with basic anti-land and anti-ship lasers.",
+  "display_name": "Dox",
+  "description": "!LOC:Basic Infantry- Fast, adaptable, expendable. Amphibious. Attacks land, air and sea targets.",
   "max_health": 40,
   "build_metal_cost": 45,
   "attachable": {
@@ -34,13 +34,12 @@
   "navigation": {
     "type": "amphibious",
     "acceleration": 50,
-    "brake": 50,
+    "brake": -1,
     "move_speed": 18,
     "turn_speed": 720
   },
   "physics": {
-    "radius": 2.0,
-    "push_class": 2
+    "radius": 2.0
   },
   "recon": {
     "observer": {
@@ -90,10 +89,6 @@
     "fired": {
       "audio_cue": "/SE/Weapons/bot/assault_fire",
       "effect_spec": "/mod/dox/dox_muzzle_flash.pfx socket_rightMuzzle /mod/dox/dox_muzzle_flash.pfx socket_leftMuzzle"
-    },
-    "died": {
-      "audio_cue": "/SE/Death/Bot",
-      "effect_scale": 1.0
     }
   },
   "audio": {
@@ -108,6 +103,9 @@
     "selection_response": {
       "cue": "/SE/Selection/bot/assault"
     }
+  },
+  "selection_icon": {
+    "diameter": 8.0
   },
   "mesh_bounds": [
     4,

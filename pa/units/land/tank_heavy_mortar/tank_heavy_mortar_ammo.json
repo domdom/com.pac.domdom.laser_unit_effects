@@ -8,13 +8,6 @@
   "initial_velocity": 200.0,
   "max_velocity": 200.0,
   "lifetime": 10,
-  "audio_loop": "/SE/Movement/missile/tactical_missile_fly_loop",
-  "events": {
-    "died": {
-      "audio_cue": "/SE/Impacts/shell_tank",
-      "effect_spec": "/mod/sheller/sheller_ammo_hit.pfx"
-    }
-  },
   "fx_trail": {
     "filename": "/mod/sheller/sheller_ammo_trail.pfx",
     "offset": [
@@ -22,5 +15,15 @@
       0.0,
       0.0
     ]
+  },
+  "model": {
+    "filename": "/pa/units/air/shell/shell.papa"
+  },
+  "audio_loop": "/SE/Movement/missile/tactical_missile_fly_loop",
+  "events": {
+    "died": {
+      "audio_cue": "/SE/Impacts/shell_tank",
+      "effect_spec": "/mod/sheller/sheller_ammo_hit.pfx"
+    }
   }
 }

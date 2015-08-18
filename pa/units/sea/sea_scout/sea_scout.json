@@ -1,7 +1,7 @@
 {
   "base_spec": "/pa/units/sea/base_ship/base_ship.json",
-  "display_name": "!LOC(units:piranha.message):Piranha",
-  "description": "!LOC(units:scout_light_weaponry_fast_speed.message):Gunboat- Light weaponry, fast speed",
+  "display_name": "!LOC:Piranha",
+  "description": "!LOC:Gunboat- Cheap. Fast. Expendable. Attacks land and sea targets.",
   "max_health": 175,
   "build_metal_cost": 150,
   "spawn_layers": "WL_WaterSurface",
@@ -22,8 +22,7 @@
     "turn_in_place": false
   },
   "physics": {
-    "radius": 6,
-    "push_class": 2
+    "radius": 6
   },
   "recon": {
     "observer": {
@@ -45,7 +44,7 @@
   },
   "model": {
     "filename": "/pa/units/sea/sea_scout/sea_scout.papa",
-    "animtree": "/pa/anim/anim_trees/turret_anim_tree.json"
+    "animtree": "/pa/anim/anim_trees/sea_scout_anim_tree.json"
   },
   "tools": [
     {
@@ -64,8 +63,8 @@
     },
     "died": {
       "audio_cue": "/SE/Death/Sea",
-      "effect_spec": "/pa/effects/specs/default_explosion.pfx",
-      "effect_scale": 1.25
+      "effect_spec": "/pa/effects/specs/default_explosion_naval.pfx",
+      "effect_scale": 0.6
     }
   },
   "audio": {
@@ -77,6 +76,15 @@
         "should_stop_func": "is_not_moving"
       }
     }
+  },
+  "fx_offsets": [
+    {
+      "type": "moving_forward",
+      "filename": "/pa/units/sea/sea_scout/sea_scout_wake.pfx"
+    }
+  ],
+  "selection_icon": {
+    "diameter": 20.0
   },
   "TEMP_texelinfo": 4.24257,
   "mesh_bounds": [

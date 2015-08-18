@@ -1,7 +1,7 @@
 {
   "base_spec": "/pa/units/land/base_structure/base_structure.json",
-  "display_name": "!LOC(units:holkins.message):Holkins",
-  "description": "!LOC(units:advanced_artillery_equipped_with_long_range_anti_land_and_anti_ship_gun.message):Advanced artillery- Equipped with long range anti-land, and anti-ship gun.",
+  "display_name": "Holkins",
+  "description": "!LOC:Advanced Artillery- Extremely long-range heavy damage. Can lay siege from very far away. Attacks land and sea targets.",
   "max_health": 5000,
   "build_metal_cost": 9600,
   "atrophy_rate": 240.0,
@@ -69,7 +69,7 @@
     },
     "died": {
       "audio_cue": "/SE/Death/structure_small",
-      "effect_scale": 1.0
+      "effect_scale": 1.2
     }
   },
   "audio": {
@@ -94,10 +94,17 @@
       "bone": "bone_pitch"
     }
   ],
+  "selection_icon": {
+    "diameter": 40.0
+  },
   "mesh_bounds": [
-    13,
-    30.8,
+    15,
+    25,
     15.0376
+  ],
+  "placement_size": [
+    30,
+    30
   ],
   "TEMP_texelinfo": 26.6522
 }

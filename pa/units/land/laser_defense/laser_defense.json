@@ -1,7 +1,7 @@
 {
   "base_spec": "/pa/units/land/base_structure/base_structure.json",
-  "display_name": "!LOC(units:laser_defense_tower.message):Laser Defense Tower",
-  "description": "!LOC(units:basic_turret_equipped_with_direct_fire_anti_land_and_anti_ship_defenses.message):Basic turret- Equipped with direct fire anti-land, and anti-ship defenses.",
+  "display_name": "!LOC:Laser Defense Tower",
+  "description": "!LOC:Basic turret- Equipped with direct fire anti-land, and anti-ship defenses.",
   "max_health": 1500,
   "build_metal_cost": 350,
   "atrophy_rate": 7.5,
@@ -72,6 +72,9 @@
       "audio_cue": "/SE/Death/structure_small",
       "effect_scale": 0.6
     }
+  },
+  "selection_icon": {
+    "diameter": 16.0
   },
   "mesh_bounds": [
     6,

@@ -1,7 +1,7 @@
 {
   "base_spec": "/pa/units/sea/base_ship/base_ship.json",
-  "display_name": "!LOC(units:orca.message):Orca",
-  "description": "!LOC(units:destroyer_basic_anti_land_and_anti_ship_guns.message):Destroyer- Basic anti-land and anti-ship guns.",
+  "display_name": "!LOC:Orca",
+  "description": "!LOC:Destroyer- Long-range. High damage. Very durable. Attacks land, sea and undersea targets.",
   "build_metal_cost": 600,
   "max_health": 1500,
   "spawn_layers": "WL_DeepWater",
@@ -24,13 +24,13 @@
     "brake": 90,
     "move_speed": 9,
     "turn_speed": 45,
+    "turn_accel": 15,
     "park_stamp_type": "box",
     "park_stamp_cost": 20
   },
   "physics": {
     "shape": "sphere",
-    "radius": 3,
-    "push_class": 2
+    "radius": 3
   },
   "recon": {
     "observer": {
@@ -100,6 +100,7 @@
     },
     "died": {
       "audio_cue": "/SE/Death/Sea_large",
+      "effect_spec": "/pa/effects/specs/default_explosion_naval.pfx",
       "effect_scale": 1.0
     }
   },
@@ -112,6 +113,15 @@
         "should_stop_func": "is_not_moving"
       }
     }
+  },
+  "fx_offsets": [
+    {
+      "type": "moving_forward",
+      "filename": "/pa/units/sea/destroyer/destroyer_wake.pfx"
+    }
+  ],
+  "selection_icon": {
+    "diameter": 40.0
   },
   "TEMP_texelinfo": 22.1895
 }

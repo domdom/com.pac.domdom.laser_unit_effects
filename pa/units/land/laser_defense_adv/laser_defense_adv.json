@@ -1,7 +1,7 @@
 {
   "base_spec": "/pa/units/land/base_structure/base_structure.json",
-  "display_name": "!LOC(units:advanced_laser_defense_tower.message):Advanced Laser Defense Tower",
-  "description": "!LOC(units:advanced_turret_equipped_with_direct_fire_anti_land_and_anti_ship_defenses.message):Advanced turret- Equipped with direct fire anti-land, and anti-ship defenses.",
+  "display_name": "!LOC:Advanced Laser Defense Tower",
+  "description": "!LOC:Advanced turret- Equipped with direct fire anti-land, and anti-ship defenses.",
   "max_health": 4000,
   "build_metal_cost": 900,
   "atrophy_rate": 15.0,
@@ -73,6 +73,9 @@
       "audio_cue": "/SE/Death/structure_small",
       "effect_scale": 0.75
     }
+  },
+  "selection_icon": {
+    "diameter": 17.0
   },
   "mesh_bounds": [
     8,

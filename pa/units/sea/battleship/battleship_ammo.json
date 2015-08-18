@@ -10,12 +10,8 @@
   "influence_radius": 900,
   "lifetime": 4,
   "audio_loop": "/SE/Movement/missile/battleship_fly_loop",
-  "events": {
-    "died": {
-      "audio_cue": "/SE/Impacts/missile_battleship",
-      "effect_spec": "/mod/leviathan/leviathan_ammo_hit.pfx",
-      "effect_scale": 0.9
-    }
+  "model": {
+    "filename": "/pa/units/air/shell/shell.papa"
   },
   "fx_trail": {
     "filename": "/mod/leviathan/leviathan_ammo_trail.pfx",
@@ -24,5 +20,12 @@
       0.0,
       0.0
     ]
+  },
+  "events": {
+    "died": {
+      "audio_cue": "/SE/Impacts/missile_battleship",
+      "effect_spec": "/mod/leviathan/leviathan_ammo_hit.pfx",
+      "effect_scale": 0.9
+    }
   }
 }

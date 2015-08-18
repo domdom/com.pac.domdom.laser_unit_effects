@@ -1,7 +1,7 @@
 {
   "base_spec": "/pa/units/sea/base_ship/base_ship.json",
-  "display_name": "!LOC(units:narwhal.message):Narwhal",
-  "description": "!LOC(units:frigate_basic_anti_air_missiles_and_anti_ship_guns.message):Frigate- Basic anti-air missiles and anti-ship guns.",
+  "display_name": "!LOC:Narwhal",
+  "description": "!LOC:Frigate- Durable. Rapid-fire. Attacks land, air, and sea targets.",
   "max_health": 750,
   "build_metal_cost": 450,
   "spawn_layers": "WL_WaterSurface",
@@ -24,12 +24,12 @@
     "acceleration": 30,
     "brake": 90,
     "move_speed": 9,
-    "turn_speed": 60
+    "turn_speed": 60,
+    "turn_accel": 20
   },
   "physics": {
     "shape": "sphere",
-    "radius": 3,
-    "push_class": 2
+    "radius": 3
   },
   "recon": {
     "observer": {
@@ -104,7 +104,8 @@
     },
     "died": {
       "audio_cue": "/SE/Death/Sea_large",
-      "effect_scale": 0.75
+      "effect_spec": "/pa/effects/specs/default_explosion_naval.pfx",
+      "effect_scale": 0.7
     }
   },
   "audio": {
@@ -116,6 +117,15 @@
         "should_stop_func": "is_not_moving"
       }
     }
+  },
+  "fx_offsets": [
+    {
+      "type": "moving_forward",
+      "filename": "/pa/units/sea/frigate/frigate_wake.pfx"
+    }
+  ],
+  "selection_icon": {
+    "diameter": 26.0
   },
   "TEMP_texelinfo": 19.1546
 }
