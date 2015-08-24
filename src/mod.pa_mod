@@ -7,13 +7,13 @@
     },
     "modinfo" : {
         "context" : "client",
-        "identifier" : "com.pa.domdom.laser_unit_effects",
+        "identifier" : "com.pac.domdom.laser_unit_effects",
         "display_name" : "PA:C | More Pew Pew",
         "description" : "PA:Classic only - More pew, more color, and more distinguishable unit weapon effects! Tell at a glance what is shooting at you.",
         "author" : "dom314",
         "forum" : "https://forums.uberent.com/threads/rel-client-pa-c-more-pew-pew.69978/",
         "icon" : "http://i.imgur.com/PQOpc3u.gif",
-        "version" : "1.1.0",
+        "version" : "1.1.1",
         "priority": 95
     },
     "mod" : [
