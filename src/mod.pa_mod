@@ -13,8 +13,10 @@
         "author" : "dom314",
         "forum" : "https://forums.uberent.com/threads/rel-client-pa-c-more-pew-pew.69978/",
         "icon" : "http://i.imgur.com/PQOpc3u.gif",
-        "version" : "1.1.2",
-        "priority": 95
+        "product" : ["Classic"],
+        "category": ["in-game", "effects"],
+        "version" : "1.1.3",
+        "priority": 100
     },
     "mod" : [
         { "from_script" : "/base_arty/base_arty_effects.py" },

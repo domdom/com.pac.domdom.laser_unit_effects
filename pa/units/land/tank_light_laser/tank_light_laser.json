@@ -1,6 +1,6 @@
 {
   "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
-  "display_name": "!LOC:Bolo",
+  "display_name": "Ant",
   "description": "!LOC:Light tank- Well-rounded. Reliable. Attacks land and sea targets.",
   "max_health": 250,
   "build_metal_cost": 150,
