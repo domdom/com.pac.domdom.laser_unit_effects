@@ -6,13 +6,13 @@
       {
         "op": "replace",
         "path": "/events/fired/effect_spec",
-        "value": "/mod/com.pa.domdom.laser_unit_effects/drifter/drifter_muzzle_flash.pfx socket_muzzle"
+        "value": "/mod/com.pac.domdom.laser_unit_effects/drifter/drifter_muzzle_flash.pfx socket_muzzle"
       }
     ]
   },
   {
     "target": "/pa/effects/specs/tank_muzzle_flash.pfx",
-    "destination": "/mod/com.pa.domdom.laser_unit_effects/drifter/drifter_muzzle_flash.pfx",
+    "destination": "/mod/com.pac.domdom.laser_unit_effects/drifter/drifter_muzzle_flash.pfx",
     "patch": [
       {"op": "replace", "path": "/emitters/0/spec/red", "value": 0.1 },
       {"op": "replace", "path": "/emitters/0/spec/green", "value": 0.6 },
@@ -111,15 +111,15 @@
       {"op": "add", "path": "/events", "value": {"died":
         {
           "audio_cue": "/SE/Impacts/shell_tank",
-          "effect_spec": "/mod/com.pa.domdom.laser_unit_effects/drifter/drifter_ammo_hit.pfx"
+          "effect_spec": "/mod/com.pac.domdom.laser_unit_effects/drifter/drifter_ammo_hit.pfx"
         }
       }},
-      {"op": "replace", "path": "/fx_trail/filename", "value": "/mod/com.pa.domdom.laser_unit_effects/drifter/drifter_ammo_trail.pfx"}
+      {"op": "replace", "path": "/fx_trail/filename", "value": "/mod/com.pac.domdom.laser_unit_effects/drifter/drifter_ammo_trail.pfx"}
     ]
   },
   {
     "target": "/base_ammo_hit.pfx",
-    "destination": "/mod/com.pa.domdom.laser_unit_effects/drifter/drifter_ammo_hit.pfx",
+    "destination": "/mod/com.pac.domdom.laser_unit_effects/drifter/drifter_ammo_hit.pfx",
     "patch": [
       {"op": "replace", "path": "/emitters/0/spec/red", "value": 0.2 },
       {"op": "replace", "path": "/emitters/0/spec/green", "value": 1.0 },
@@ -137,7 +137,7 @@
   },
   {
     "target": "/base_ammo_trail.pfx",
-    "destination": "/mod/com.pa.domdom.laser_unit_effects/drifter/drifter_ammo_trail.pfx",
+    "destination": "/mod/com.pac.domdom.laser_unit_effects/drifter/drifter_ammo_trail.pfx",
     "patch": [
       {"op": "replace", "path": "/emitters/0/spec/red", "value": 0.05 },
       {"op": "replace", "path": "/emitters/0/spec/green", "value": 7.0 },

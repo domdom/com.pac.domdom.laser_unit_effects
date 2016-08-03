@@ -76,7 +76,7 @@
     },
     "fired": {
       "audio_cue": "/SE/Weapons/structure/tact_mis_launcher_catapult_fire",
-      "effect_spec": "/mod/com.pa.domdom.laser_unit_effects/catapult/catapult_muzzle_effect.pfx"
+      "effect_spec": "/mod/com.pac.domdom.laser_unit_effects/catapult/catapult_muzzle_effect.pfx"
     },
     "died": {
       "audio_cue": "/SE/Death/Factory",

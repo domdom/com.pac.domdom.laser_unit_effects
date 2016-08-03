@@ -5,13 +5,13 @@
       {
         "op": "replace",
         "path": "/events/fired/effect_spec",
-        "value": "/mod/com.pa.domdom.laser_unit_effects/leveler/leveler_muzzle_flash.pfx socket_leftMuzzle /mod/com.pa.domdom.laser_unit_effects/leveler/leveler_muzzle_flash.pfx socket_rightMuzzle"
+        "value": "/mod/com.pac.domdom.laser_unit_effects/leveler/leveler_muzzle_flash.pfx socket_leftMuzzle /mod/com.pac.domdom.laser_unit_effects/leveler/leveler_muzzle_flash.pfx socket_rightMuzzle"
       }
     ]
   },
   {
     "target": "/pa/effects/specs/tank_muzzle_flash.pfx",
-    "destination": "/mod/com.pa.domdom.laser_unit_effects/leveler/leveler_muzzle_flash.pfx",
+    "destination": "/mod/com.pac.domdom.laser_unit_effects/leveler/leveler_muzzle_flash.pfx",
     "patch": [
       {"op": "replace", "path": "/emitters/0/spec/red", "value": 0.0 },
       {"op": "replace", "path": "/emitters/0/spec/green", "value": 0.25 },
@@ -108,16 +108,16 @@
     "target": "/pa/units/land/tank_laser_adv/tank_laser_adv_ammo.json",
     "patch": [
       {"op": "add", "path": "/events", "value": {"died": {
-        "effect_spec": "/mod/com.pa.domdom.laser_unit_effects/leveler/leveler_ammo_hit.pfx"
+        "effect_spec": "/mod/com.pac.domdom.laser_unit_effects/leveler/leveler_ammo_hit.pfx"
       } } },
       {"op": "add", "path": "/fx_trail", "value": {
-        "filename": "/mod/com.pa.domdom.laser_unit_effects/leveler/leveler_ammo_trail.pfx"
+        "filename": "/mod/com.pac.domdom.laser_unit_effects/leveler/leveler_ammo_trail.pfx"
       }}
     ]
   },
   {
     "target": "/base_ammo_hit.pfx",
-    "destination": "/mod/com.pa.domdom.laser_unit_effects/leveler/leveler_ammo_hit.pfx",
+    "destination": "/mod/com.pac.domdom.laser_unit_effects/leveler/leveler_ammo_hit.pfx",
     "patch": [
       {"op": "replace", "path": "/emitters/0/spec/red", "value": 0.2 },
       {"op": "replace", "path": "/emitters/0/spec/green", "value": 1.0 },
@@ -178,7 +178,7 @@
   },
   {
     "target": "/base_ammo_trail.pfx",
-    "destination": "/mod/com.pa.domdom.laser_unit_effects/leveler/leveler_ammo_trail.pfx",
+    "destination": "/mod/com.pac.domdom.laser_unit_effects/leveler/leveler_ammo_trail.pfx",
     "patch": [
       {"op": "remove", "path": "/emitters/0"},
       {"op": "remove", "path": "/emitters/0"},

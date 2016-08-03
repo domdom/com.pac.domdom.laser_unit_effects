@@ -5,19 +5,19 @@
       {"op": "add", "path": "/events", "value": {
         "died": {
           "audio_cue": "/SE/Impacts/missile_artillery_short",
-          "effect_spec": "/mod/com.pa.domdom.laser_unit_effects/pelter/pelter_ammo_hit.pfx",
+          "effect_spec": "/mod/com.pac.domdom.laser_unit_effects/pelter/pelter_ammo_hit.pfx",
           "effect_scale" : 0.8
         }
       }},
       {"op": "add", "path": "/fx_trail", "value": {
-        "filename": "/mod/com.pa.domdom.laser_unit_effects/pelter/pelter_ammo_trail.pfx",
+        "filename": "/mod/com.pac.domdom.laser_unit_effects/pelter/pelter_ammo_trail.pfx",
         "offset": [0.0, 0.0, 0.0]
       }}
     ]
   },
   {
     "target": "/base_arty/base_ammo_trail.pfx",
-    "destination" : "/mod/com.pa.domdom.laser_unit_effects/pelter/pelter_ammo_trail.pfx",
+    "destination" : "/mod/com.pac.domdom.laser_unit_effects/pelter/pelter_ammo_trail.pfx",
     "patch" : [
       {"op" : "replace", "path" : "/emitters/0/spec/red",     "value" : 0.1},
       {"op" : "replace", "path" : "/emitters/0/spec/green",   "value" : 1},
@@ -44,7 +44,7 @@
   },
   {
     "target": "/base_arty/base_ammo_hit.pfx",
-    "destination" : "/mod/com.pa.domdom.laser_unit_effects/pelter/pelter_ammo_hit.pfx",
+    "destination" : "/mod/com.pac.domdom.laser_unit_effects/pelter/pelter_ammo_hit.pfx",
     "patch" : [
       {"op" : "replace", "path" : "/emitters/0/spec/red",     "value" : [[0, 10 ], [0.35, 2 ]]},
       {"op" : "replace", "path" : "/emitters/0/spec/green",   "value" : [[0, 100 ], [0.35, 4 ]]},
@@ -78,13 +78,13 @@
       {
         "op": "add",
         "path": "/events/fired/effect_spec",
-        "value": "/mod/com.pa.domdom.laser_unit_effects/pelter/pelter_muzzle_flash.pfx socket_muzzle /pa/effects/specs/artillery_muzzle_ground.pfx"
+        "value": "/mod/com.pac.domdom.laser_unit_effects/pelter/pelter_muzzle_flash.pfx socket_muzzle /pa/effects/specs/artillery_muzzle_ground.pfx"
       }
     ]
   },
   {
     "target": "/pa/effects/specs/tank_muzzle_flash.pfx",
-    "destination": "/mod/com.pa.domdom.laser_unit_effects/pelter/pelter_muzzle_flash.pfx",
+    "destination": "/mod/com.pac.domdom.laser_unit_effects/pelter/pelter_muzzle_flash.pfx",
     "patch": [
       {"op" : "replace", "path" : "/emitters/1/spec/shader",  "value" : "particle_add"},
       {"op" : "replace", "path" : "/emitters/1/spec/red",     "value" : [[0.3, 0.2], [1, 0.20]]},

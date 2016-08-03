@@ -6,19 +6,19 @@
       {"op": "add", "path": "/events", "value": {
         "died": {
           "audio_cue": "/SE/Impacts/missile_battleship",
-          "effect_spec": "/mod/com.pa.domdom.laser_unit_effects/leviathan/leviathan_ammo_hit.pfx",
+          "effect_spec": "/mod/com.pac.domdom.laser_unit_effects/leviathan/leviathan_ammo_hit.pfx",
           "effect_scale" : 0.7
         }
       }},
       {"op": "add", "path": "/fx_trail", "value": {
-        "filename": "/mod/com.pa.domdom.laser_unit_effects/leviathan/leviathan_ammo_trail.pfx",
+        "filename": "/mod/com.pac.domdom.laser_unit_effects/leviathan/leviathan_ammo_trail.pfx",
         "offset": [0.0, 0.0, 0.0]
       }}
     ]
   },
   {
     "target": "/base_ammo_trail.pfx",
-    "destination": "/mod/com.pa.domdom.laser_unit_effects/leviathan/leviathan_ammo_trail.pfx",
+    "destination": "/mod/com.pac.domdom.laser_unit_effects/leviathan/leviathan_ammo_trail.pfx",
     "patch": [
       {"op": "remove", "path": "/emitters/0"},
       {"op": "remove", "path": "/emitters/0"},
@@ -55,7 +55,7 @@
   },
     {
     "target": "/base_arty/base_ammo_hit.pfx",
-    "destination" : "/mod/com.pa.domdom.laser_unit_effects/leviathan/leviathan_ammo_hit.pfx",
+    "destination" : "/mod/com.pac.domdom.laser_unit_effects/leviathan/leviathan_ammo_hit.pfx",
     "patch" : [
       {"op" : "replace", "path" : "/emitters/0/spec/red",     "value" : [[0, 10 ], [0.35, 2 ]]},
       {"op" : "replace", "path" : "/emitters/0/spec/green",   "value" : [[0, 60 ], [0.35, 4 ]]},
@@ -91,22 +91,22 @@
       {
         "op": "add",
         "path": "/events/fired0/effect_spec",
-        "value": "/mod/com.pa.domdom.laser_unit_effects/leviathan/leviathan_muzzle_flash.pfx socket_muzzle01 /mod/com.pa.domdom.laser_unit_effects/leviathan/leviathan_muzzle_flash.pfx socket_muzzle02 /mod/com.pa.domdom.laser_unit_effects/leviathan/leviathan_muzzle_flash.pfx socket_muzzle03"
+        "value": "/mod/com.pac.domdom.laser_unit_effects/leviathan/leviathan_muzzle_flash.pfx socket_muzzle01 /mod/com.pac.domdom.laser_unit_effects/leviathan/leviathan_muzzle_flash.pfx socket_muzzle02 /mod/com.pac.domdom.laser_unit_effects/leviathan/leviathan_muzzle_flash.pfx socket_muzzle03"
       },
       {
         "op": "add",
         "path": "/events/fired1/effect_spec",
-        "value": "/mod/com.pa.domdom.laser_unit_effects/leviathan/leviathan_muzzle_flash.pfx socket_muzzle04 /mod/com.pa.domdom.laser_unit_effects/leviathan/leviathan_muzzle_flash.pfx socket_muzzle05 /mod/com.pa.domdom.laser_unit_effects/leviathan/leviathan_muzzle_flash.pfx socket_muzzle06"
+        "value": "/mod/com.pac.domdom.laser_unit_effects/leviathan/leviathan_muzzle_flash.pfx socket_muzzle04 /mod/com.pac.domdom.laser_unit_effects/leviathan/leviathan_muzzle_flash.pfx socket_muzzle05 /mod/com.pac.domdom.laser_unit_effects/leviathan/leviathan_muzzle_flash.pfx socket_muzzle06"
       },
       {
         "op": "add",
         "path": "/events/fired2/effect_spec",
-        "value": "/mod/com.pa.domdom.laser_unit_effects/leviathan/leviathan_muzzle_flash.pfx socket_muzzle07 /mod/com.pa.domdom.laser_unit_effects/leviathan/leviathan_muzzle_flash.pfx socket_muzzle08 /mod/com.pa.domdom.laser_unit_effects/leviathan/leviathan_muzzle_flash.pfx socket_muzzle09"
+        "value": "/mod/com.pac.domdom.laser_unit_effects/leviathan/leviathan_muzzle_flash.pfx socket_muzzle07 /mod/com.pac.domdom.laser_unit_effects/leviathan/leviathan_muzzle_flash.pfx socket_muzzle08 /mod/com.pac.domdom.laser_unit_effects/leviathan/leviathan_muzzle_flash.pfx socket_muzzle09"
       },
       {
         "op": "add",
         "path": "/events/fired3/effect_spec",
-        "value": "/mod/com.pa.domdom.laser_unit_effects/leviathan/leviathan_muzzle_flash.pfx socket_muzzle10 /mod/com.pa.domdom.laser_unit_effects/leviathan/leviathan_muzzle_flash.pfx socket_muzzle11 /mod/com.pa.domdom.laser_unit_effects/leviathan/leviathan_muzzle_flash.pfx socket_muzzle12"
+        "value": "/mod/com.pac.domdom.laser_unit_effects/leviathan/leviathan_muzzle_flash.pfx socket_muzzle10 /mod/com.pac.domdom.laser_unit_effects/leviathan/leviathan_muzzle_flash.pfx socket_muzzle11 /mod/com.pac.domdom.laser_unit_effects/leviathan/leviathan_muzzle_flash.pfx socket_muzzle12"
       },
       {"op": "add", "path": "/events/fired0/effect_scale", "value": 0.5 },
       {"op": "add", "path": "/events/fired1/effect_scale", "value": 0.5 },
@@ -116,7 +116,7 @@
   },
   {
     "target": "/pa/effects/specs/tank_muzzle_flash.pfx",
-    "destination": "/mod/com.pa.domdom.laser_unit_effects/leviathan/leviathan_muzzle_flash.pfx",
+    "destination": "/mod/com.pac.domdom.laser_unit_effects/leviathan/leviathan_muzzle_flash.pfx",
     "patch": [
       {"op" : "replace", "path" : "/emitters/1/spec/shader",  "value" : "particle_add"},
       {"op" : "replace", "path" : "/emitters/1/spec/red",     "value" : [[0.3, 0.2], [1, 0.20]]},

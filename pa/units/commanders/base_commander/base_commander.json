@@ -136,7 +136,7 @@
   },
   "events": {
     "fired": {
-      "effect_spec": "/mod/com.pa.domdom.laser_unit_effects/commander/commander_muzzle_flash.pfx socket_rightMuzzle"
+      "effect_spec": "/mod/com.pac.domdom.laser_unit_effects/commander/commander_muzzle_flash.pfx socket_rightMuzzle"
     }
   },
   "fx_offsets": [

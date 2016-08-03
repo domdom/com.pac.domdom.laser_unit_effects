@@ -80,7 +80,7 @@
     },
     "fired": {
       "audio_cue": "/SE/Weapons/veh/tank_T2_sheller",
-      "effect_spec": "/mod/com.pa.domdom.laser_unit_effects/sheller/sheller_muzzle_flash.pfx socket_muzzle /mod/com.pa.domdom.laser_unit_effects/sheller/sheller_smoke_skirt.pfx",
+      "effect_spec": "/mod/com.pac.domdom.laser_unit_effects/sheller/sheller_muzzle_flash.pfx socket_muzzle /mod/com.pac.domdom.laser_unit_effects/sheller/sheller_smoke_skirt.pfx",
       "effect_scale": 4.0
     },
     "died": {

@@ -85,12 +85,12 @@
     },
     "fired0": {
       "audio_cue": "/SE/Weapons/sea/destroyer_fire",
-      "effect_spec": "/mod/com.pa.domdom.laser_unit_effects/orca/orca_muzzle_flash.pfx socket_rightMuzzle01 /mod/com.pa.domdom.laser_unit_effects/orca/orca_muzzle_flash.pfx socket_leftMuzzle01",
+      "effect_spec": "/mod/com.pac.domdom.laser_unit_effects/orca/orca_muzzle_flash.pfx socket_rightMuzzle01 /mod/com.pac.domdom.laser_unit_effects/orca/orca_muzzle_flash.pfx socket_leftMuzzle01",
       "effect_scale": 5.0
     },
     "fired1": {
       "audio_cue": "/SE/Weapons/sea/destroyer_fire",
-      "effect_spec": "/mod/com.pa.domdom.laser_unit_effects/orca/orca_muzzle_flash.pfx socket_rightMuzzle02 /mod/com.pa.domdom.laser_unit_effects/orca/orca_muzzle_flash.pfx socket_leftMuzzle02",
+      "effect_spec": "/mod/com.pac.domdom.laser_unit_effects/orca/orca_muzzle_flash.pfx socket_rightMuzzle02 /mod/com.pac.domdom.laser_unit_effects/orca/orca_muzzle_flash.pfx socket_leftMuzzle02",
       "effect_scale": 5.0
     },
     "fired2": {

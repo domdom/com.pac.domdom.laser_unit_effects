@@ -5,18 +5,18 @@
       {"op": "add", "path": "/events", "value": {"died": 
         {
           "audio_cue": "/SE/Impacts/shell_tank",
-          "effect_spec": "/mod/com.pa.domdom.laser_unit_effects/sheller/sheller_ammo_hit.pfx"
+          "effect_spec": "/mod/com.pac.domdom.laser_unit_effects/sheller/sheller_ammo_hit.pfx"
         }
       }},
       {"op": "add", "path": "/fx_trail", "value": {
-        "filename": "/mod/com.pa.domdom.laser_unit_effects/sheller/sheller_ammo_trail.pfx",
+        "filename": "/mod/com.pac.domdom.laser_unit_effects/sheller/sheller_ammo_trail.pfx",
         "offset": [0.0, 0.0, 0.0]
       }}
     ]
   },
   {
     "target" : "/pa/effects/specs/artillery_muzzle_ground.pfx",
-    "destination" : "/mod/com.pa.domdom.laser_unit_effects/sheller/sheller_smoke_skirt.pfx",
+    "destination" : "/mod/com.pac.domdom.laser_unit_effects/sheller/sheller_smoke_skirt.pfx",
     "patch" : [
       {"op" : "replace", "path" : "/emitters", "value" : [
           {
@@ -81,7 +81,7 @@
   },
   {
     "target": "/base_arty/base_ammo_trail.pfx",
-    "destination" : "/mod/com.pa.domdom.laser_unit_effects/sheller/sheller_ammo_trail.pfx",
+    "destination" : "/mod/com.pac.domdom.laser_unit_effects/sheller/sheller_ammo_trail.pfx",
     "patch" : [
       {"op" : "replace", "path" : "/emitters/0/spec/red",     "value" : [[0, 5.0], [0.3, 5.0]]},
       {"op" : "replace", "path" : "/emitters/0/spec/green",   "value" : [[0, 0.1], [0.3, 1.5]]},
@@ -113,7 +113,7 @@
   },
   {
     "target": "/base_arty/base_ammo_hit.pfx",
-    "destination" : "/mod/com.pa.domdom.laser_unit_effects/sheller/sheller_ammo_hit.pfx",
+    "destination" : "/mod/com.pac.domdom.laser_unit_effects/sheller/sheller_ammo_hit.pfx",
     "patch" : [
       {"op" : "replace", "path" : "/emitters/0/spec/red",   "value" : [[0, 100 ], [0.35, 4 ]]},
       {"op" : "replace", "path" : "/emitters/0/spec/green", "value" : [[0, 10 ], [0.35, 2 ]]},
@@ -143,7 +143,7 @@
       {
         "op": "add",
         "path": "/events/fired/effect_spec",
-        "value": "/mod/com.pa.domdom.laser_unit_effects/sheller/sheller_muzzle_flash.pfx socket_muzzle /mod/com.pa.domdom.laser_unit_effects/sheller/sheller_smoke_skirt.pfx"
+        "value": "/mod/com.pac.domdom.laser_unit_effects/sheller/sheller_muzzle_flash.pfx socket_muzzle /mod/com.pac.domdom.laser_unit_effects/sheller/sheller_smoke_skirt.pfx"
       },
       {
         "op": "add",
@@ -154,7 +154,7 @@
   },
   {
     "target": "/pa/effects/specs/tank_muzzle_flash.pfx",
-    "destination": "/mod/com.pa.domdom.laser_unit_effects/sheller/sheller_muzzle_flash.pfx",
+    "destination": "/mod/com.pac.domdom.laser_unit_effects/sheller/sheller_muzzle_flash.pfx",
     "patch": [
       {"op" : "replace", "path" : "/emitters/1/spec/shader",  "value" : "particle_add"},
       {"op" : "replace", "path" : "/emitters/1/spec/red",     "value" : [[0.3, 1.2], [1, 1.60]]},

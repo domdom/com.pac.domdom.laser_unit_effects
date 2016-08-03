@@ -2,12 +2,12 @@
   {
     "target" : "/pa/units/land/assault_bot_adv/assault_bot_adv.json",
     "patch" : [
-      {"op" : "replace", "path" : "/events/fired/effect_spec", "value" : "/mod/com.pa.domdom.laser_unit_effects/slammer/slammer_muzzle_flash.pfx socket_rightMuzzle /mod/com.pa.domdom.laser_unit_effects/slammer/slammer_muzzle_flash.pfx socket_leftMuzzle"}
+      {"op" : "replace", "path" : "/events/fired/effect_spec", "value" : "/mod/com.pac.domdom.laser_unit_effects/slammer/slammer_muzzle_flash.pfx socket_rightMuzzle /mod/com.pac.domdom.laser_unit_effects/slammer/slammer_muzzle_flash.pfx socket_leftMuzzle"}
     ]
   },
   {
     "target": "/pa/effects/specs/default_muzzle_flash.pfx",
-    "destination" : "/mod/com.pa.domdom.laser_unit_effects/slammer/slammer_muzzle_flash.pfx",
+    "destination" : "/mod/com.pac.domdom.laser_unit_effects/slammer/slammer_muzzle_flash.pfx",
     "patch" : [
         {"op" : "scale", "path" : "/emitters/0/sizeX", "value" : 0.5},
         {"op" : "scale", "path" : "/emitters/1/sizeX", "value" : 0.5},
@@ -96,15 +96,15 @@
         {"op" : "add"    , "path" : "/events", "value" : {
              "died" : {
                 "audio_cue" : "/SE/Impacts/shell_bullet",
-                "effect_spec" : "/mod/com.pa.domdom.laser_unit_effects/slammer/slammer_ammo_hit.pfx"
+                "effect_spec" : "/mod/com.pac.domdom.laser_unit_effects/slammer/slammer_ammo_hit.pfx"
             }
         }},
-        {"op" : "replace", "path" : "/fx_trail/filename", "value" : "/mod/com.pa.domdom.laser_unit_effects/slammer/slammer_ammo_trail.pfx"}
+        {"op" : "replace", "path" : "/fx_trail/filename", "value" : "/mod/com.pac.domdom.laser_unit_effects/slammer/slammer_ammo_trail.pfx"}
     ]
 },
 {
     "target" : "/base_ammo_hit.pfx",
-    "destination" : "/mod/com.pa.domdom.laser_unit_effects/slammer/slammer_ammo_hit.pfx",
+    "destination" : "/mod/com.pac.domdom.laser_unit_effects/slammer/slammer_ammo_hit.pfx",
     "patch"  : [
         {"op" : "replace", "path" : "/emitters/0/spec/red",     "value" : 0.6},
         {"op" : "replace", "path" : "/emitters/0/spec/green",   "value" : 0.2},
@@ -125,7 +125,7 @@
 },
 {
     "target" : "/base_ammo_trail.pfx",
-    "destination" : "/mod/com.pa.domdom.laser_unit_effects/slammer/slammer_ammo_trail.pfx",
+    "destination" : "/mod/com.pac.domdom.laser_unit_effects/slammer/slammer_ammo_trail.pfx",
     "patch"  : [
         {"op" : "replace", "path" : "/emitters/0/spec/red",     "value" : 0.6},
         {"op" : "replace", "path" : "/emitters/0/spec/green",   "value" : 0.6},

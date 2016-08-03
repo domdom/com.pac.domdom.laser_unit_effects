@@ -1,7 +1,7 @@
 [
 	{
 		"target" : "/pa/units/air/missile_tactical/missile_tactical_trail.pfx",
-		"destination" : "/mod/com.pa.domdom.laser_unit_effects/tactical_missile/tactical_missile_trail.pfx",
+		"destination" : "/mod/com.pac.domdom.laser_unit_effects/tactical_missile/tactical_missile_trail.pfx",
 		"patch" : [
 			{"op" : "replace", "path" : "/emitters/0/spec/green", "value" : 0.2},
 			{"op" : "replace", "path" : "/emitters/0/spec/blue", "value" : 4},
@@ -31,7 +31,7 @@
 	},
 	{
 		"target" : "/pa/units/air/missile_tactical/missile_tactical_trail.pfx",
-		"destination" : "/mod/com.pa.domdom.laser_unit_effects/sea/missile_ship_ammo_trail.pfx",
+		"destination" : "/mod/com.pac.domdom.laser_unit_effects/sea/missile_ship_ammo_trail.pfx",
 		"patch" : [
 			{"op" : "replace", "path" : "/emitters/0/spec/green", "value" : 0.2},
 			{"op" : "replace", "path" : "/emitters/0/spec/blue", "value" : 4},
@@ -69,7 +69,7 @@
 	},
 	{
 		"target": "/base_arty/base_ammo_hit.pfx",
-		"destination" : "/mod/com.pa.domdom.laser_unit_effects/tac/tac_ammo_hit.pfx",
+		"destination" : "/mod/com.pac.domdom.laser_unit_effects/tac/tac_ammo_hit.pfx",
 		"patch" : [
 		  {"op" : "replace", "path" : "/emitters/0/spec/red",   "value" : [[0, 100 ], [0.35, 4 ]]},
 	      {"op" : "replace", "path" : "/emitters/0/spec/green", "value" : [[0, 10 ], [0.35, 2 ]]},
@@ -124,26 +124,26 @@
 		"target" : "/pa/units/land/bot_tactical_missile/bot_tactical_missile_ammo.json",
 		"destination" : "/pa/units/land/bot_tactical_missile/bot_tactical_missile_ammo.json",
 		"patch" : [
-			{"op" : "replace", "path" : "/events/died/effect_spec", "value" : "/mod/com.pa.domdom.laser_unit_effects/tac/tac_ammo_hit.pfx"},
+			{"op" : "replace", "path" : "/events/died/effect_spec", "value" : "/mod/com.pac.domdom.laser_unit_effects/tac/tac_ammo_hit.pfx"},
 			{"op" : "add", "path" : "/events/died/effect_scale", "value" : 0.2},
-			{"op" : "add", "path" : "/fx_trail", "value" : {"filename" : "/mod/com.pa.domdom.laser_unit_effects/tactical_missile/tactical_missile_trail.pfx"}}
+			{"op" : "add", "path" : "/fx_trail", "value" : {"filename" : "/mod/com.pac.domdom.laser_unit_effects/tactical_missile/tactical_missile_trail.pfx"}}
 		]
 	},
 	{
 		"target" : "/pa/units/land/tactical_missile_launcher/tactical_missile_launcher_ammo.json",
 		"destination" : "/pa/units/land/tactical_missile_launcher/tactical_missile_launcher_ammo.json",
 		"patch" : [
-			{"op" : "replace", "path" : "/events/died/effect_spec", "value" : "/mod/com.pa.domdom.laser_unit_effects/tac/tac_ammo_hit.pfx"},
+			{"op" : "replace", "path" : "/events/died/effect_spec", "value" : "/mod/com.pac.domdom.laser_unit_effects/tac/tac_ammo_hit.pfx"},
 			{"op" : "add", "path" : "/events/died/effect_scale", "value" : 0.2},
-			{"op" : "add", "path" : "/fx_trail", "value" : {"filename" : "/mod/com.pa.domdom.laser_unit_effects/tactical_missile/tactical_missile_trail.pfx"}}
+			{"op" : "add", "path" : "/fx_trail", "value" : {"filename" : "/mod/com.pac.domdom.laser_unit_effects/tactical_missile/tactical_missile_trail.pfx"}}
 		]
 	},
 	{
 		"target" : "/pa/units/air/bomber_adv/bomber_adv_ammo.json",
 		"patch" : [
-			{"op" : "replace", "path" : "/events/died/effect_spec", "value" : "/mod/com.pa.domdom.laser_unit_effects/tac/tac_ammo_hit.pfx"},
+			{"op" : "replace", "path" : "/events/died/effect_spec", "value" : "/mod/com.pac.domdom.laser_unit_effects/tac/tac_ammo_hit.pfx"},
 			{"op" : "add", "path" : "/events/died/effect_scale", "value" : 0.2},
-			{"op" : "add", "path" : "/fx_trail", "value" : {"filename" : "/mod/com.pa.domdom.laser_unit_effects/tactical_missile/tactical_missile_trail.pfx"}}
+			{"op" : "add", "path" : "/fx_trail", "value" : {"filename" : "/mod/com.pac.domdom.laser_unit_effects/tactical_missile/tactical_missile_trail.pfx"}}
 		]
 	},
 	{
@@ -161,9 +161,9 @@
 		"target" : "/pa/units/sea/missile_ship/missile_ship_ammo.json",
 		"destination" : "/pa/units/sea/missile_ship/missile_ship_ammo.json",
 		"patch" : [
-			{"op" : "add", "path" : "/events/died/effect_spec", "value" : "/mod/com.pa.domdom.laser_unit_effects/tac/tac_ammo_hit.pfx"},
+			{"op" : "add", "path" : "/events/died/effect_spec", "value" : "/mod/com.pac.domdom.laser_unit_effects/tac/tac_ammo_hit.pfx"},
 			{"op" : "add", "path" : "/events/died/effect_scale", "value" : 0.4},
-			{"op" : "add", "path" : "/fx_trail", "value" : {"filename" : "/mod/com.pa.domdom.laser_unit_effects/sea/missile_ship_ammo_trail.pfx"}}
+			{"op" : "add", "path" : "/fx_trail", "value" : {"filename" : "/mod/com.pac.domdom.laser_unit_effects/sea/missile_ship_ammo_trail.pfx"}}
 		]
 	}
 ]

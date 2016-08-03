@@ -7,7 +7,7 @@
   "max_velocity": 85.0,
   "lifetime": 3,
   "fx_trail": {
-    "filename": "/mod/com.pa.domdom.laser_unit_effects/orca/orca_ammo_trail.pfx",
+    "filename": "/mod/com.pac.domdom.laser_unit_effects/orca/orca_ammo_trail.pfx",
     "offset": [
       0.0,
       0.0,
@@ -17,7 +17,7 @@
   "events": {
     "died": {
       "audio_cue": "/SE/Impacts/missile_destroyer",
-      "effect_spec": "/mod/com.pa.domdom.laser_unit_effects/orca/orca_ammo_hit.pfx",
+      "effect_spec": "/mod/com.pac.domdom.laser_unit_effects/orca/orca_ammo_hit.pfx",
       "effect_scale": 0.2
     }
   }
