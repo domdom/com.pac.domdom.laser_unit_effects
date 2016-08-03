@@ -9,7 +9,7 @@
   "max_velocity": 200.0,
   "lifetime": 10,
   "fx_trail": {
-    "filename": "/mod/sheller/sheller_ammo_trail.pfx",
+    "filename": "/mod/com.pa.domdom.laser_unit_effects/sheller/sheller_ammo_trail.pfx",
     "offset": [
       0.0,
       0.0,
@@ -23,7 +23,7 @@
   "events": {
     "died": {
       "audio_cue": "/SE/Impacts/shell_tank",
-      "effect_spec": "/mod/sheller/sheller_ammo_hit.pfx"
+      "effect_spec": "/mod/com.pa.domdom.laser_unit_effects/sheller/sheller_ammo_hit.pfx"
     }
   }
 }

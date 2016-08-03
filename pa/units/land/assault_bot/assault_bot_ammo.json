@@ -8,7 +8,7 @@
   "lifetime": 1.0,
   "model": null,
   "fx_trail": {
-    "filename": "/mod/dox/dox_ammo_trail.pfx",
+    "filename": "/mod/com.pa.domdom.laser_unit_effects/dox/dox_ammo_trail.pfx",
     "offset": [
       0.0,
       0.0,
@@ -18,7 +18,7 @@
   "events": {
     "died": {
       "audio_cue": "/SE/Impacts/shell_bullet",
-      "effect_spec": "/mod/dox/dox_ammo_hit.pfx"
+      "effect_spec": "/mod/com.pa.domdom.laser_unit_effects/dox/dox_ammo_hit.pfx"
     }
   }
 }

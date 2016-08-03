@@ -17,7 +17,7 @@
     "filename": "/pa/units/air/shell_large/shell_large.papa"
   },
   "fx_trail": {
-    "filename": "/mod/holkins/holkins_ammo_trail.pfx",
+    "filename": "/mod/com.pa.domdom.laser_unit_effects/holkins/holkins_ammo_trail.pfx",
     "offset": [
       0.0,
       0.0,
@@ -28,7 +28,7 @@
   "events": {
     "died": {
       "audio_cue": "/SE/Impacts/missile_artillery_long_holkins",
-      "effect_spec": "/mod/holkins/holkins_ammo_hit.pfx",
+      "effect_spec": "/mod/com.pa.domdom.laser_unit_effects/holkins/holkins_ammo_hit.pfx",
       "effect_scale": 1.6
     }
   }

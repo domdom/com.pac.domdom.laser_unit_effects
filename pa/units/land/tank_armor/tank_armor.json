@@ -78,7 +78,7 @@
     },
     "fired": {
       "audio_cue": "/SE/Weapons/veh/tank_flame",
-      "effect_spec": "/mod/inferno/spark_muzzle_flash.pfx socket_muzzle"
+      "effect_spec": "/mod/com.pa.domdom.laser_unit_effects/inferno/spark_muzzle_flash.pfx socket_muzzle"
     },
     "died": {
       "audio_cue": "/SE/Death/Veh",

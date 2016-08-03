@@ -19,7 +19,7 @@
     },
     "fired": {
       "audio_cue": "/SE/Weapons/air/gunship_fire",
-      "effect_spec": "/mod/kestrel/kestrel_muzzle_flash.pfx socket_rightMuzzle /mod/kestrel/kestrel_muzzle_flash.pfx socket_leftMuzzle"
+      "effect_spec": "/mod/com.pa.domdom.laser_unit_effects/kestrel/kestrel_muzzle_flash.pfx socket_rightMuzzle /mod/com.pa.domdom.laser_unit_effects/kestrel/kestrel_muzzle_flash.pfx socket_leftMuzzle"
     },
     "died": {
       "audio_cue": "/SE/Death/Air",

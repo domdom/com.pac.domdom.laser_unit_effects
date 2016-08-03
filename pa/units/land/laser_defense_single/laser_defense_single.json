@@ -67,7 +67,7 @@
     },
     "fired": {
       "audio_cue": "/SE/Weapons/structure/laser_defense_single_fire",
-      "effect_spec": "/mod/laser/t1_muzzle_flash.pfx socket_muzzle"
+      "effect_spec": "/mod/com.pa.domdom.laser_unit_effects/laser/t1_muzzle_flash.pfx socket_muzzle"
     },
     "died": {
       "audio_cue": "/SE/Death/structure_small",

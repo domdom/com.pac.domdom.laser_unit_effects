@@ -8,7 +8,7 @@
   "model": null,
   "lifetime": 3,
   "fx_trail": {
-    "filename": "/mod/piranha/piranha_ammo_trail.pfx",
+    "filename": "/mod/com.pa.domdom.laser_unit_effects/piranha/piranha_ammo_trail.pfx",
     "offset": [
       0.0,
       0.0,
@@ -18,7 +18,7 @@
   "events": {
     "died": {
       "audio_cue": "/SE/Impacts/shell_tank",
-      "effect_spec": "/mod/piranha/piranha_ammo_hit.pfx"
+      "effect_spec": "/mod/com.pa.domdom.laser_unit_effects/piranha/piranha_ammo_hit.pfx"
     }
   }
 }

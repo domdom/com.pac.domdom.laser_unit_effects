@@ -71,7 +71,7 @@
     },
     "fired": {
       "audio_cue": "/SE/Weapons/veh/tank_light_fire",
-      "effect_spec": "/mod/ant/ant_muzzle_flash.pfx socket_muzzle /mod/ant/top_burst_flash.pfx bone_root /mod/ant/side_burst_flash.pfx bone_root"
+      "effect_spec": "/mod/com.pa.domdom.laser_unit_effects/ant/ant_muzzle_flash.pfx socket_muzzle /mod/com.pa.domdom.laser_unit_effects/ant/top_burst_flash.pfx bone_root /mod/com.pa.domdom.laser_unit_effects/ant/side_burst_flash.pfx bone_root"
     },
     "died": {
       "audio_cue": "/SE/Death/Veh"

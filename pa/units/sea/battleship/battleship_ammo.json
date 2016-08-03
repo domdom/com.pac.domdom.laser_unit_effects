@@ -14,7 +14,7 @@
     "filename": "/pa/units/air/shell/shell.papa"
   },
   "fx_trail": {
-    "filename": "/mod/leviathan/leviathan_ammo_trail.pfx",
+    "filename": "/mod/com.pa.domdom.laser_unit_effects/leviathan/leviathan_ammo_trail.pfx",
     "offset": [
       0.0,
       0.0,
@@ -24,8 +24,8 @@
   "events": {
     "died": {
       "audio_cue": "/SE/Impacts/missile_battleship",
-      "effect_spec": "/mod/leviathan/leviathan_ammo_hit.pfx",
-      "effect_scale": 0.9
+      "effect_spec": "/mod/com.pa.domdom.laser_unit_effects/leviathan/leviathan_ammo_hit.pfx",
+      "effect_scale": 0.7
     }
   }
 }

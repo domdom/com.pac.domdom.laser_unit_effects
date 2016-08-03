@@ -7,12 +7,12 @@
   "max_velocity": 500.0,
   "lifetime": 2,
   "fx_trail": {
-    "filename": "/mod/laser/t1_ammo_trail.pfx"
+    "filename": "/mod/com.pa.domdom.laser_unit_effects/laser/t1_ammo_trail.pfx"
   },
   "events": {
     "died": {
       "audio_cue": "/SE/Impacts/laser_blast",
-      "effect_spec": "/mod/laser/t1_ammo_hit.pfx"
+      "effect_spec": "/mod/com.pa.domdom.laser_unit_effects/laser/t1_ammo_hit.pfx"
     }
   }
 }

@@ -318,12 +318,12 @@ def run():
         {
            "target" : "/pa/units/commanders/base_commander/base_commander.json",
             "patch" : [
-                {"op" : "add", "path" : "/events/fired", "value" : {"effect_spec" : "/mod/commander/commander_muzzle_flash.pfx socket_rightMuzzle"}}
+                {"op" : "add", "path" : "/events/fired", "value" : {"effect_spec" : "/mod/com.pa.domdom.laser_unit_effects/commander/commander_muzzle_flash.pfx socket_rightMuzzle"}}
             ]
         },
         {
             "target": "/pa/effects/specs/tank_muzzle_flash.pfx",
-            "destination": "/mod/commander/commander_muzzle_flash.pfx",
+            "destination": "/mod/com.pa.domdom.laser_unit_effects/commander/commander_muzzle_flash.pfx",
             "patch": [
                 {"op": "replace", "path": "/emitters/0/spec/red", "value": 0.0 },
                 {"op": "replace", "path": "/emitters/0/spec/green", "value": 0.7 },
@@ -360,17 +360,17 @@ def run():
         {
             "target" : "/pa/units/commanders/base_commander/base_commander_ammo_bullet.json",
             "patch" : [
-                {"op" : "add", "path" : "/fx_trail", "value" : {"filename" : "/mod/commander/bullet_trail.pfx"}},
+                {"op" : "add", "path" : "/fx_trail", "value" : {"filename" : "/mod/com.pa.domdom.laser_unit_effects/commander/bullet_trail.pfx"}},
                 {"op" : "add", "path" : "/events/died", "value" : {}},
-                {"op" : "add", "path" : "/events/died/effect_spec", "value" : "/mod/commander/proj_hit.pfx"},
+                {"op" : "add", "path" : "/events/died/effect_spec", "value" : "/mod/com.pa.domdom.laser_unit_effects/commander/proj_hit.pfx"},
                 {"op" : "add", "path" : "/events/died/effect_scale", "value" : 0.15}
             ]
         },
         {
             "target" : "/pa/units/commanders/base_commander/base_commander_ammo_laser.json",
             "patch" : [
-                {"op" : "add", "path" : "/fx_trail", "value" : {"filename" : "/mod/commander/laser_trail.pfx"}},
-                {"op" : "add", "path" : "/events/died/effect_spec", "value" : "/mod/commander/proj_hit.pfx"},
+                {"op" : "add", "path" : "/fx_trail", "value" : {"filename" : "/mod/com.pa.domdom.laser_unit_effects/commander/laser_trail.pfx"}},
+                {"op" : "add", "path" : "/events/died/effect_spec", "value" : "/mod/com.pa.domdom.laser_unit_effects/commander/proj_hit.pfx"},
                 {"op" : "add", "path" : "/events/died/effect_scale", "value" : 0.15}
             ]
         },
@@ -378,28 +378,28 @@ def run():
             "target" : "/pa/units/commanders/base_commander/base_commander_ammo_missile.json",
             "patch" : [
                 {"op" : "add", "path" : "/fx_trail", "value" : {
-                    "filename" : "/mod/commander/rocket_trail.pfx",
+                    "filename" : "/mod/com.pa.domdom.laser_unit_effects/commander/rocket_trail.pfx",
                     "offset": [0.0, 0.9, 0.0]
                 }},
-                {"op" : "add", "path" : "/events/died/effect_spec", "value" : "/mod/commander/proj_hit.pfx"},
+                {"op" : "add", "path" : "/events/died/effect_spec", "value" : "/mod/com.pa.domdom.laser_unit_effects/commander/proj_hit.pfx"},
                 {"op" : "add", "path" : "/events/died/effect_scale", "value" : 0.15}
             ]
         },
         {
             "target" : "bullet_trail.pfx",
-            "destination" : "/mod/commander/bullet_trail.pfx"
+            "destination" : "/mod/com.pa.domdom.laser_unit_effects/commander/bullet_trail.pfx"
         },
         {
             "target" : "laser_trail.pfx",
-            "destination" : "/mod/commander/laser_trail.pfx"
+            "destination" : "/mod/com.pa.domdom.laser_unit_effects/commander/laser_trail.pfx"
         },
         {
             "target" : "rocket_trail.pfx",
-            "destination" : "/mod/commander/rocket_trail.pfx"
+            "destination" : "/mod/com.pa.domdom.laser_unit_effects/commander/rocket_trail.pfx"
         },
         {
             "target" : "/base_arty/base_ammo_hit.pfx",
-            "destination" : "/mod/commander/proj_hit.pfx",
+            "destination" : "/mod/com.pa.domdom.laser_unit_effects/commander/proj_hit.pfx",
             "patch" : [
               {"op" : "replace", "path" : "/emitters/0/spec/red",     "value" : [[0, 0 ], [0.35, 2 ]]},
               {"op" : "replace", "path" : "/emitters/0/spec/green",   "value" : [[0, 100 ], [0.35, 20 ]]},

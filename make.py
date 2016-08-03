@@ -5,5 +5,5 @@ sys.path.append("../pa_tools")
 
 import mod_generator
 
-mod_generator.run("src/mod.pa_mod")
+mod_generator.run("src/mod.json")
 

@@ -69,7 +69,7 @@
     },
     "fired": {
       "audio_cue": "/SE/Weapons/structure/artillery_short_fire",
-      "effect_spec": "/mod/pelter/pelter_muzzle_flash.pfx socket_muzzle /pa/effects/specs/artillery_muzzle_ground.pfx"
+      "effect_spec": "/mod/com.pa.domdom.laser_unit_effects/pelter/pelter_muzzle_flash.pfx socket_muzzle /pa/effects/specs/artillery_muzzle_ground.pfx"
     },
     "died": {
       "audio_cue": "/SE/Death/structure_small",

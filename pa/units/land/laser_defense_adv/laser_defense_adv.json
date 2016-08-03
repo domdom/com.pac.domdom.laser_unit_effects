@@ -67,7 +67,7 @@
     },
     "fired": {
       "audio_cue": "/SE/Weapons/structure/laser_defense_ADV_fire",
-      "effect_spec": "/mod/laser/t3_muzzle_flash.pfx socket_leftMuzzle /mod/laser/t3_muzzle_flash.pfx socket_centerMuzzle /mod/laser/t3_muzzle_flash.pfx socket_rightMuzzle"
+      "effect_spec": "/mod/com.pa.domdom.laser_unit_effects/laser/t3_muzzle_flash.pfx socket_leftMuzzle /mod/com.pa.domdom.laser_unit_effects/laser/t3_muzzle_flash.pfx socket_centerMuzzle /mod/com.pa.domdom.laser_unit_effects/laser/t3_muzzle_flash.pfx socket_rightMuzzle"
     },
     "died": {
       "audio_cue": "/SE/Death/structure_small",

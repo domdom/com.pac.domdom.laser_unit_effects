@@ -89,7 +89,7 @@
     },
     "fired0": {
       "audio_cue": "/SE/Weapons/sea/frigate_fire_1",
-      "effect_spec": "/mod/narwhal/narwhal_muzzle_flash.pfx socket_muzzle01",
+      "effect_spec": "/mod/com.pa.domdom.laser_unit_effects/narwhal/narwhal_muzzle_flash.pfx socket_muzzle01",
       "effect_scale": 0.5
     },
     "fired1": {

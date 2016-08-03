@@ -1,7 +1,7 @@
 {
   "base_spec": "/pa/ammo/base_bullet/base_bullet.json",
   "fx_trail": {
-    "filename": "/mod/kestrel/kestrel_ammo_trail.pfx"
+    "filename": "/mod/com.pa.domdom.laser_unit_effects/kestrel/kestrel_ammo_trail.pfx"
   },
   "flight_type": "Direct",
   "physics": {
@@ -19,7 +19,7 @@
   "lifetime": 2,
   "events": {
     "died": {
-      "effect_spec": "/mod/kestrel/kestrel_ammo_hit.pfx"
+      "effect_spec": "/mod/com.pa.domdom.laser_unit_effects/kestrel/kestrel_ammo_hit.pfx"
     }
   }
 }

@@ -123,21 +123,21 @@ def run():
         {
            "target" : "/pa/units/land/tank_armor/tank_armor.json",
             "patch" : [
-                {"op" : "replace", "path" : "/events/fired/effect_spec", "value" : "/mod/inferno/spark_muzzle_flash.pfx socket_muzzle"}
+                {"op" : "replace", "path" : "/events/fired/effect_spec", "value" : "/mod/com.pa.domdom.laser_unit_effects/inferno/spark_muzzle_flash.pfx socket_muzzle"}
             ]
         },        
         {
             "target" : "/pa/units/land/tank_armor/tank_armor_muzzle_flame.pfx",
-            "destination" : "/mod/inferno/spark_muzzle_flash.pfx",
+            "destination" : "/mod/com.pa.domdom.laser_unit_effects/inferno/spark_muzzle_flash.pfx",
             "patch" : """ + muzzle_patch + """
         },
         {
             "target" : "/blueflamethrower.papa",
-            "destination" : "/mod/blueflamethrower.papa"
+            "destination" : "/mod/com.pa.domdom.laser_unit_effects/blueflamethrower.papa"
         },
         {
             "target" : "/pa/units/land/tank_armor/tank_armor_muzzle_flame.pfx",
-            "destination" : "/mod/inferno/spark_muzzle_flash.pfx",
+            "destination" : "/mod/com.pa.domdom.laser_unit_effects/inferno/spark_muzzle_flash.pfx",
             "patch" : [
                 {"op" : "move", "path" : "/emitters/0/spec/_blue", "from" : "/emitters/0/spec/red"},
                 {"op" : "move", "path" : "/emitters/0/spec/red", "from" : "/emitters/0/spec/blue"},
@@ -155,7 +155,7 @@ def run():
                 {"op" : "move", "path" : "/emitters/3/spec/red", "from" : "/emitters/3/spec/blue"},
                 {"op" : "move", "path" : "/emitters/3/spec/blue", "from" : "/emitters/3/spec/_blue"},
 
-                {"op" : "replace", "path" : "/emitters/1/spec/baseTexture", "value" : "/mod/blueflamethrower.papa"}
+                {"op" : "replace", "path" : "/emitters/1/spec/baseTexture", "value" : "/mod/com.pa.domdom.laser_unit_effects/blueflamethrower.papa"}
             ]
         }
     ]""")

@@ -9,7 +9,7 @@
   "lifetime": 5,
   "model": null,
   "fx_trail": {
-    "filename": "/mod/grenadier/grenadier_ammo_trail.pfx",
+    "filename": "/mod/com.pa.domdom.laser_unit_effects/grenadier/grenadier_ammo_trail.pfx",
     "offset": [
       0.0,
       0.0,
@@ -19,7 +19,7 @@
   "events": {
     "died": {
       "audio_cue": "/SE/Impacts/shell_bullet",
-      "effect_spec": "/mod/grenadier/grenadier_ammo_hit.pfx",
+      "effect_spec": "/mod/com.pa.domdom.laser_unit_effects/grenadier/grenadier_ammo_hit.pfx",
       "effect_scale": 1
     }
   },

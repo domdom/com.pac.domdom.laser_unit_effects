@@ -31,7 +31,7 @@ base_string = loader.loads("""{
     "sizeX" : 0.2,
     "cameraPush" : 0.5,
     "useWorldSpace" : true,
-    "endDistance" : 2000
+    "endDistance" : -1
 }""")
 
 base_trail = {
@@ -148,6 +148,7 @@ base_hit_rings = loader.loads("""[
         "blue": 5.0,
         "alpha": [[0.2, 2 ], [0.3, 1 ], [0.6, 0.5 ], [1, 0 ] ],
         "baseTexture": "/pa/effects/textures/particles/simpleExplosionRing.papa",
+        "cameraPush" : 0.2,
         "dataChannelFormat": "PositionAndColor"
       },
       "offsetZ": 1,
@@ -168,6 +169,7 @@ base_hit_rings = loader.loads("""[
         "green": 0.35,
         "blue": 5.0,
         "alpha": {"keys": [[0, 1 ], [0.3, 1 ], [0.6, 0.05 ], [1, 0 ] ], "stepped": false },
+        "cameraPush" : 0.2,
         "baseTexture": "/pa/effects/textures/particles/simpleExplosionRing.papa",
         "rampTexture": "/pa/effects/textures/particles/uncompressed/no_ramp.papa",
         "dataChannelFormat": "PositionAndColor"
@@ -190,6 +192,7 @@ base_hit_rings = loader.loads("""[
         "red": 0.05,
         "green": 0.35,
         "blue": 5.0,
+        "cameraPush" : 0.2,
         "alpha": {"keys": [[0, 1 ], [0.3, 1 ], [0.6, 0.02 ], [1, 0 ] ], "stepped": false },
         "baseTexture": "/pa/effects/textures/particles/simpleExplosionRing.papa",
         "rampTexture": "/pa/effects/textures/particles/uncompressed/no_ramp.papa",

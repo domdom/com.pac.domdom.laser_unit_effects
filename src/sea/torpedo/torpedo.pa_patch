@@ -5,18 +5,18 @@
   {
     "target" : "/pa/ammo/torpedo/torpedo.json",
     "patch" : [
-      {"op" : "replace", "path" : "/fx_trail/filename", "value" : "/mod/torpedo/torpedo_trail.pfx"},
-      {"op" : "replace", "path" : "/events/died/effect_spec", "value" : "/mod/torpedo/torpedo_hit.pfx"},
+      {"op" : "replace", "path" : "/fx_trail/filename", "value" : "/mod/com.pa.domdom.laser_unit_effects/torpedo/torpedo_trail.pfx"},
+      {"op" : "replace", "path" : "/events/died/effect_spec", "value" : "/mod/com.pa.domdom.laser_unit_effects/torpedo/torpedo_hit.pfx"},
       {"op" : "add", "path" : "/events/died/effect_scale", "value" : 0.15}
     ]
   },
   {
     "target" : "/sea/torpedo/torpedo_trail.pfx",
-    "destination" : "/mod/torpedo/torpedo_trail.pfx"
+    "destination" : "/mod/com.pa.domdom.laser_unit_effects/torpedo/torpedo_trail.pfx"
   },
   {
     "target": "/base_arty/base_ammo_hit.pfx",
-    "destination" : "/mod/torpedo/torpedo_hit.pfx",
+    "destination" : "/mod/com.pa.domdom.laser_unit_effects/torpedo/torpedo_hit.pfx",
     "patch" : [
       {"op" : "replace", "path" : "/emitters/0/spec/red",   "value" : [[0, 100], [0.35, 4]]},
       {"op" : "replace", "path" : "/emitters/0/spec/green", "value" : [[0, 10 ], [0.35, 2]]},

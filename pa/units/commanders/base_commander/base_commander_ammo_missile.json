@@ -5,7 +5,7 @@
     "arrows": 3
   },
   "fx_trail": {
-    "filename": "/mod/commander/rocket_trail.pfx",
+    "filename": "/mod/com.pa.domdom.laser_unit_effects/commander/rocket_trail.pfx",
     "offset": [
       0.0,
       0.9,
@@ -16,7 +16,7 @@
     "died": {
       "audio_cue": "/SE/Impacts/missile_tactical",
       "effect_specs": "/pa/effects/specs/default_proj_explosion.pfx",
-      "effect_spec": "/mod/commander/proj_hit.pfx",
+      "effect_spec": "/mod/com.pa.domdom.laser_unit_effects/commander/proj_hit.pfx",
       "effect_scale": 0.15
     },
     "spawned": {

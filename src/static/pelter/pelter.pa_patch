@@ -5,19 +5,19 @@
       {"op": "add", "path": "/events", "value": {
         "died": {
           "audio_cue": "/SE/Impacts/missile_artillery_short",
-          "effect_spec": "/mod/pelter/pelter_ammo_hit.pfx",
+          "effect_spec": "/mod/com.pa.domdom.laser_unit_effects/pelter/pelter_ammo_hit.pfx",
           "effect_scale" : 0.8
         }
       }},
       {"op": "add", "path": "/fx_trail", "value": {
-        "filename": "/mod/pelter/pelter_ammo_trail.pfx",
+        "filename": "/mod/com.pa.domdom.laser_unit_effects/pelter/pelter_ammo_trail.pfx",
         "offset": [0.0, 0.0, 0.0]
       }}
     ]
   },
   {
     "target": "/base_arty/base_ammo_trail.pfx",
-    "destination" : "/mod/pelter/pelter_ammo_trail.pfx",
+    "destination" : "/mod/com.pa.domdom.laser_unit_effects/pelter/pelter_ammo_trail.pfx",
     "patch" : [
       {"op" : "replace", "path" : "/emitters/0/spec/red",     "value" : 0.1},
       {"op" : "replace", "path" : "/emitters/0/spec/green",   "value" : 1},
@@ -44,7 +44,7 @@
   },
   {
     "target": "/base_arty/base_ammo_hit.pfx",
-    "destination" : "/mod/pelter/pelter_ammo_hit.pfx",
+    "destination" : "/mod/com.pa.domdom.laser_unit_effects/pelter/pelter_ammo_hit.pfx",
     "patch" : [
       {"op" : "replace", "path" : "/emitters/0/spec/red",     "value" : [[0, 10 ], [0.35, 2 ]]},
       {"op" : "replace", "path" : "/emitters/0/spec/green",   "value" : [[0, 100 ], [0.35, 4 ]]},
@@ -78,13 +78,13 @@
       {
         "op": "add",
         "path": "/events/fired/effect_spec",
-        "value": "/mod/pelter/pelter_muzzle_flash.pfx socket_muzzle /pa/effects/specs/artillery_muzzle_ground.pfx"
+        "value": "/mod/com.pa.domdom.laser_unit_effects/pelter/pelter_muzzle_flash.pfx socket_muzzle /pa/effects/specs/artillery_muzzle_ground.pfx"
       }
     ]
   },
   {
     "target": "/pa/effects/specs/tank_muzzle_flash.pfx",
-    "destination": "/mod/pelter/pelter_muzzle_flash.pfx",
+    "destination": "/mod/com.pa.domdom.laser_unit_effects/pelter/pelter_muzzle_flash.pfx",
     "patch": [
       {"op" : "replace", "path" : "/emitters/1/spec/shader",  "value" : "particle_add"},
       {"op" : "replace", "path" : "/emitters/1/spec/red",     "value" : [[0.3, 0.2], [1, 0.20]]},
@@ -116,6 +116,66 @@
           "emitterLifetime": 0.1,
           "bLoop": false,
           "endDistance": 850
+        }
+      },
+
+      {"op": "add", "path": "/emitters/-", "value": {
+          "spec": {
+            "shape": "particle_transparent_lit",
+            "facing" : "velocity",
+            "red": 1,
+            "green": 15,
+            "blue": 30,
+            "alpha": [[0.6, 0.8], [1, 0]],
+            "baseTexture": "/pa/effects/textures/particles/dot.papa"
+          },
+          "velocityY" : -1,
+          "velocityRangeX" : 0.4,
+          "velocityRangeZ" : 0.4,
+          "velocity" : 27,
+          "velocityRange" : 15,
+          "gravity" : -9.8,
+          "drag" : 0.98,
+          "offsetY": -0.5,
+          "sizeX": 0.2,
+          "sizeY" : 0.7,
+          "emissionBursts": 50,
+          "lifetime": 0.7,
+          "lifetimeRange": 0.2,
+          "emitterLifetime": 0.5,
+          "useWorldSpace" : true,
+          "bLoop": false,
+          "endDistance": 400
+        }
+      },
+      {"op" : "add", "path" : "/emitters/-", "value" :  {
+          "spec": {
+            "label": "SPARKS",
+            "shader": "particle_transparent_lit",
+            "facing": "velocity",
+            "sizeX": [[0.5, 1.0 ], [1, 0.0 ] ],
+            "red": [[0, 1 ], [1, 0.66 ] ],
+            "green": [[0, 30 ], [1, 10 ] ],
+            "blue": [[0, 50 ], [1, 20 ] ],
+            "alpha": [[0.75, 1.0 ], [1, 0.0 ] ],
+            "baseTexture": "/pa/effects/textures/particles/softdot.papa"
+          },
+          "offsetRangeX": 0.01,
+          "offsetRangeZ": 0.7,
+          "velocity": 50,
+          "velocityY": -1,
+          "velocityRangeZ": 0.0,
+          "velocityRange": 30,
+          "gravity": -10.0,
+          "drag": 0.97,
+          "sizeX": 0.3,
+          "sizeY" : 0.8,
+          "lifetime": 0.7,
+          "lifetimeRange": 0.35,
+          "emissionBursts": 60,
+          "useWorldSpace": true,
+          "bLoop": false,
+          "endDistance": 400
         }
       }
     ]

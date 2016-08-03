@@ -59,7 +59,7 @@
     },
     "fired": {
       "audio_cue": "/SE/Weapons/sea/sea_scout_fire",
-      "effect_spec": "/mod/piranha/piranha_muzzle_flash.pfx socket_muzzle"
+      "effect_spec": "/mod/com.pa.domdom.laser_unit_effects/piranha/piranha_muzzle_flash.pfx socket_muzzle"
     },
     "died": {
       "audio_cue": "/SE/Death/Sea",
