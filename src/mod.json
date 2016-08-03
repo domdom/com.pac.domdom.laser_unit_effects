@@ -49,6 +49,7 @@
     { "from_file" :   "/sea/piranha/piranha.pa_patch" },
     { "from_file" :   "/sea/narwhal/narwhal.pa_patch" },
     { "from_file" :   "/sea/leviathan/leviathan.pa_patch" },
+    { "from_file" :   "/sea/kraken/kraken.pa_patch" },
     { "from_file" :   "/sea/orca/orca.pa_patch" }
   ]
 }
