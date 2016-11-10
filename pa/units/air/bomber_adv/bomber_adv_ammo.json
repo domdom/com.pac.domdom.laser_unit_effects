@@ -13,8 +13,7 @@
   "events": {
     "died": {
       "audio_cue": "/SE/Impacts/bomber_adv",
-      "effect_spec": "/mod/com.pac.domdom.laser_unit_effects/tac/tac_ammo_hit.pfx",
-      "effect_scale": 0.2
+      "effect_spec": "/pa/units/air/bomber_adv/bomber_adv_ammo_hit.pfx"
     }
   },
   "audio_loop": "/SE/Movement/missile/bomber_t2_fly_loop",
@@ -52,6 +51,6 @@
     }
   ],
   "fx_trail": {
-    "filename": "/mod/com.pac.domdom.laser_unit_effects/tactical_missile/tactical_missile_trail.pfx"
+    "filename": "/pa/units/air/bomber_adv/bomber_adv_ammo_trail.pfx"
   }
 }

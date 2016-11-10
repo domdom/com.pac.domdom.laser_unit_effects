@@ -95,7 +95,7 @@
     },
     "fired0": {
       "audio_cue": "/SE/Weapons/bot/sniper_fire",
-      "effect_spec": "/mod/com.pac.domdom.laser_unit_effects/sniper/sniper_muzzle_flash.pfx socket_muzzle01"
+      "effect_spec": "/pa/units/land/bot_sniper/bot_sniper_muzzle_flash.pfx socket_muzzle01"
     },
     "fired1": {
       "audio_cue": "/SE/Weapons/bot/sniper_fire_anti_tac",

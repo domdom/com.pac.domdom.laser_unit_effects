@@ -13,8 +13,7 @@
   "events": {
     "died": {
       "audio_cue": "/SE/Impacts/missile_tactical",
-      "effect_spec": "/mod/com.pac.domdom.laser_unit_effects/tac/tac_ammo_hit.pfx",
-      "effect_scale": 0.2
+      "effect_spec": "/pa/units/land/bot_tactical_missile/bot_tactical_missile_ammo_hit.pfx"
     }
   },
   "audio_loop": "/SE/Movement/missile/bot_tactical_missile_fly_loop",
@@ -53,6 +52,6 @@
     }
   ],
   "fx_trail": {
-    "filename": "/mod/com.pac.domdom.laser_unit_effects/tactical_missile/tactical_missile_trail.pfx"
+    "filename": "/pa/units/land/bot_tactical_missile/bot_tactical_missile_ammo_trail.pfx"
   }
 }

@@ -117,22 +117,22 @@
     },
     "fired0": {
       "audio_cue": "/SE/Weapons/sea/T2_battleship_fire",
-      "effect_spec": "/mod/com.pac.domdom.laser_unit_effects/leviathan/leviathan_muzzle_flash.pfx socket_muzzle01 /mod/com.pac.domdom.laser_unit_effects/leviathan/leviathan_muzzle_flash.pfx socket_muzzle02 /mod/com.pac.domdom.laser_unit_effects/leviathan/leviathan_muzzle_flash.pfx socket_muzzle03",
+      "effect_spec": "/pa/units/sea/battleship/battleship_muzzle_flash.pfx socket_muzzle01 /pa/units/sea/battleship/battleship_muzzle_flash.pfx socket_muzzle02 /pa/units/sea/battleship/battleship_muzzle_flash.pfx socket_muzzle03",
       "effect_scale": 0.5
     },
     "fired1": {
       "audio_cue": "/SE/Weapons/sea/T2_battleship_fire",
-      "effect_spec": "/mod/com.pac.domdom.laser_unit_effects/leviathan/leviathan_muzzle_flash.pfx socket_muzzle04 /mod/com.pac.domdom.laser_unit_effects/leviathan/leviathan_muzzle_flash.pfx socket_muzzle05 /mod/com.pac.domdom.laser_unit_effects/leviathan/leviathan_muzzle_flash.pfx socket_muzzle06",
+      "effect_spec": "/pa/units/sea/battleship/battleship_muzzle_flash.pfx socket_muzzle04 /pa/units/sea/battleship/battleship_muzzle_flash.pfx socket_muzzle05 /pa/units/sea/battleship/battleship_muzzle_flash.pfx socket_muzzle06",
       "effect_scale": 0.5
     },
     "fired2": {
       "audio_cue": "/SE/Weapons/sea/T2_battleship_fire",
-      "effect_spec": "/mod/com.pac.domdom.laser_unit_effects/leviathan/leviathan_muzzle_flash.pfx socket_muzzle07 /mod/com.pac.domdom.laser_unit_effects/leviathan/leviathan_muzzle_flash.pfx socket_muzzle08 /mod/com.pac.domdom.laser_unit_effects/leviathan/leviathan_muzzle_flash.pfx socket_muzzle09",
+      "effect_spec": "/pa/units/sea/battleship/battleship_muzzle_flash.pfx socket_muzzle07 /pa/units/sea/battleship/battleship_muzzle_flash.pfx socket_muzzle08 /pa/units/sea/battleship/battleship_muzzle_flash.pfx socket_muzzle09",
       "effect_scale": 0.5
     },
     "fired3": {
       "audio_cue": "/SE/Weapons/sea/T2_battleship_fire",
-      "effect_spec": "/mod/com.pac.domdom.laser_unit_effects/leviathan/leviathan_muzzle_flash.pfx socket_muzzle10 /mod/com.pac.domdom.laser_unit_effects/leviathan/leviathan_muzzle_flash.pfx socket_muzzle11 /mod/com.pac.domdom.laser_unit_effects/leviathan/leviathan_muzzle_flash.pfx socket_muzzle12",
+      "effect_spec": "/pa/units/sea/battleship/battleship_muzzle_flash.pfx socket_muzzle10 /pa/units/sea/battleship/battleship_muzzle_flash.pfx socket_muzzle11 /pa/units/sea/battleship/battleship_muzzle_flash.pfx socket_muzzle12",
       "effect_scale": 0.5
     }
   },

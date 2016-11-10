@@ -74,7 +74,7 @@
     },
     "fired": {
       "audio_cue": "/SE/Weapons/veh/tank_T2_leveler",
-      "effect_spec": "/mod/com.pac.domdom.laser_unit_effects/leveler/leveler_muzzle_flash.pfx socket_leftMuzzle /mod/com.pac.domdom.laser_unit_effects/leveler/leveler_muzzle_flash.pfx socket_rightMuzzle"
+      "effect_spec": "/pa/units/land/tank_laser_adv/tank_laser_adv_muzzle_flash.pfx socket_leftMuzzle /pa/units/land/tank_laser_adv/tank_laser_adv_muzzle_flash.pfx socket_rightMuzzle"
     },
     "died": {
       "audio_cue": "/SE/Death/Veh",

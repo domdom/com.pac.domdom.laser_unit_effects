@@ -13,13 +13,12 @@
     "filename": "/pa/units/air/atoa_missile/atoa_missile.papa"
   },
   "fx_trail": {
-    "filename": "/mod/com.pac.domdom.laser_unit_effects/tactical_missile/tactical_missile_trail.pfx"
+    "filename": "/pa/units/land/tactical_missile_launcher/tactical_missile_launcher_ammo_trail.pfx"
   },
   "events": {
     "died": {
       "audio_cue": "/SE/Impacts/missile_catapult",
-      "effect_spec": "/mod/com.pac.domdom.laser_unit_effects/tac/tac_ammo_hit.pfx",
-      "effect_scale": 0.2
+      "effect_spec": "/pa/units/land/tactical_missile_launcher/tactical_missile_launcher_ammo_hit.pfx"
     }
   },
   "audio_loop": "/SE/Movement/missile/catapult_missile_fly_loop",

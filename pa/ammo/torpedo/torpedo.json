@@ -7,7 +7,7 @@
     "filename": "/pa/units/sea/torpedo/torpedo.papa"
   },
   "fx_trail": {
-    "filename": "/mod/com.pac.domdom.laser_unit_effects/torpedo/torpedo_trail.pfx",
+    "filename": "/pa/units/sea/torpedo/torpedo_trail.pfx",
     "offset": [
       0.0,
       0.8,
@@ -23,8 +23,7 @@
   "events": {
     "died": {
       "audio_cue": "/SE/Impacts/torpedo",
-      "effect_spec": "/mod/com.pac.domdom.laser_unit_effects/torpedo/torpedo_hit.pfx",
-      "effect_scale": 0.15
+      "effect_spec": "/pa/units/sea/torpedo/torpedo_hit.pfx"
     }
   },
   "damage": 50,

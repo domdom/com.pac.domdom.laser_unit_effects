@@ -1,9 +1,0 @@
-[
-  {
-    "target" : "/pa/effects/specs/uber_proj_trail.pfx",
-    "destination" : "/mod/com.pac.domdom.laser_unit_effects/commander/uber_trail.pfx",
-    "patch" : [
-    	
-    ]
-  }
-]

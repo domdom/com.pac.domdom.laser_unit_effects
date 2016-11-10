@@ -15,12 +15,11 @@
   "events": {
     "died": {
       "audio_cue": "/SE/Impacts/missile_artillery_short",
-      "effect_spec": "/mod/com.pac.domdom.laser_unit_effects/pelter/pelter_ammo_hit.pfx",
-      "effect_scale": 0.8
+      "effect_spec": "/pa/units/land/artillery_short/artillery_short_ammo_hit.pfx"
     }
   },
   "fx_trail": {
-    "filename": "/mod/com.pac.domdom.laser_unit_effects/pelter/pelter_ammo_trail.pfx",
+    "filename": "/pa/units/land/artillery_short/artillery_short_ammo_trail.pfx",
     "offset": [
       0.0,
       0.0,

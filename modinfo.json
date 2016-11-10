@@ -1,18 +1,18 @@
 {
-    "context": "client",
-    "identifier": "com.pac.domdom.laser_unit_effects",
-    "display_name": "PA:C | More Pew Pew",
-    "description": "More pew, more color, and more distinguishable unit weapon effects! Tell at a glance what is shooting at you.",
-    "author": "dom314",
-    "forum": "https://forums.uberent.com/threads/rel-client-pa-c-more-pew-pew.69978/",
-    "icon": "http://i.imgur.com/PQOpc3u.gif",
-    "category": [
-        "classic",
-        "effects"
-    ],
-    "version": "1.3.0",
-    "classicOnly": true,
-    "build": "94684",
-    "date": "2016/08/03",
-    "signature": " "
+  "identifier": "com.pac.domdom.laser_unit_effects",
+  "context": "client",
+  "display_name": "More Pew Pew",
+  "description": "More pew, more color, and more distinguishable unit weapon effects! Tell at a glance what is shooting at you.",
+  "author": "dom314",
+  "forum": "https://forums.uberent.com/threads/rel-client-pa-c-more-pew-pew.69978/",
+  "icon": "http://i.imgur.com/PQOpc3u.gif",
+  "category": [
+    "classic",
+    "effects"
+  ],
+  "classicOnly": true,
+  "version": "1.4.0",
+  "build": "94684",
+  "date": "2016-11-10",
+  "signature": " "
 }

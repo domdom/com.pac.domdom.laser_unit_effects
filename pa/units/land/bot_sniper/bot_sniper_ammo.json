@@ -5,6 +5,15 @@
   "splash_radius": 0,
   "collision_check": "target",
   "collision_response": "impact",
-  "fx_beam_spec": "/mod/com.pac.domdom.laser_unit_effects/sniper/sniper_ammo_trail.pfx",
-  "fx_collision_spec": "/mod/com.pac.domdom.laser_unit_effects/sniper/sniper_ammo_hit.pfx"
+  "fx_beam_spec": "/pa/units/land/bot_sniper/bot_sniper_ammo_trail.pfx",
+  "fx_collision_spec": "/pa/units/land/bot_sniper/bot_sniper_ammo_hit.pfx",
+  "events": {
+    "died": {
+      "audio_cue": "/SE/Impacts/shell_bullet",
+      "effect_spec": "/pa/units/land/bot_sniper/bot_sniper_ammo_hit.pfx"
+    }
+  },
+  "fx_trail": {
+    "filename": "/pa/units/land/bot_sniper/bot_sniper_ammo_trail.pfx"
+  }
 }
