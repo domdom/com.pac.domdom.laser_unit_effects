@@ -17,8 +17,7 @@
   "events": {
     "died": {
       "audio_cue": "/SE/Impacts/missile_destroyer",
-      "effect_spec": "/pa/units/sea/destroyer/destroyer_ammo_hit.pfx",
-      "effect_scale": 0.2
+      "effect_spec": "/pa/units/sea/destroyer/destroyer_ammo_hit.pfx"
     }
   }
 }
