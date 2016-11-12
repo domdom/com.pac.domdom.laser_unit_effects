@@ -24,8 +24,7 @@
   "events": {
     "died": {
       "audio_cue": "/SE/Impacts/missile_battleship",
-      "effect_spec": "/pa/units/sea/battleship/battleship_ammo_hit.pfx",
-      "effect_scale": 0.7
+      "effect_spec": "/pa/units/sea/battleship/battleship_ammo_hit.pfx"
     }
   }
 }
