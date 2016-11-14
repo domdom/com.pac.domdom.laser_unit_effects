@@ -14,6 +14,11 @@
     }
   },
   "fx_trail": {
+    "offset": [
+      0.0,
+      0.8,
+      0.0
+    ],
     "filename": "/pa/units/land/tank_laser_adv/tank_laser_adv_ammo_trail.pfx"
   }
 }

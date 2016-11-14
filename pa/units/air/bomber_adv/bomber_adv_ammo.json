@@ -51,6 +51,11 @@
     }
   ],
   "fx_trail": {
+    "offset": [
+      0.0,
+      2.2,
+      0.0
+    ],
     "filename": "/pa/units/air/bomber_adv/bomber_adv_ammo_trail.pfx"
   }
 }

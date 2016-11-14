@@ -9,12 +9,7 @@
   "lifetime": 5,
   "model": null,
   "fx_trail": {
-    "filename": "/pa/units/land/bot_grenadier/bot_grenadier_ammo_trail.pfx",
-    "offset": [
-      0.0,
-      0.0,
-      0.0
-    ]
+    "filename": "/pa/units/land/bot_grenadier/bot_grenadier_ammo_trail.pfx"
   },
   "events": {
     "died": {

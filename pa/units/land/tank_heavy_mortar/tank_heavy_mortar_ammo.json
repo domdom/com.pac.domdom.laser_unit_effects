@@ -9,12 +9,7 @@
   "max_velocity": 200.0,
   "lifetime": 10,
   "fx_trail": {
-    "filename": "/pa/units/land/tank_heavy_mortar/tank_heavy_mortar_ammo_trail.pfx",
-    "offset": [
-      0.0,
-      0.0,
-      0.0
-    ]
+    "filename": "/pa/units/land/tank_heavy_mortar/tank_heavy_mortar_ammo_trail.pfx"
   },
   "model": {
     "filename": "/pa/units/air/shell/shell.papa"

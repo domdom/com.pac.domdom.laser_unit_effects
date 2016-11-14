@@ -52,6 +52,11 @@
     }
   ],
   "fx_trail": {
+    "offset": [
+      0.0,
+      2.2,
+      0.0
+    ],
     "filename": "/pa/units/land/bot_tactical_missile/bot_tactical_missile_ammo_trail.pfx"
   }
 }

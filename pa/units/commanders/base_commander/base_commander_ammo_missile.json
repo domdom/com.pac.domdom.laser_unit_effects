@@ -5,12 +5,7 @@
     "arrows": 3
   },
   "fx_trail": {
-    "filename": "/pa/units/commanders/base_commander/base_commander_rocket_trail.pfx",
-    "offset": [
-      0.0,
-      0.9,
-      0.0
-    ]
+    "filename": "/pa/units/commanders/base_commander/base_commander_ammo_missile_trail.pfx"
   },
   "events": {
     "died": {

@@ -8,12 +8,7 @@
   "lifetime": 1.0,
   "model": null,
   "fx_trail": {
-    "filename": "/pa/units/land/assault_bot/assault_bot_ammo_trail.pfx",
-    "offset": [
-      0.0,
-      0.0,
-      0.0
-    ]
+    "filename": "/pa/units/land/assault_bot/assault_bot_ammo_trail.pfx"
   },
   "events": {
     "died": {

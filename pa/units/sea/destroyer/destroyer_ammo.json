@@ -7,12 +7,7 @@
   "max_velocity": 85.0,
   "lifetime": 3,
   "fx_trail": {
-    "filename": "/pa/units/sea/destroyer/destroyer_ammo_trail.pfx",
-    "offset": [
-      0.0,
-      0.0,
-      0.0
-    ]
+    "filename": "/pa/units/sea/destroyer/destroyer_ammo_trail.pfx"
   },
   "events": {
     "died": {

@@ -8,12 +8,7 @@
   "max_velocity": 85.0,
   "lifetime": 3,
   "fx_trail": {
-    "filename": "/pa/units/sea/frigate/frigate_ammo_shell_trail.pfx",
-    "offset": [
-      0.0,
-      0.0,
-      0.0
-    ]
+    "filename": "/pa/units/sea/frigate/frigate_ammo_shell_trail.pfx"
   },
   "events": {
     "died": {

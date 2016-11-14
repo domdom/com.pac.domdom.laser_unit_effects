@@ -43,6 +43,11 @@
     "filename": "/pa/units/air/atoa_missile/atoa_missile.papa"
   },
   "fx_trail": {
+    "offset": [
+      0.0,
+      2.2,
+      0.0
+    ],
     "filename": "/pa/units/sea/nuclear_sub/nuclear_sub_ammo_missile_trail.pfx"
   }
 }
