@@ -29,9 +29,7 @@
   ],
   "guard_layer": "WL_AnySurface",
   "navigation": {
-    "type": "land-small",
     "acceleration": 120,
-    "brake": -1,
     "move_speed": 12,
     "turn_speed": 720,
     "group_preference": "back"
@@ -90,9 +88,6 @@
     }
   ],
   "events": {
-    "build_complete": {
-      "audio_cue": "/SE/Build_Complete/bot"
-    },
     "fired0": {
       "audio_cue": "/SE/Weapons/bot/sniper_fire",
       "effect_spec": "/pa/units/land/bot_sniper/bot_sniper_muzzle_flash.pfx socket_muzzle01"
@@ -102,7 +97,6 @@
       "effect_spec": "/pa/units/land/bot_sniper/bot_sniper_beam_flash.pfx socket_muzzle02"
     },
     "died": {
-      "audio_cue": "/SE/Death/Bot",
       "effect_spec": "/pa/effects/specs/default_explosion_bot_t2.pfx",
       "effect_scale": 1.2
     }
@@ -110,10 +104,7 @@
   "audio": {
     "loops": {
       "move": {
-        "cue": "/SE/Movement/bot/sniper_loop",
-        "flag": "vel_changed",
-        "should_start_func": "is_moving",
-        "should_stop_func": "is_not_moving"
+        "cue": "/SE/Movement/bot/sniper_loop"
       }
     },
     "selection_response": {

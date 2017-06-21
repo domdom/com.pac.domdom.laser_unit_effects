@@ -13,15 +13,11 @@
   },
   "events": {
     "died": {
-      "audio_cue": "/SE/Impacts/shell_bullet",
       "effect_spec": "/pa/units/land/bot_grenadier/bot_grenadier_ammo_hit.pfx",
       "effect_scale": 0.4
     }
   },
   "physics": {
-    "radius": 1,
-    "gravity_scalar": 6,
-    "add_to_spatial_db": false,
-    "allow_underground": true
+    "gravity_scalar": 6
   }
 }

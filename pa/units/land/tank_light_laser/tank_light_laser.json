@@ -32,7 +32,6 @@
   },
   "guard_layer": "WL_LandHorizontal",
   "navigation": {
-    "type": "land-small",
     "acceleration": 100,
     "brake": 100,
     "move_speed": 10,
@@ -66,24 +65,15 @@
     }
   ],
   "events": {
-    "build_complete": {
-      "audio_cue": "/SE/Build_Complete/veh"
-    },
     "fired": {
       "audio_cue": "/SE/Weapons/veh/tank_light_fire",
       "effect_spec": "/pa/units/land/tank_light_laser/tank_light_laser_muzzle_flash.pfx socket_muzzle /pa/units/land/tank_light_laser/tank_light_laser_burst_flash.pfx bone_root"
-    },
-    "died": {
-      "audio_cue": "/SE/Death/Veh"
     }
   },
   "audio": {
     "loops": {
       "move": {
-        "cue": "/SE/Movement/veh/tank_light_laser_loop",
-        "flag": "vel_changed",
-        "should_start_func": "is_moving",
-        "should_stop_func": "is_not_moving"
+        "cue": "/SE/Movement/veh/tank_light_laser_loop"
       }
     },
     "selection_response": {

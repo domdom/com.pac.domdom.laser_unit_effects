@@ -31,7 +31,6 @@
   },
   "guard_layer": "WL_LandHorizontal",
   "navigation": {
-    "type": "land-small",
     "acceleration": 100,
     "brake": 100,
     "move_speed": 10,
@@ -69,15 +68,11 @@
     }
   ],
   "events": {
-    "build_complete": {
-      "audio_cue": "/SE/Build_Complete/veh"
-    },
     "fired": {
       "audio_cue": "/SE/Weapons/veh/tank_T2_leveler",
       "effect_spec": "/pa/units/land/tank_laser_adv/tank_laser_adv_muzzle_flash.pfx socket_leftMuzzle /pa/units/land/tank_laser_adv/tank_laser_adv_muzzle_flash.pfx socket_rightMuzzle"
     },
     "died": {
-      "audio_cue": "/SE/Death/Veh",
       "effect_spec": "/pa/effects/specs/default_explosion_bot_t2.pfx",
       "effect_scale": 1.0
     }
@@ -85,10 +80,7 @@
   "audio": {
     "loops": {
       "move": {
-        "cue": "/SE/Movement/veh/tank_leveler_loop_T2",
-        "flag": "vel_changed",
-        "should_start_func": "is_moving",
-        "should_stop_func": "is_not_moving"
+        "cue": "/SE/Movement/veh/tank_leveler_loop_T2"
       }
     },
     "selection_response": {

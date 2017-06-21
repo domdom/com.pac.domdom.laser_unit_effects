@@ -34,7 +34,6 @@
   "navigation": {
     "type": "amphibious",
     "acceleration": 50,
-    "brake": -1,
     "move_speed": 18,
     "turn_speed": 720
   },
@@ -83,23 +82,12 @@
     }
   ],
   "events": {
-    "build_complete": {
-      "audio_cue": "/SE/Build_Complete/bot"
-    },
     "fired": {
       "audio_cue": "/SE/Weapons/bot/assault_fire",
       "effect_spec": "/pa/units/land/assault_bot/assault_bot_muzzle_flash.pfx socket_rightMuzzle /pa/units/land/assault_bot/assault_bot_muzzle_flash.pfx socket_leftMuzzle"
     }
   },
   "audio": {
-    "loops": {
-      "move": {
-        "cue": "/SE/Movement/bot/assault_loop",
-        "flag": "vel_changed",
-        "should_start_func": "is_moving",
-        "should_stop_func": "is_not_moving"
-      }
-    },
     "selection_response": {
       "cue": "/SE/Selection/bot/assault"
     }

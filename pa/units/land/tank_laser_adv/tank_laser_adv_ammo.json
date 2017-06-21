@@ -4,7 +4,6 @@
   "splash_damage": 300,
   "splash_radius": 3,
   "full_damage_splash_radius": 1,
-  "splash_damages_allies": false,
   "initial_velocity": 150.0,
   "max_velocity": 150.0,
   "lifetime": 2,
@@ -14,11 +13,6 @@
     }
   },
   "fx_trail": {
-    "offset": [
-      0.0,
-      0.8,
-      0.0
-    ],
     "filename": "/pa/units/land/tank_laser_adv/tank_laser_adv_ammo_trail.pfx"
   }
 }

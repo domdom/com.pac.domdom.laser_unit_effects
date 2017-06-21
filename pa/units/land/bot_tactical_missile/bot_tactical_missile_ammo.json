@@ -12,15 +12,11 @@
   "influence_radius": 400,
   "events": {
     "died": {
-      "audio_cue": "/SE/Impacts/missile_tactical",
       "effect_spec": "/pa/units/land/bot_tactical_missile/bot_tactical_missile_ammo_hit.pfx"
     }
   },
   "audio_loop": "/SE/Movement/missile/bot_tactical_missile_fly_loop",
   "physics": {
-    "radius": 1,
-    "gravity_scalar": 5,
-    "ignore_gravity": true,
     "add_to_spatial_db": true
   },
   "armor_damage_map": {
@@ -52,11 +48,6 @@
     }
   ],
   "fx_trail": {
-    "offset": [
-      0.0,
-      2.2,
-      0.0
-    ],
     "filename": "/pa/units/land/bot_tactical_missile/bot_tactical_missile_ammo_trail.pfx"
   }
 }

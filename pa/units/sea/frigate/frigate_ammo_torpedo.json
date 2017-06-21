@@ -5,20 +5,12 @@
   "max_velocity": 50.0,
   "lifetime": 5,
   "turn_rate": 180,
-  "model": {
-    "filename": "/pa/units/sea/torpedo/torpedo.papa"
-  },
   "events": {
     "died": {
       "effect_spec": "/pa/effects/specs/default_proj_explosion.pfx"
     }
   },
   "fx_trail": {
-    "filename": "/pa/units/sea/frigate/frigate_ammo_torpedo_trail.pfx",
-    "offset": [
-      0.0,
-      0.8,
-      0.0
-    ]
+    "filename": "/pa/units/sea/frigate/frigate_ammo_torpedo_trail.pfx"
   }
 }

@@ -71,15 +71,11 @@
     }
   ],
   "events": {
-    "build_complete": {
-      "audio_cue": "/SE/Build_Complete/factory"
-    },
     "fired": {
       "audio_cue": "/SE/Weapons/structure/tact_mis_launcher_catapult_fire",
       "effect_spec": "/pa/units/land/tactical_missile_launcher/tactical_missile_launcher_launch.pfx"
     },
     "died": {
-      "audio_cue": "/SE/Death/Factory",
       "effect_scale": 0.5
     }
   },

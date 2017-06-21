@@ -4,7 +4,6 @@
   "description": "!LOC:Gunboat- Cheap. Fast. Expendable. Attacks land and sea targets.",
   "max_health": 175,
   "build_metal_cost": 150,
-  "spawn_layers": "WL_WaterSurface",
   "unit_types": [
     "UNITTYPE_Naval",
     "UNITTYPE_Scout",
@@ -14,16 +13,13 @@
     "UNITTYPE_FactoryBuild"
   ],
   "navigation": {
-    "type": "deepwater",
     "acceleration": 75,
     "brake": 200,
     "move_speed": 20,
     "turn_speed": 180,
     "turn_in_place": false
   },
-  "physics": {
-    "radius": 6
-  },
+  "physics": {},
   "recon": {
     "observer": {
       "items": [
@@ -54,15 +50,11 @@
     }
   ],
   "events": {
-    "build_complete": {
-      "audio_cue": "/SE/Build_Complete/sea"
-    },
     "fired": {
       "audio_cue": "/SE/Weapons/sea/sea_scout_fire",
       "effect_spec": "/pa/units/sea/sea_scout/sea_scout_muzzle_flash.pfx socket_muzzle"
     },
     "died": {
-      "audio_cue": "/SE/Death/Sea",
       "effect_spec": "/pa/effects/specs/default_explosion_naval.pfx",
       "effect_scale": 0.6
     }
@@ -70,10 +62,7 @@
   "audio": {
     "loops": {
       "move": {
-        "cue": "/SE/Movement/sea/sea_scout_ship_loop",
-        "flag": "vel_changed",
-        "should_start_func": "is_moving",
-        "should_stop_func": "is_not_moving"
+        "cue": "/SE/Movement/sea/sea_scout_ship_loop"
       }
     }
   },

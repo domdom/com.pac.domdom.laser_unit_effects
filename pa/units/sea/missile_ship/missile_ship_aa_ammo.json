@@ -34,11 +34,6 @@
     }
   ],
   "fx_trail": {
-    "filename": "/pa/units/sea/missile_ship/missile_ship_aa_ammo_trail.pfx",
-    "offset": [
-      0.0,
-      1.3,
-      0.0
-    ]
+    "filename": "/pa/units/sea/missile_ship/missile_ship_aa_ammo_trail.pfx"
   }
 }
