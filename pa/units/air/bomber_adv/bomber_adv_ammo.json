@@ -18,6 +18,9 @@
   },
   "audio_loop": "/SE/Movement/missile/bomber_t2_fly_loop",
   "physics": {
+    "radius": 1,
+    "gravity_scalar": 5,
+    "ignore_gravity": true,
     "add_to_spatial_db": true
   },
   "flight_type": "Staged",
@@ -48,6 +51,11 @@
     }
   ],
   "fx_trail": {
+    "offset": [
+      0.0,
+      2.2,
+      0.0
+    ],
     "filename": "/pa/units/air/bomber_adv/bomber_adv_ammo_trail.pfx"
   }
 }

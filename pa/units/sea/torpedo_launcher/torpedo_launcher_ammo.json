@@ -5,10 +5,16 @@
   "max_velocity": 50.0,
   "lifetime": 4.0,
   "turn_rate": 120,
+  "cruise_height": 2,
   "model": {
     "filename": "/pa/units/sea/torpedo_small/torpedo_small.papa"
   },
   "fx_trail": {
-    "filename": "/pa/units/sea/torpedo_launcher/torpedo_launcher_ammo_trail.pfx"
+    "filename": "/pa/units/sea/torpedo_launcher/torpedo_launcher_ammo_trail.pfx",
+    "offset": [
+      0.0,
+      0.8,
+      0.0
+    ]
   }
 }

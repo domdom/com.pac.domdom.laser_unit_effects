@@ -34,6 +34,7 @@
   "navigation": {
     "type": "amphibious",
     "acceleration": 120,
+    "brake": -1,
     "move_speed": 12,
     "turn_speed": 720
   },
@@ -90,18 +91,26 @@
     }
   ],
   "events": {
+    "build_complete": {
+      "audio_cue": "/SE/Build_Complete/bot"
+    },
     "fired": {
       "audio_cue": "/SE/Weapons/bot/assault_adv_fire",
       "effect_spec": "/pa/units/land/assault_bot_adv/assault_bot_adv_muzzle_flash.pfx socket_rightMuzzle /pa/units/land/assault_bot_adv/assault_bot_adv_muzzle_flash.pfx socket_leftMuzzle"
     },
     "died": {
-      "effect_spec": "/pa/effects/specs/default_explosion_bot_t2.pfx"
+      "audio_cue": "/SE/Death/Bot",
+      "effect_spec": "/pa/effects/specs/default_explosion_bot_t2.pfx",
+      "effect_scale": 1.0
     }
   },
   "audio": {
     "loops": {
       "move": {
-        "cue": "/SE/Movement/bot/T2_assault_loop"
+        "cue": "/SE/Movement/bot/T2_assault_loop",
+        "flag": "vel_changed",
+        "should_start_func": "is_moving",
+        "should_stop_func": "is_not_moving"
       }
     },
     "selection_response": {

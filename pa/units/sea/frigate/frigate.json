@@ -4,6 +4,7 @@
   "description": "!LOC:Frigate- Durable. Rapid-fire. Attacks land, air, and sea targets.",
   "max_health": 750,
   "build_metal_cost": 450,
+  "spawn_layers": "WL_WaterSurface",
   "mesh_bounds": [
     6,
     15,
@@ -19,6 +20,7 @@
   ],
   "guard_layer": "WL_AnySurface",
   "navigation": {
+    "type": "deepwater",
     "acceleration": 30,
     "brake": 90,
     "move_speed": 9,
@@ -26,6 +28,7 @@
     "turn_accel": 20
   },
   "physics": {
+    "shape": "sphere",
     "radius": 3
   },
   "recon": {
@@ -81,6 +84,9 @@
     }
   ],
   "events": {
+    "build_complete": {
+      "audio_cue": "/SE/Build_Complete/sea"
+    },
     "fired0": {
       "audio_cue": "/SE/Weapons/sea/frigate_fire_1",
       "effect_spec": "/pa/units/sea/frigate/frigate_muzzle_flash.pfx socket_muzzle01",
@@ -105,7 +111,10 @@
   "audio": {
     "loops": {
       "move": {
-        "cue": "/SE/Movement/sea/frigate_loop"
+        "cue": "/SE/Movement/sea/frigate_loop",
+        "flag": "vel_changed",
+        "should_start_func": "is_moving",
+        "should_stop_func": "is_not_moving"
       }
     }
   },

@@ -43,6 +43,7 @@
   },
   "guard_layer": "WL_LandHorizontal",
   "navigation": {
+    "type": "land-small",
     "acceleration": 120,
     "brake": 120,
     "move_speed": 12,
@@ -87,6 +88,7 @@
       "audio_cue": "/SE/Build_Complete/fab"
     },
     "died": {
+      "audio_cue": "/SE/Death/Veh",
       "effect_scale": 1.5
     }
   },
@@ -99,7 +101,10 @@
         "should_stop_func": "no_build_target"
       },
       "move": {
-        "cue": "/SE/Movement/veh/fab_loop"
+        "cue": "/SE/Movement/veh/fab_loop",
+        "flag": "vel_changed",
+        "should_start_func": "is_moving",
+        "should_stop_func": "is_not_moving"
       }
     },
     "selection_response": {
