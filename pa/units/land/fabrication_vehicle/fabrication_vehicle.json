@@ -1,7 +1,8 @@
 {
   "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
+  "unit_name": "Fabrication Vehicle",
   "display_name": "!LOC:Fabrication Vehicle",
-  "description": "!LOC:Basic fabricator- Wired to build structures.",
+  "description": "!LOC:Basic Fabricator - Builds basic structures. Durable. More powerful than other fabricators.",
   "max_health": 50,
   "build_metal_cost": 200,
   "buildable_types": "Land & Structure & Basic | Factory & Basic | Factory & Land & Tank & Advanced | FabBuild",

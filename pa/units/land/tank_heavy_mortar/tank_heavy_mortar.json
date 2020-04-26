@@ -1,7 +1,7 @@
 {
   "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
-  "display_name": "!LOC:Sheller",
-  "description": "!LOC:Mortar tank- Equipped with advanced mobile artillery.",
+  "display_name": "Sheller",
+  "description": "!LOC:Mortar tank - Advanced long range mobile artillery.",
   "max_health": 125,
   "build_metal_cost": 1200,
   "influence_radius": 400,
