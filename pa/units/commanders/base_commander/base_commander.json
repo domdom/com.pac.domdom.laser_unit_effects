@@ -36,6 +36,7 @@
     "UNITTYPE_Mobile",
     "UNITTYPE_Offense",
     "UNITTYPE_Land",
+    "UNITTYPE_Amphibious",
     "UNITTYPE_NoBuild"
   ],
   "command_caps": [
