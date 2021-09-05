@@ -25,8 +25,7 @@
     "UNITTYPE_Land",
     "UNITTYPE_Advanced",
     "UNITTYPE_FactoryBuild",
-    "UNITTYPE_CannonBuildable",
-    "UNITTYPE_Amphibious"
+    "UNITTYPE_CannonBuildable"
   ],
   "transportable": {
     "size": 1

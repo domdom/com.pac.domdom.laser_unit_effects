@@ -25,8 +25,7 @@
     "UNITTYPE_Land",
     "UNITTYPE_Artillery",
     "UNITTYPE_Advanced",
-    "UNITTYPE_FactoryBuild",
-    "UNITTYPE_TacticalDefense"
+    "UNITTYPE_FactoryBuild"
   ],
   "guard_layer": "WL_AnySurface",
   "navigation": {
