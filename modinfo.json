@@ -6,14 +6,14 @@
   "author": "dom314",
   "icon": "http://i.imgur.com/PQOpc3u.gif",
   "priority": 105,
-  "version": "1.5.3-114220",
+  "version": "1.5.3-115958",
   "forum": "https://forums.uberent.com/threads/rel-client-pa-c-more-pew-pew.69978/",
   "category": [
     "classic",
     "effects"
   ],
   "classicOnly": true,
-  "build": "114220",
-  "date": "2021-09-05",
+  "build": "115958",
+  "date": "2021-09-07",
   "signature": " "
 }
