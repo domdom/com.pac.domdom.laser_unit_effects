@@ -2,8 +2,8 @@
   "base_spec": "/pa/units/land/base_bot/base_bot.json",
   "display_name": "Slammer",
   "description": "!LOC:Assault Bot - Armoured with high damage guns and torpedoes. Amphibious. Attacks land and sea.",
-  "max_health": 400,
-  "build_metal_cost": 600,
+  "max_health": 360,
+  "build_metal_cost": 500,
   "attachable": {
     "offsets": {
       "root": [
@@ -19,6 +19,8 @@
     }
   },
   "unit_types": [
+    "UNITTYPE_Custom58",
+    "UNITTYPE_Sub",
     "UNITTYPE_Bot",
     "UNITTYPE_Mobile",
     "UNITTYPE_Offense",
@@ -34,9 +36,9 @@
   "guard_layer": "WL_AnySurface",
   "navigation": {
     "type": "amphibious",
-    "acceleration": 120,
+    "acceleration": 140,
     "brake": -1,
-    "move_speed": 12,
+    "move_speed": 14,
     "turn_speed": 720
   },
   "physics": {

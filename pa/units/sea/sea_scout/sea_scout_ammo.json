@@ -6,7 +6,7 @@
   "initial_velocity": 130.0,
   "max_velocity": 130.0,
   "model": null,
-  "lifetime": 3,
+  "lifetime": 1.5,
   "fx_trail": {
     "filename": "/pa/units/sea/sea_scout/sea_scout_ammo_trail.pfx"
   },

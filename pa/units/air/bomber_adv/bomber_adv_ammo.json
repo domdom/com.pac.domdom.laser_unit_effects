@@ -6,23 +6,34 @@
   "splash_radius": 0,
   "cruise_height": 40,
   "initial_velocity": 20.0,
-  "max_velocity": 80.0,
+  "max_velocity": 160,
   "turn_rate": 360,
   "lifetime": 15,
   "max_health": 1,
   "influence_radius": 400,
-  "events": {
-    "died": {
-      "audio_cue": "/SE/Impacts/bomber_adv",
-      "effect_spec": "/pa/units/air/bomber_adv/bomber_adv_ammo_hit.pfx"
-    }
-  },
   "audio_loop": "/SE/Movement/missile/bomber_t2_fly_loop",
   "physics": {
     "radius": 1,
     "gravity_scalar": 5,
     "ignore_gravity": true,
     "add_to_spatial_db": true
+  },
+  "model": {
+    "filename": "/pa/units/air/missile_tactical/missile_tactical.papa"
+  },
+  "fx_trail": {
+    "offset": [
+      0.0,
+      2.2,
+      0.0
+    ],
+    "filename": "/pa/units/air/bomber_adv/bomber_adv_ammo_trail.pfx"
+  },
+  "events": {
+    "died": {
+      "audio_cue": "/SE/Impacts/missile_tactical",
+      "effect_spec": "/pa/units/air/bomber_adv/bomber_adv_ammo_hit.pfx"
+    }
   },
   "flight_type": "Staged",
   "stages": [
@@ -50,13 +61,5 @@
       "apply_thrust": true,
       "rotates_to_velocity": true
     }
-  ],
-  "fx_trail": {
-    "offset": [
-      0.0,
-      2.2,
-      0.0
-    ],
-    "filename": "/pa/units/air/bomber_adv/bomber_adv_ammo_trail.pfx"
-  }
+  ]
 }

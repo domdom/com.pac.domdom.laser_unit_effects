@@ -5,14 +5,17 @@
   "damage": 1000,
   "splash_damage": 0,
   "splash_radius": 0,
-  "initial_velocity": 80.0,
-  "max_velocity": 80.0,
+  "initial_velocity": 120.0,
+  "max_velocity": 120.0,
   "cruise_height": 60,
   "turn_rate": 0,
-  "lifetime": 60,
+  "lifetime": 40,
   "influence_radius": 400,
-  "armor_damage_map": {
-    "AT_Orbital": 0.5
+  "physics": {
+    "radius": 1,
+    "gravity_scalar": 5,
+    "ignore_gravity": true,
+    "add_to_spatial_db": true
   },
   "stages": [
     {
@@ -38,11 +41,8 @@
       "rotates_to_velocity": true
     }
   ],
-  "audio_loop": "/SE/Movement/missile/missileship_fly_loop",
-  "events": {
-    "died": {
-      "effect_spec": "/pa/units/sea/missile_ship/missile_ship_ammo_hit.pfx"
-    }
+  "model": {
+    "filename": "/pa/units/air/missile_tactical/missile_tactical.papa"
   },
   "fx_trail": {
     "offset": [
@@ -51,5 +51,11 @@
       0.0
     ],
     "filename": "/pa/units/sea/missile_ship/missile_ship_ammo_trail.pfx"
-  }
+  },
+  "events": {
+    "died": {
+      "effect_spec": "/pa/units/sea/missile_ship/missile_ship_ammo_hit.pfx"
+    }
+  },
+  "audio_loop": "/SE/Movement/missile/missileship_fly_loop"
 }
