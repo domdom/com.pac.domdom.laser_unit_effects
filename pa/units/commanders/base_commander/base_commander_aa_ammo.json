@@ -8,11 +8,11 @@
   "turn_rate": 360,
   "damage": 200,
   "splash_damage": 10,
-  "splash_radius": 0.75,
+  "splash_radius": 1.5,
   "full_damage_splash_radius": 0.75,
-  "initial_velocity": 125.0,
-  "max_velocity": 125.0,
-  "lifetime": 2,
+  "initial_velocity": 150.0,
+  "max_velocity": 150.0,
+  "lifetime": 2.5,
   "events": {
     "spawned": {
       "audio_cue": "/SE/Weapons/commander/Commander_gun_fire_aa"
