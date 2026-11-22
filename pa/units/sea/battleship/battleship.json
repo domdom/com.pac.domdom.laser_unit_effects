@@ -11,6 +11,7 @@
     12
   ],
   "unit_types": [
+    "UNITTYPE_Custom58",
     "UNITTYPE_Naval",
     "UNITTYPE_Mobile",
     "UNITTYPE_Offense",

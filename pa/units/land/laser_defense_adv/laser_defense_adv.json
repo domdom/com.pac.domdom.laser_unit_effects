@@ -70,6 +70,7 @@
     ]
   ],
   "unit_types": [
+    "UNITTYPE_Custom58",
     "UNITTYPE_Structure",
     "UNITTYPE_Advanced",
     "UNITTYPE_Land",

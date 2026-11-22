@@ -19,6 +19,7 @@
     }
   },
   "unit_types": [
+    "UNITTYPE_Custom58",
     "UNITTYPE_Tank",
     "UNITTYPE_Mobile",
     "UNITTYPE_Offense",
